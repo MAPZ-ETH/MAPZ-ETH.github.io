@@ -1,7 +1,12 @@
-# Site settings
+# --- Site settings ---
 title: Moroccan Association of Polytechnicians in Zurich
 description: "Our official website."
 theme: minimal-mistakes-jekyll
+
+# --- Logo (Top-level) ---
+logo: /assets/images/TATTOO.png
+
+# --- Plugins ---
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

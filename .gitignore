@@ -1,0 +1,10 @@
+# Jekyll files and folders to ignore
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+
+# Gemfile and environment files
+Gemfile.lock
+.env
+
