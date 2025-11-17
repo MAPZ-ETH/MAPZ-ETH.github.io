@@ -1,31 +1,29 @@
 name: Build and Deploy Jekyll Site
 
 on:
-  # Run this workflow on every push to the 'main' branch
   push:
     branches:
       - main 
 
 jobs:
-  build: # This job builds the site
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
-      # NEW STEP: Set up Ruby (just like we did on your Mac)
+      
+      # This step sets up Ruby, just like on your Mac
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3.0'   # Use the same version you have
+          ruby-version: '3.3.0'   
           bundler-cache: true   # This automatically runs 'bundle install'
-                              # and installs gems from your Gemfile
 
-      # NEW STEP: Build the site using Bundler
+      # This step builds the site using the gems you installed
       - name: Build with Jekyll
         run: bundle exec jekyll build --destination ./_site
-
-      # This step is the same, it uploads the built site
+      
+      # This step uploads the finished site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3 
         with:
@@ -33,7 +31,7 @@ jobs:
 
   deploy: # This deploy job is unchanged
     runs-on: ubuntu-latest
-    needs: build # This job waits for the 'build' job to finish
+    needs: build 
     permissions:
       pages: write      
       id-token: write 
