@@ -3,6 +3,9 @@ title: Moroccan Association of Polytechnicians in Zurich
 description: "Our official website."
 theme: minimal-mistakes-jekyll
 
+url: "https://MAPZ-ETH.github.io"
+baseurl: "/"
+
 # --- Logo (Top-level) ---
 logo: /assets/images/TATTOO.png
 
