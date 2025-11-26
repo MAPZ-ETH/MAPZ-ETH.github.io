@@ -7,10 +7,111 @@
 
 @import "variables";
 
+// ============================================================================
+// FULL WIDTH LAYOUT OVERRIDE
+// Remove all Minimal Mistakes constraints for a modern, full-width design
+// ============================================================================
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $font-family-base;
+  color: $dark-gray;
+  background-color: $background-color;
+}
+
+// Main content area with same background for consistency
+.page {
+  background-color: $background-color;
+}
+
+// Individual sections with same background
+section {
+  background-color: $background-color;
+  
+  &:nth-child(odd) {
+    background-color: $background-color;
+  }
+  
+  &:nth-child(even) {
+    background-color: $background-color;
+  }
+}
+
+// Remove all width constraints
+.page {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page__inner {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page__content {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+// Remove sidebar constraints
+.layout--single {
+  .page__inner {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+// Create a proper content wrapper with generous side margins
+.page__wrapper {
+  width: 100%;
+  padding: 0 $space-xl;
+}
+
+// Section wrapper for content
+.content-wrapper {
+  width: 100%;
+  padding: $space-2xl $space-xl;
+  margin: 0 auto;
+}
+
+// Full-width sections
+.section-full {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: $space-3xl $space-xl;
+}
+
 // --- Hero/Splash Page Overrides ---
 .splash {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
   .page__hero {
     background-color: $primary-dark;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: $space-3xl $space-xl;
   }
 
   .page__hero-image {
@@ -22,12 +123,19 @@
     font-family: $font-family-heading;
     font-size: $font-size-5xl;
     font-weight: $font-weight-bold;
+    margin: $space-2xl 0 $space-md 0;
   }
 
   .page__lead {
     color: $light-gray;
     font-size: $font-size-lg;
     font-weight: $font-weight-normal;
+  }
+
+  .page__content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -50,6 +158,46 @@
   }
 }
 
+// Content padding for text sections
+h1, h2, h3, h4, h5, h6 {
+  padding: 0 $space-xl;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+p, ul, ol, blockquote, pre {
+  padding: 0 $space-xl;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+// Definition list styling (for contact info, etc.)
+dt {
+  padding: 0 $space-xl;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: $font-weight-bold;
+  color: $primary-dark;
+}
+
+dd {
+  padding: 0 $space-xl;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: $space-md;
+}
+
+// Don't double-pad nested elements
+blockquote > p,
+li > p,
+dd > p {
+  padding: 0;
+}
+
+hr {
+  margin: $space-3xl 0;
+}
+
 // --- Button Styling ---
 .btn {
   font-family: $font-family-base;
@@ -58,6 +206,7 @@
   transition: all $transition-base;
   padding: $space-md $space-xl;
   font-size: $font-size-base;
+  display: inline-block;
 
   &--primary {
     background-color: $primary-color;
@@ -93,9 +242,85 @@
   }
 }
 
+// --- iFrame and Embedded Content Styling ---
+iframe {
+  padding: 0 $space-xl;
+  margin: $space-2xl 0;
+}
+
+table {
+  width: calc(100% - (2 * #{$space-xl}));
+  margin: $space-2xl $space-xl;
+}
+
+// --- HTML Element Wrapping Styles ---
+div {
+  &.social-links,
+  &.sponsors-grid,
+  &.carousel-container,
+  &.cta-section,
+  &.contact-info {
+    padding: 0 $space-xl;
+  }
+}
+
+// Direct styling for content sections that have built-in padding
+div.sponsors-grid,
+div.carousel-container {
+  margin: $space-2xl 0;
+}
+
+// Contact info layout
+.contact-info {
+  margin: $space-xl 0;
+  
+  dt {
+    padding: 0;
+  }
+  
+  dd {
+    padding: 0;
+  }
+}
+
+.contact-method {
+  margin-bottom: $space-2xl;
+  padding: $space-lg;
+  background-color: $light-gray;
+  border-radius: $border-radius-md;
+  border-left: 4px solid $primary-color;
+  
+  h4 {
+    padding: 0;
+    margin: 0 0 $space-sm 0;
+    color: $primary-dark;
+    font-size: $font-size-lg;
+  }
+  
+  p {
+    padding: 0;
+    margin: 0 0 $space-sm 0;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    font-weight: $font-weight-semibold;
+    
+    &:hover {
+      text-decoration: underline;
+      color: $primary-dark;
+    }
+  }
+}
+
 // --- Section Styling ---
 .section {
-  padding: $space-3xl $space-lg;
+  padding: $space-3xl $space-xl;
 
   &__title {
     color: $primary-dark;
@@ -108,33 +333,66 @@
   }
 
   &--light {
-    background-color: $light-gray;
+    background-color: $background-color;
   }
 
   &--white {
-    background-color: $white;
+    background-color: $background-color;
   }
 }
 
 // --- Navigation ---
 .masthead {
-  background-color: $white;
+  background-color: $background-color;
   border-bottom: 1px solid $medium-gray;
+  width: 100%;
+  padding: 8px 0;
+}
+
+.site-logo img {
+  max-height: 60px;
+  width: auto;
+  display: block;
+}
+
+.masthead__inner-wrap {
+  padding: 0 !important;
 }
 
 .site-nav a {
   color: $dark-gray;
   font-weight: $font-weight-semibold;
-  transition: color $transition-base;
+  transition: all $transition-base;
+  padding-bottom: 6px;
+  border-bottom: 3px solid transparent;
+  display: inline-block;
 
   &:hover {
     color: $primary-color;
+    border-bottom-color: $accent-color;
   }
+}
 
-  &.active {
-    color: $primary-color;
-    border-bottom: 2px solid $secondary-color;
-  }
+// Active link styling - bold text with red underline only
+.site-nav a.active,
+a.active[href],
+.masthead__menu-item a.active {
+  color: $primary-color !important;
+  font-weight: $font-weight-bold !important;
+  border-bottom: 3px solid $primary-color !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+
+// Target the greedy navigation as well
+.greedy-nav a[aria-current="page"],
+.greedy-nav a.active,
+.greedy-nav .active a {
+  color: $primary-color !important;
+  font-weight: $font-weight-bold !important;
+  border-bottom: 3px solid $primary-color !important;
+  background-color: transparent !important;
+  padding: 0 !important;
 }
 
 // --- Text Utility Classes ---
@@ -154,6 +412,22 @@
   color: $dark-gray;
 }
 
+// --- Responsive Design ---
+@media (max-width: $breakpoint-md) {
+  h1, h2, h3, h4, h5, h6,
+  p, ul, ol, blockquote, pre {
+    padding: 0 $space-lg;
+  }
+
+  .page__hero {
+    padding: $space-2xl $space-lg !important;
+  }
+
+  .section {
+    padding: $space-2xl $space-lg;
+  }
+}
+
 // --- Utility Mixins ---
 @mixin card-shadow {
   box-shadow: $shadow-md;
@@ -169,21 +443,13 @@
   background: linear-gradient(135deg, $secondary-color, $secondary-light);
 }
 
-// --- Responsive Typography ---
-@media (max-width: $breakpoint-md) {
-  h1 {
-    font-size: $font-size-3xl;
-  }
+// Logo styling - make it bigger
+.site-logo {
+  max-width: 100px;
+  height: auto;
+}
 
-  h2 {
-    font-size: $font-size-2xl;
-  }
-
-  h3 {
-    font-size: $font-size-xl;
-  }
-
-  .page__title {
-    font-size: $font-size-3xl !important;
-  }
+.masthead img {
+  max-width: 100px !important;
+  height: auto !important;
 }

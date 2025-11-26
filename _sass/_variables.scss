@@ -6,28 +6,32 @@
 // ============================================================================
 
 // --- Color Palette ---
-// Primary Colors
-$primary-color: #1a472a;           // Deep green (inspired by Morocco/ETH)
-$primary-light: #2d6a42;
-$primary-dark: #0f2818;
+// MAPZ Official Brand Colors
+$background-color: #f1efe7;        // Official logo background
+$primary-color: #9f1319;           // Moroccan Map & Text (Red)
+$primary-light: #c23a42;           // Lighter version of primary
+$primary-dark: #6d0d10;            // Darker version of primary
 
-// Secondary Colors
-$secondary-color: #d4941e;         // Gold accent (Moroccan inspiration)
-$secondary-light: #e6a82e;
-$secondary-dark: #b87a0f;
+$secondary-color: #24620e;         // Moroccan Stars (Green)
+$secondary-light: #3d8b1a;         // Lighter green
+$secondary-dark: #1a4609;          // Darker green
 
-// Neutral Colors
+$accent-color: #caa64f;            // ETH Zurich drawing (Gold)
+$accent-light: #dbb866;            // Lighter gold
+$accent-dark: #9f8337;             // Darker gold
+
+// Neutral Colors (based on background)
 $white: #ffffff;
-$light-gray: #f5f5f5;
-$medium-gray: #e0e0e0;
-$dark-gray: #333333;
-$black: #000000;
+$light-gray: #f1efe7;              // Match background for subtle contrast
+$medium-gray: #d9d6ce;             // Slightly darker than background
+$dark-gray: #5a5754;               // Dark neutral
+$black: #2a2825;                   // Almost black
 
 // Status/Utility Colors
-$success-color: #28a745;
-$warning-color: #ffc107;
-$danger-color: #dc3545;
-$info-color: #17a2b8;
+$success-color: #24620e;           // Use secondary (stars color)
+$warning-color: #caa64f;           // Use accent (gold)
+$danger-color: #9f1319;            // Use primary (red)
+$info-color: #3d8b1a;              // Use secondary light
 
 // --- Typography ---
 // Font Families
