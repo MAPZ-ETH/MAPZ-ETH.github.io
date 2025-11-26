@@ -1,0 +1,189 @@
+// ============================================================================
+// MAPZ Custom Styles
+// ============================================================================
+// This file contains custom styling for MAPZ, using global variables
+// defined in _variables.scss
+// ============================================================================
+
+@import "variables";
+
+// --- Hero/Splash Page Overrides ---
+.splash {
+  .page__hero {
+    background-color: $primary-dark;
+  }
+
+  .page__hero-image {
+    background-color: $primary-color;
+  }
+
+  .page__title {
+    color: $white;
+    font-family: $font-family-heading;
+    font-size: $font-size-5xl;
+    font-weight: $font-weight-bold;
+  }
+
+  .page__lead {
+    color: $light-gray;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-normal;
+  }
+}
+
+// --- Feature Row Styling ---
+.feature__item {
+  margin-bottom: $space-3xl;
+
+  .feature__item-title {
+    color: $primary-dark;
+    font-family: $font-family-heading;
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-bold;
+    margin-bottom: $space-md;
+  }
+
+  .feature__item-excerpt {
+    color: $dark-gray;
+    font-size: $font-size-base;
+    line-height: $line-height-normal;
+  }
+}
+
+// --- Button Styling ---
+.btn {
+  font-family: $font-family-base;
+  font-weight: $font-weight-semibold;
+  border-radius: $border-radius-md;
+  transition: all $transition-base;
+  padding: $space-md $space-xl;
+  font-size: $font-size-base;
+
+  &--primary {
+    background-color: $primary-color;
+    color: $white;
+    border: 2px solid $primary-color;
+
+    &:hover {
+      background-color: $primary-dark;
+      border-color: $primary-dark;
+    }
+  }
+
+  &--secondary {
+    background-color: transparent;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $white;
+    }
+  }
+
+  &--accent {
+    background-color: $secondary-color;
+    color: $white;
+    border: 2px solid $secondary-color;
+
+    &:hover {
+      background-color: $secondary-dark;
+      border-color: $secondary-dark;
+    }
+  }
+}
+
+// --- Section Styling ---
+.section {
+  padding: $space-3xl $space-lg;
+
+  &__title {
+    color: $primary-dark;
+    font-family: $font-family-heading;
+    font-size: $font-size-3xl;
+    font-weight: $font-weight-bold;
+    margin-bottom: $space-2xl;
+    border-bottom: 3px solid $secondary-color;
+    padding-bottom: $space-md;
+  }
+
+  &--light {
+    background-color: $light-gray;
+  }
+
+  &--white {
+    background-color: $white;
+  }
+}
+
+// --- Navigation ---
+.masthead {
+  background-color: $white;
+  border-bottom: 1px solid $medium-gray;
+}
+
+.site-nav a {
+  color: $dark-gray;
+  font-weight: $font-weight-semibold;
+  transition: color $transition-base;
+
+  &:hover {
+    color: $primary-color;
+  }
+
+  &.active {
+    color: $primary-color;
+    border-bottom: 2px solid $secondary-color;
+  }
+}
+
+// --- Text Utility Classes ---
+.text-primary {
+  color: $primary-color;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: $dark-gray;
+}
+
+// --- Utility Mixins ---
+@mixin card-shadow {
+  box-shadow: $shadow-md;
+  border-radius: $border-radius-lg;
+  padding: $space-xl;
+}
+
+@mixin gradient-primary {
+  background: linear-gradient(135deg, $primary-color, $primary-light);
+}
+
+@mixin gradient-secondary {
+  background: linear-gradient(135deg, $secondary-color, $secondary-light);
+}
+
+// --- Responsive Typography ---
+@media (max-width: $breakpoint-md) {
+  h1 {
+    font-size: $font-size-3xl;
+  }
+
+  h2 {
+    font-size: $font-size-2xl;
+  }
+
+  h3 {
+    font-size: $font-size-xl;
+  }
+
+  .page__title {
+    font-size: $font-size-3xl !important;
+  }
+}

@@ -1,0 +1,13 @@
+---
+# only the first two dashes are stripped
+---
+
+// Import global variables first
+@import "variables";
+
+// Import Minimal Mistakes theme
+@import "minimal-mistakes/skins/default"; // skin
+@import "minimal-mistakes"; // main partials
+
+// Import custom MAPZ styles
+@import "custom";
