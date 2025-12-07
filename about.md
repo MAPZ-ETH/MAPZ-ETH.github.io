@@ -11,6 +11,39 @@ MAPZ (Moroccan Association of Polytechnicians in Zurich) is the official associa
 
 Founded over 15 years ago, MAPZ has grown into one of the most active and engaged international communities at ETH. Today, we have hundreds of active members across all departments and study levels, from first-year students to accomplished alumni working around the world.
 
+## Our Logo Story
+
+<div class="logo-animation-section">
+  <div class="logo-animation-container">
+    <div class="logo-animation-canvas">
+      <!-- Logo parts with explanations attached -->
+      <div class="logo-part logo-part-map" data-part="map">
+        <div class="logo-explanation logo-explanation-map" data-explanation="map">
+          <h4>MAP</h4>
+          <p>Representing our Moroccan heritage and geographical roots.</p>
+        </div>
+      </div>
+      
+      <div class="logo-part logo-part-eth" data-part="eth">
+        <div class="logo-explanation logo-explanation-eth" data-explanation="eth">
+          <h4>ETH</h4>
+          <p>Standing for ETH Zurich, the institution that brings us together.</p>
+        </div>
+      </div>
+      
+      <div class="logo-part logo-part-stars" data-part="stars">
+        <div class="logo-explanation logo-explanation-stars" data-explanation="stars">
+          <h4>STARS</h4>
+          <p>Symbolizing Zurich and our aspirations.</p>
+        </div>
+      </div>
+      
+      <div class="logo-part logo-part-text-1" data-part="text-1"></div>
+      <div class="logo-part logo-part-text-2" data-part="text-2"></div>
+    </div>
+  </div>
+</div>
+
 ---
 
 ## Our Mission
@@ -462,3 +495,11 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 </script>
+
+<!-- GSAP Library for scroll animations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Logo Animation Script -->
+<script src="/assets/js/logo-animation.js"></script>
+
