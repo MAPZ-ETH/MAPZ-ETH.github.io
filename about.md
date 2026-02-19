@@ -115,7 +115,7 @@ Our goal is to connect Moroccan students and professionals, foster collaboration
 <div class="team-grid">
   <div class="team-member">
     <div class="member-image">
-      <img src="/assets/images/team/placeholder-member-1.jpg" alt="El Hassan Jamaly">
+      <img src="/assets/images/team/elhassan-jamaly.jpeg" alt="El Hassan Jamaly">
     </div>
     <h3>El Hassan Jamaly</h3>
     <p class="member-role">President</p>
@@ -123,7 +123,7 @@ Our goal is to connect Moroccan students and professionals, foster collaboration
 
   <div class="team-member">
     <div class="member-image">
-      <img src="/assets/images/team/placeholder-member-2.jpg" alt="Ismail Lataoui">
+      <img src="/assets/images/team/ismail-lataoui.jpeg" alt="Ismail Lataoui">
     </div>
     <h3>Ismail Lataoui</h3>
     <p class="member-role">VP Membership</p>
@@ -131,7 +131,7 @@ Our goal is to connect Moroccan students and professionals, foster collaboration
 
   <div class="team-member">
     <div class="member-image">
-      <img src="/assets/images/team/placeholder-member-3.jpg" alt="Abdellah JANATI IDRISSI">
+      <img src="/assets/images/team/abdellah-janati.jpeg" alt="Abdellah JANATI IDRISSI">
     </div>
     <h3>Abdellah JANATI IDRISSI</h3>
     <p class="member-role">VP Administration</p>
@@ -139,7 +139,7 @@ Our goal is to connect Moroccan students and professionals, foster collaboration
 
   <div class="team-member">
     <div class="member-image">
-      <img src="/assets/images/team/placeholder-member-4.jpg" alt="Ismail Ibnmajah">
+      <img src="/assets/images/team/ismail-ibnmajah.jpeg" alt="Ismail Ibnmajah">
     </div>
     <h3>Ismail Ibnmajah</h3>
     <p class="member-role">VP Finance</p>
@@ -147,7 +147,7 @@ Our goal is to connect Moroccan students and professionals, foster collaboration
 
   <div class="team-member">
     <div class="member-image">
-      <img src="/assets/images/team/placeholder-member-5.jpg" alt="Aya Jroundi">
+      <img src="/assets/images/team/aya-jroundi.jpeg" alt="Aya Jroundi">
     </div>
     <h3>Aya Jroundi</h3>
     <p class="member-role">VP Communication</p>
@@ -155,7 +155,7 @@ Our goal is to connect Moroccan students and professionals, foster collaboration
 
   <div class="team-member">
     <div class="member-image">
-      <img src="/assets/images/team/placeholder-member-6.jpg" alt="Mamoun Rhmari Tlemcani">
+      <img src="/assets/images/team/mamoun-tlemcani.jpeg" alt="Mamoun Rhmari Tlemcani">
     </div>
     <h3>Mamoun Rhmari Tlemcani</h3>
     <p class="member-role">VP Logistics</p>
@@ -163,7 +163,7 @@ Our goal is to connect Moroccan students and professionals, foster collaboration
 
   <div class="team-member">
     <div class="member-image">
-      <img src="/assets/images/team/placeholder-member-7.jpg" alt="Mehdi Hamirifou">
+      <img src="/assets/images/team/mehdi-hamirifou-1.jpeg" alt="Mehdi Hamirifou">
     </div>
     <h3>Mehdi Hamirifou</h3>
     <p class="member-role">VP Sponsorship</p>
@@ -171,7 +171,7 @@ Our goal is to connect Moroccan students and professionals, foster collaboration
 
   <div class="team-member">
     <div class="member-image">
-      <img src="/assets/images/team/placeholder-member-8.jpg" alt="Amine Benjelloun Touimi">
+      <img src="/assets/images/team/amine-benjelloun.jpeg" alt="Amine Benjelloun Touimi">
     </div>
     <h3>Amine Benjelloun Touimi</h3>
     <p class="member-role">VP IT</p>

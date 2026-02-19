@@ -1,6 +1,7 @@
 # --- Site settings ---
-title: Moroccan Association of Polytechnicians in Zurich
-description: "Our official website."
+title: MAPZ - Moroccan Association of Polytechnicians in Zurich
+description: "The official community for Moroccan students and alumni at ETH Zurich. Networking, internal events, mentorship, and cultural exchange for Polytechnicians."
+keywords: "MAPZ, ETH Zurich, Moroccan, Students, Alumni, Association, Polytechnicians, Zurich, Morocco, Community, Networking"
 theme: minimal-mistakes-jekyll
 
 url: "https://MAPZ-ETH.github.io"
@@ -9,6 +10,12 @@ permalink: pretty
 
 # --- Logo (Top-level) ---
 logo: /assets/images/TATTOO.png
+
+# --- Analytics ---
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-XXXXXXXXXX" # Placeholder for Google Analytics 4
 
 # --- Plugins ---
 plugins:

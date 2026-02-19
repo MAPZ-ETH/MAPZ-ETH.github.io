@@ -104,9 +104,13 @@ Joining MAPZ is easy! Follow these simple steps:
 ## Membership Form
 
 <div class="form-section">
-  <p>Ready to join MAPZ? Fill out the form below and we'll get in touch with you shortly!</p>
+  <p>Ready to join MAPZ? Click the button below to open our membership form (Google Form).</p>
   
-  <iframe src="https://docs.google.com/forms/d/e/YOUR_JOIN_FORM_ID/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <div style="text-align: center; margin: 2em 0;">
+    <a href="https://forms.google.com/placeholder-link" target="_blank" class="btn btn--primary btn--large">Open Membership Form</a>
+  </div>
+  
+  <p><em>Having trouble? You can also email us directly at <a href="mailto:contact@mapz.ch">contact@mapz.ch</a>.</em></p>
 </div>
 
 ---

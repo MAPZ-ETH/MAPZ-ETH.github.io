@@ -3,8 +3,11 @@ layout: splash
 permalink: /
 
 header:
-  overlay_filter: "0.5"
   overlay_image: /assets/images/team.gif
+  overlay_filter: "0.5"
+  actions:
+    - label: "Join Us"
+      url: "/join/"
   overlay_size: cover
   overlay_position: center center
 
@@ -44,16 +47,45 @@ intro:
 MAPZ is the official association for Moroccan students and alumni at ETH Zurich. We bring together talented individuals to share experiences, support each other's academic and professional growth, and maintain our cultural connections.
 
 Whether you're just starting your studies or are a successful alumnus, MAPZ provides a welcoming space to network, learn, and grow.
+
+[Join MAPZ](/join/){: .btn .btn--primary}
 "
 ---
 
 {% include feature_row id="intro" type="center" %}
 
+## Our Impact
+
+We are proud to have built a strong and active community in Zurich.
+
+<div style="display: flex; justify-content: space-around; text-align: center; margin: 2em 0;">
+  <div>
+    <h3 style="color: #d9534f; margin-bottom: 0;">50+</h3>
+    <p>Active Members</p>
+  </div>
+  <div>
+    <h3 style="color: #d9534f; margin-bottom: 0;">10+</h3>
+    <p>Years of Community</p>
+  </div>
+  <div>
+    <h3 style="color: #d9534f; margin-bottom: 0;">100%</h3>
+    <p>Moroccan Spirit</p>
+  </div>
+</div>
+
 {% include feature_row %}
 
-## Upcoming Events
+## Trusted Partners
 
-Stay tuned for our upcoming events and activities. [View all events →](/events/)
+<div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; margin: 2em 0; gap: 20px;">
+  <div style="background: #e2e2e2; width: 150px; height: 80px; display: flex; align-items: center; justify-content: center; border-radius: 8px; color: #777;">Partner 1</div>
+  <div style="background: #e2e2e2; width: 150px; height: 80px; display: flex; align-items: center; justify-content: center; border-radius: 8px; color: #777;">Partner 2</div>
+  <div style="background: #e2e2e2; width: 150px; height: 80px; display: flex; align-items: center; justify-content: center; border-radius: 8px; color: #777;">Partner 3</div>
+</div>
+
+## Upcoming Events & Activities
+
+Stay tuned for our upcoming events and activities. 🎉 **Join our next event!** We organize seminars and social gatherings monthly. Check our [Events Page](/events/) or join our WhatsApp group for real-time updates.
 
 ## Get Connected
 

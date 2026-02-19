@@ -11,93 +11,57 @@ MAPZ is grateful to our sponsors who help us organize events, provide mentorship
 
 ---
 
-## Platinum Sponsors
+## Our Partners
 
-Our most valued partners making a significant impact on our community.
-
-<div class="sponsors-grid sponsors-platinum">
-  <div class="sponsor-card">
-    <div class="sponsor-logo">
-      <img src="/assets/images/sponsors/placeholder-platinum-1.png" alt="Platinum Sponsor 1">
+<div class="sponsors-interactive">
+  <div class="sponsor-interactive-item">
+    <div class="logo-wrapper">
+      <img src="/assets/images/sponsors/brands-for-students.jpg" alt="Brands for Students">
     </div>
-    <h3>Sponsor Name</h3>
-    <p>Brief description of partnership and contributions.</p>
+    <div class="details-overlay">
+      <h3>Brands for Students</h3>
+      <p>Exclusive offers and benefits tailored for students in Switzerland.</p>
+    </div>
   </div>
 
-  <div class="sponsor-card">
-    <div class="sponsor-logo">
-      <img src="/assets/images/sponsors/placeholder-platinum-2.png" alt="Platinum Sponsor 2">
+  <div class="sponsor-interactive-item">
+    <div class="logo-wrapper">
+      <img src="/assets/images/sponsors/fed-ms.jpg" alt="FED-MS">
     </div>
-    <h3>Sponsor Name</h3>
-    <p>Brief description of partnership and contributions.</p>
-  </div>
-</div>
-
----
-
-## Gold Sponsors
-
-Supporting our events and initiatives throughout the year.
-
-<div class="sponsors-grid sponsors-gold">
-  <div class="sponsor-card">
-    <div class="sponsor-logo">
-      <img src="/assets/images/sponsors/placeholder-gold-1.png" alt="Gold Sponsor 1">
+    <div class="details-overlay">
+      <h3>FED-MS</h3>
+      <p>Fédération de la Diaspora Marocaine en Suisse.</p>
     </div>
-    <h3>Sponsor Name</h3>
-    <p>Partnership contributions and support.</p>
   </div>
 
-  <div class="sponsor-card">
-    <div class="sponsor-logo">
-      <img src="/assets/images/sponsors/placeholder-gold-2.png" alt="Gold Sponsor 2">
+  <div class="sponsor-interactive-item">
+    <div class="logo-wrapper">
+      <img src="/assets/images/sponsors/alliance-suisse-maroc.jpg" alt="Alliance Suisse Maroc">
     </div>
-    <h3>Sponsor Name</h3>
-    <p>Partnership contributions and support.</p>
+    <div class="details-overlay">
+      <h3>Alliance Suisse Maroc</h3>
+      <p>Promoting cultural, economic, and social exchanges.</p>
+    </div>
   </div>
 
-  <div class="sponsor-card">
-    <div class="sponsor-logo">
-      <img src="/assets/images/sponsors/placeholder-gold-3.png" alt="Gold Sponsor 3">
+  <div class="sponsor-interactive-item">
+    <div class="logo-wrapper">
+      <img src="/assets/images/sponsors/apml.jpg" alt="APML">
     </div>
-    <h3>Sponsor Name</h3>
-    <p>Partnership contributions and support.</p>
-  </div>
-</div>
-
----
-
-## Silver Sponsors
-
-Thank you to all our silver sponsors for their ongoing support.
-
-<div class="sponsors-grid sponsors-silver">
-  <div class="sponsor-card">
-    <div class="sponsor-logo">
-      <img src="/assets/images/sponsors/placeholder-silver-1.png" alt="Silver Sponsor 1">
+    <div class="details-overlay">
+      <h3>APML</h3>
+      <p>Association des Polytechniciens Marocains de Lausanne.</p>
     </div>
-    <h3>Sponsor Name</h3>
   </div>
 
-  <div class="sponsor-card">
-    <div class="sponsor-logo">
-      <img src="/assets/images/sponsors/placeholder-silver-2.png" alt="Silver Sponsor 2">
+  <div class="sponsor-interactive-item">
+    <div class="logo-wrapper">
+      <img src="/assets/images/sponsors/um6p.jpg" alt="UM6P">
     </div>
-    <h3>Sponsor Name</h3>
-  </div>
-
-  <div class="sponsor-card">
-    <div class="sponsor-logo">
-      <img src="/assets/images/sponsors/placeholder-silver-3.png" alt="Silver Sponsor 3">
+    <div class="details-overlay">
+      <h3>UM6P</h3>
+      <p>Mohammed VI Polytechnic University.</p>
     </div>
-    <h3>Sponsor Name</h3>
-  </div>
-
-  <div class="sponsor-card">
-    <div class="sponsor-logo">
-      <img src="/assets/images/sponsors/placeholder-silver-4.png" alt="Silver Sponsor 4">
-    </div>
-    <h3>Sponsor Name</h3>
   </div>
 </div>
 
