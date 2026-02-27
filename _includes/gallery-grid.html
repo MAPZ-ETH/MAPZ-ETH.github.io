@@ -1,0 +1,21 @@
+<!-- Gallery Grid — reads from _data/gallery.yml -->
+<!-- Filter buttons (categories derived from data) -->
+<div class="gl-filters">
+    <button class="gl-filter-btn active" onclick="filterGallery('all')">All</button>
+    <button class="gl-filter-btn" onclick="filterGallery('events')">Events</button>
+    <button class="gl-filter-btn" onclick="filterGallery('networking')">Networking</button>
+    <button class="gl-filter-btn" onclick="filterGallery('cultural')">Cultural</button>
+    <button class="gl-filter-btn" onclick="filterGallery('team')">Team</button>
+</div>
+
+<div class="gl-grid">
+    {% for photo in site.data.gallery.body %}
+    <div class="gl-item{% if photo.wide %} gl-item--wide{% endif %}" data-category="{{ photo.category }}">
+        <img src="{{ photo.photo }}" alt="{{ photo.title }}" onclick="openLightbox(this)">
+        <div class="gl-caption">
+            <span class="gl-tag">{{ photo.category | capitalize }}</span>
+            <h4>{{ photo.title }}</h4>
+        </div>
+    </div>
+    {% endfor %}
+</div>

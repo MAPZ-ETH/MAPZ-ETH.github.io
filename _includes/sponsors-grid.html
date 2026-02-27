@@ -1,0 +1,14 @@
+<!-- Sponsors Grid — reads from _data/sponsors.yml -->
+<div class="sponsors-interactive">
+    {% for sponsor in site.data.sponsors.body %}
+    <div class="sponsor-interactive-item">
+        <div class="logo-wrapper">
+            <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+        </div>
+        <div class="details-overlay">
+            <h3>{{ sponsor.name }}</h3>
+            <p>{{ sponsor.description }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>

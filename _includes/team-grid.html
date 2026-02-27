@@ -1,0 +1,14 @@
+<!-- Team Grid — reads from _data/team.yml -->
+<div class="ab-team-grid">
+    {% for member in site.data.team.body %}
+    <div class="ab-team-card">
+        <div class="ab-team-img">
+            <img src="{{ member.photo }}" alt="{{ member.name }}">
+        </div>
+        <div class="ab-team-info">
+            <h4>{{ member.name }}</h4>
+            <span class="ab-team-role">{{ member.role }}</span>
+        </div>
+    </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,22 @@
+<!-- Past Events — reads from _data/events.yml -->
+<div class="ev-past-section">
+    {% assign past_events = site.data.events.past %}
+    {% assign years = past_events | map: "year" | uniq | sort | reverse %}
+    {% for yr in years %}
+    <div class="ev-year-block">
+        <div class="ev-year-badge">{{ yr }}</div>
+        <div class="ev-past-grid">
+            {% for event in past_events %}
+            {% if event.year == yr %}
+            <div class="ev-past-card">
+                <div class="ev-past-icon">{{ event.icon }}</div>
+                <h4>{{ event.title }}</h4>
+                <span class="ev-past-date">{{ event.date_label }}</span>
+                <p>{{ event.description }}</p>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>

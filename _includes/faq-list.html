@@ -1,0 +1,19 @@
+<!-- FAQ List — reads from _data/faq.yml -->
+<div class="fq-category-tabs">
+    <button class="fq-tab active" onclick="showCategory('all', this)">All</button>
+    <button class="fq-tab" onclick="showCategory('about', this)">About MAPZ</button>
+    <button class="fq-tab" onclick="showCategory('membership', this)">Membership</button>
+    <button class="fq-tab" onclick="showCategory('events', this)">Events</button>
+    <button class="fq-tab" onclick="showCategory('involvement', this)">Getting Involved</button>
+    <button class="fq-tab" onclick="showCategory('sponsorship', this)">Sponsorship</button>
+    <button class="fq-tab" onclick="showCategory('contact', this)">Contact</button>
+</div>
+
+<div class="fq-list">
+    {% for item in site.data.faq.body %}
+    <details class="fq-item" data-cat="{{ item.category }}">
+        <summary>{{ item.question }}</summary>
+        <div class="fq-answer-body">{{ item.answer }}</div>
+    </details>
+    {% endfor %}
+</div>
