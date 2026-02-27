@@ -1,0 +1,112 @@
+backend:
+  name: github
+  repo: MAPZ-ETH/MAPZ-ETH.github.io
+  branch: main
+  base_url: https://mapz-cms-auth.vercel.app
+
+# Keep local_backend for local development (npx decap-server)
+# local_backend: true
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  # ── Site Content (file-based collections) ─────────────────────
+  - name: "settings"
+    label: "Site Content"
+    editor:
+      preview: false
+    files:
+      - name: "team"
+        label: "Team Members"
+        file: "_data/team.yml"
+        description: "Board members shown on the About page"
+        fields:
+          - name: body
+            label: Members
+            widget: list
+            fields:
+              - { name: name, label: "Full Name", widget: string }
+              - { name: role, label: "Role / Title", widget: string }
+              - { name: photo, label: "Photo", widget: image }
+
+      - name: "gallery"
+        label: "Gallery Photos"
+        file: "_data/gallery.yml"
+        description: "Photos displayed on the Gallery page"
+        fields:
+          - name: body
+            label: Photos
+            widget: list
+            fields:
+              - { name: title, label: "Caption", widget: string }
+              - { name: photo, label: "Photo", widget: image }
+              - name: category
+                label: "Category"
+                widget: select
+                options: ["events", "networking", "cultural", "team"]
+              - { name: wide, label: "Wide (spans 2 columns)", widget: boolean, default: false, required: false }
+
+      - name: "faq"
+        label: "FAQ"
+        file: "_data/faq.yml"
+        description: "Questions and answers on the FAQ page"
+        fields:
+          - name: body
+            label: Questions
+            widget: list
+            fields:
+              - { name: question, label: "Question", widget: string }
+              - { name: answer, label: "Answer", widget: text }
+              - name: category
+                label: "Category"
+                widget: select
+                options:
+                  - { label: "About MAPZ", value: "about" }
+                  - { label: "Membership", value: "membership" }
+                  - { label: "Events", value: "events" }
+                  - { label: "Getting Involved", value: "involvement" }
+                  - { label: "Sponsorship", value: "sponsorship" }
+                  - { label: "Contact", value: "contact" }
+
+      - name: "sponsors"
+        label: "Sponsors"
+        file: "_data/sponsors.yml"
+        description: "Partner organizations on the Sponsors page"
+        fields:
+          - name: body
+            label: Sponsors
+            widget: list
+            fields:
+              - { name: name, label: "Organization Name", widget: string }
+              - { name: logo, label: "Logo", widget: image }
+              - { name: description, label: "Short Description", widget: string }
+
+      - name: "events"
+        label: "Events"
+        file: "_data/events.yml"
+        description: "Upcoming and past events"
+        fields:
+          - name: upcoming
+            label: "Upcoming Events"
+            widget: list
+            fields:
+              - { name: title, label: "Event Title", widget: string }
+              - { name: date, label: "Date (YYYY-MM-DD)", widget: string }
+              - { name: month, label: "Month (3-letter, e.g. JAN)", widget: string }
+              - { name: day, label: "Day (number)", widget: string }
+              - { name: year, label: "Year", widget: string }
+              - { name: time, label: "Time Range (e.g. 18:00 – 21:00)", widget: string }
+              - { name: location, label: "Location", widget: string }
+              - { name: description, label: "Description", widget: text }
+              - { name: link, label: "Link URL", widget: string, required: false }
+              - { name: link_text, label: "Link Text (e.g. Register →)", widget: string, required: false }
+          - name: past
+            label: "Past Events"
+            widget: list
+            fields:
+              - { name: title, label: "Event Title", widget: string }
+              - { name: icon, label: "Icon (emoji)", widget: string }
+              - { name: date_label, label: "Date Label (e.g. November 2025)", widget: string }
+              - { name: year, label: "Year (number)", widget: number, value_type: int }
+              - { name: description, label: "Description", widget: text }
