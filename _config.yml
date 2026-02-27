@@ -15,7 +15,7 @@ logo: /assets/images/TATTOO.png
 analytics:
   provider: "google-gtag"
   google:
-    tracking_id: "G-XXXXXXXXXX" # Placeholder for Google Analytics 4
+    tracking_id: "G-PTKMXM8NKP"
 
 # --- Plugins ---
 plugins:
