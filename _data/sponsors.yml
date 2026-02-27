@@ -1,0 +1,20 @@
+body:
+  - name: "Brands for Students"
+    logo: "/assets/images/sponsors/brands-for-students.jpg"
+    description: "Exclusive offers and benefits tailored for students in Switzerland."
+
+  - name: "FED-MS"
+    logo: "/assets/images/sponsors/fed-ms.jpg"
+    description: "Fédération de la Diaspora Marocaine en Suisse."
+
+  - name: "Alliance Suisse Maroc"
+    logo: "/assets/images/sponsors/alliance-suisse-maroc.jpg"
+    description: "Promoting cultural, economic, and social exchanges."
+
+  - name: "APML"
+    logo: "/assets/images/sponsors/apml.jpg"
+    description: "Association des Polytechniciens Marocains de Lausanne."
+
+  - name: "UM6P"
+    logo: "/assets/images/sponsors/um6p.jpg"
+    description: "Mohammed VI Polytechnic University."

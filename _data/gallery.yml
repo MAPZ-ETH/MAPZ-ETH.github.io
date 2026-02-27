@@ -1,0 +1,33 @@
+body:
+  - title: "MAPZ Family at ETH"
+    photo: "/assets/images/gallery/group-photo.jpg"
+    category: "team"
+    wide: true
+
+  - title: "Annual Networking Night"
+    photo: "/assets/images/gallery/networking-event.jpg"
+    category: "networking"
+
+  - title: "Cultural Celebration"
+    photo: "/assets/images/gallery/cultural-celebration.jpg"
+    category: "cultural"
+
+  - title: "Career Workshop"
+    photo: "/assets/images/gallery/career-workshop.jpg"
+    category: "events"
+
+  - title: "Moroccan Cooking Workshop"
+    photo: "/assets/images/gallery/cooking-workshop.jpg"
+    category: "cultural"
+
+  - title: "Alumni Meetup"
+    photo: "/assets/images/gallery/alumni-meetup.jpg"
+    category: "networking"
+
+  - title: "Panel Discussion"
+    photo: "/assets/images/gallery/panel-discussion.jpg"
+    category: "events"
+
+  - title: "MAPZ Sports Day"
+    photo: "/assets/images/gallery/sports-day.jpg"
+    category: "team"

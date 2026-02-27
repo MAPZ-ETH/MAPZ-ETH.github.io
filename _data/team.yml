@@ -1,0 +1,25 @@
+body:
+  - name: El Hassan III
+    role: President
+    photo: /assets/images/team/elhassan-jamaly.jpeg
+  - name: Ismail Lataoui
+    role: VP Membership
+    photo: /assets/images/team/ismail-lataoui.jpeg
+  - name: Amine Benjelloun Touimi
+    role: VP IT
+    photo: /assets/images/team/amine-benjelloun.jpeg
+  - name: Abdellah JANATI IDRISSI
+    role: VP Administration
+    photo: /assets/images/team/abdellah-janati.jpeg
+  - name: Aya Jroundi
+    role: VP Communication
+    photo: /assets/images/team/aya-jroundi.jpeg
+  - name: Mamoun Rhmari Tlemcani
+    role: VP Logistics
+    photo: /assets/images/team/mamoun-tlemcani.jpeg
+  - name: Mehdi Hamirifou
+    role: VP Sponsorship
+    photo: /assets/images/team/mehdi-hamirifou-1.jpeg
+  - name: Ismail Ibnmajah
+    role: VP Finance
+    photo: /assets/images/team/ismail-ibnmajah.jpeg

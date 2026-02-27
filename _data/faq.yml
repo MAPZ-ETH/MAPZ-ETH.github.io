@@ -1,0 +1,88 @@
+body:
+  - question: "What is MAPZ?"
+    answer: "MAPZ (Moroccan Association of Polytechnicians in Zurich) is a vibrant student association dedicated to creating a supportive community for Moroccan students and professionals at ETH Zurich. We organize events, provide mentorship, facilitate networking, and celebrate Moroccan culture."
+    category: "about"
+
+  - question: "When was MAPZ founded?"
+    answer: "MAPZ was founded on the <strong>50th anniversary of the Green March</strong> by a group of 8 Moroccan students who wanted to build a strong community at ETH Zurich."
+    category: "about"
+
+  - question: "What are MAPZ's core values?"
+    answer: "Our values are: <strong>Community</strong> (supporting each other), <strong>Excellence</strong> (high standards), <strong>Inclusivity</strong> (welcoming everyone), <strong>Innovation</strong> (driving change), <strong>Heritage</strong> (celebrating Moroccan culture), and <strong>Growth</strong> (personal development)."
+    category: "about"
+
+  - question: "Who can join MAPZ?"
+    answer: "<p>MAPZ welcomes:</p><ul><li>Current Moroccan students at ETH Zurich (all levels and departments)</li><li>Moroccan alumni of ETH Zurich</li><li>Anyone interested in Moroccan culture and community</li></ul><p>You don't need to be from Morocco to join — if you're interested in our community, we welcome you!</p>"
+    category: "membership"
+
+  - question: "Is there a membership fee?"
+    answer: "No! MAPZ membership is completely free. We're supported by sponsorships and member contributions, so you can focus on enjoying the community without worrying about costs."
+    category: "membership"
+
+  - question: "How do I join MAPZ?"
+    answer: "<p>Joining is easy:</p><ol><li>Fill out the membership form on our <a href='/join/'>Join Us page</a></li><li>Attend one of our events to meet the community</li><li>Join our WhatsApp group and subscribe to our newsletter</li><li>Start participating in activities that interest you!</li></ol>"
+    category: "membership"
+
+  - question: "Do I have to be very active to be a member?"
+    answer: "No! You can participate at whatever level works for you. Whether you attend one event a year or are actively involved in organizing, you're part of the community."
+    category: "membership"
+
+  - question: "Can alumni join MAPZ?"
+    answer: "Absolutely! Alumni are a crucial part of our community. Many alumni stay connected through our WhatsApp group, attend events, and mentor current students."
+    category: "membership"
+
+  - question: "How long is the membership valid for?"
+    answer: "There's no time limit! Once you join, you remain a member for as long as you'd like. Whether you're a current student or many years out, you're always part of the MAPZ community."
+    category: "membership"
+
+  - question: "What types of events does MAPZ organize?"
+    answer: "<p>Our events include:</p><ul><li><strong>Networking Events:</strong> Dinners, socials, meetups</li><li><strong>Career Workshops:</strong> CV prep, interview skills, mentorship</li><li><strong>Cultural Celebrations:</strong> Moroccan cultural events, festivals</li><li><strong>Academic Activities:</strong> Study groups, seminar series</li><li><strong>Social & Sports:</strong> BBQs, game nights, sports activities</li></ul>"
+    category: "events"
+
+  - question: "Can I attend events if I'm not a member yet?"
+    answer: "Yes! Most of our events are open to everyone. It's a great way to meet the community before deciding to formally join. Check the <a href='/events/'>Events page</a> for details."
+    category: "events"
+
+  - question: "Where and when do events take place?"
+    answer: "Events take place throughout Zurich, both on and off the ETH campus. Most are scheduled for evenings or weekends to accommodate students' schedules. Check our <a href='/events/'>Events page</a> for locations and times."
+    category: "events"
+
+  - question: "How do I stay updated on upcoming events?"
+    answer: "<ul><li>Check our <a href='/events/'>Events page</a> regularly</li><li>Subscribe to our monthly newsletter</li><li>Follow us on <strong>Instagram</strong> (@mapz_eth) and <strong>LinkedIn</strong></li><li>Join our WhatsApp group after membership</li></ul>"
+    category: "events"
+
+  - question: "Can I help organize events?"
+    answer: "Yes! We're always looking for motivated members to help. Whether you want to help plan a networking dinner, organize a workshop, or coordinate a social event, reach out to the board."
+    category: "involvement"
+
+  - question: "How can I join the MAPZ board?"
+    answer: "The board has positions including President, VP Membership, VP Administration, VP Finance, VP Communication, VP Logistics, VP Sponsorship, and VP IT. Elections are held annually. <a href='/about/'>Meet the current board here</a>."
+    category: "involvement"
+
+  - question: "Are there committees I can join?"
+    answer: "Yes! MAPZ has committees including Events, Communications, Career Development, Academic Support, and Cultural Affairs. Contact the board about joining one that interests you."
+    category: "involvement"
+
+  - question: "Can I get a mentorship?"
+    answer: "Absolutely! MAPZ connects members with alumni mentors who can provide guidance on careers, studies, and life at ETH. Contact the board or attend a mentorship event to get matched."
+    category: "involvement"
+
+  - question: "Is MAPZ looking for sponsors?"
+    answer: "Yes! We work with companies that want to connect with talented Moroccan students and professionals. We offer various sponsorship tiers. <a href='/sponsors/'>Learn more</a>."
+    category: "sponsorship"
+
+  - question: "What sponsorship levels are available?"
+    answer: "<ul><li><strong>Platinum:</strong> Premium benefits including event naming rights and exclusive networking</li><li><strong>Gold:</strong> Logo visibility and event presence</li><li><strong>Silver:</strong> Entry-level with communication mentions</li></ul><p><a href='/sponsors/'>See full details and apply</a>.</p>"
+    category: "sponsorship"
+
+  - question: "How do I become a sponsor?"
+    answer: "<a href='/sponsors/'>Fill out the sponsorship form</a> and the board will contact you to discuss options and create a customized package."
+    category: "sponsorship"
+
+  - question: "How do I contact MAPZ?"
+    answer: "<ul><li><strong>Email:</strong> Via our <a href='/contact/'>Contact page</a></li><li><strong>Instagram:</strong> @mapz_eth</li><li><strong>LinkedIn:</strong> MAPZ - Moroccan Association of Polytechnicians in Zurich</li><li><strong>WhatsApp:</strong> Message us directly after joining</li></ul>"
+    category: "contact"
+
+  - question: "Where is MAPZ located on campus?"
+    answer: "MAPZ doesn't have a permanent office, but we meet regularly in various locations. Check our <a href='/events/'>Events page</a> or <a href='/contact/'>contact us</a> for current meeting locations."
+    category: "contact"
