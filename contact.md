@@ -90,11 +90,55 @@ excerpt: "Have questions or want to connect? We'd love to hear from you!"
 
 ---
 
-## Contact Form
+## Send Us a Message
 
-We'd love to hear from you! Fill out the form below and we'll get back to you.
+Have a specific question or proposal? Fill out the form below and we'll get back to you as soon as possible.
 
-<iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<div class="mapz-form-wrapper">
+  <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLScX7kj_FnmVxgh38aazEs5aC7rARGkm-If-CsvlfpOHLDvH0w/formResponse" method="POST" target="hidden_iframe" onsubmit="formSubmitted()">
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="name">Your Name <span class="required">*</span></label>
+        <input type="text" id="name" name="entry.1696308507" placeholder="e.g. Amine Alaoui" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address <span class="required">*</span></label>
+        <input type="email" id="email" name="entry.206799959" placeholder="you@example.com" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="subject">Subject <span class="required">*</span></label>
+      <select id="subject" name="entry.1852175971" required>
+        <option value="" disabled selected>Choose a topic…</option>
+        <option value="General Inquiry">General Inquiry</option>
+        <option value="Membership">Membership</option>
+        <option value="Events & Collaboration">Events & Collaboration</option>
+        <option value="Sponsorship">Sponsorship</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message <span class="required">*</span></label>
+      <textarea id="message" name="entry.1296022839" rows="5" placeholder="Write your message here…" required></textarea>
+    </div>
+
+    <button type="submit" class="form-submit-btn">
+      <span class="btn-text">Send Message</span>
+      <span class="btn-icon">→</span>
+    </button>
+  </form>
+
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){showThankYou();}"></iframe>
+
+  <div id="thank-you-message" class="thank-you-message" style="display:none;">
+    <div class="thank-you-icon">✅</div>
+    <h3>Thank you!</h3>
+    <p>Your message has been sent successfully. We'll get back to you soon.</p>
+  </div>
+</div>
 
 
 
@@ -327,6 +371,17 @@ We'd love to hear from you! Fill out the form below and we'll get back to you.
 </style>
 
 <script>
+var submitted = false;
+
+function formSubmitted() {
+  submitted = true;
+}
+
+function showThankYou() {
+  document.getElementById('contact-form').style.display = 'none';
+  document.getElementById('thank-you-message').style.display = 'block';
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   let currentPath = window.location.pathname;
   if (currentPath !== '/' && currentPath.endsWith('/')) {

@@ -7,40 +7,10 @@ excerpt: "Learn about MAPZ, our mission, values, and the vibrant community we've
 
 ## Who We Are
 
-MAPZ (Moroccan Association of Polytechnicians in Zurich) is the official association for Moroccan students and alumni at ETH Zurich. We are a dynamic, welcoming community dedicated to fostering connections, supporting professional growth, and celebrating our shared Moroccan heritage.
-
-Founded over 15 years ago, MAPZ has grown into one of the most active and engaged international communities at ETH. Today, we have hundreds of active members across all departments and study levels, from first-year students to accomplished alumni working around the world.
-
-## Our Logo Story
-
-<div class="logo-animation-section">
-  <div class="logo-animation-container">
-    <div class="logo-animation-canvas">
-      <!-- Logo parts with explanations attached -->
-      <div class="logo-part logo-part-map" data-part="map">
-        <div class="logo-explanation logo-explanation-map" data-explanation="map">
-          <h4>MAP</h4>
-          <p>Representing our Moroccan heritage and geographical roots.</p>
-        </div>
-      </div>
-      
-      <div class="logo-part logo-part-eth" data-part="eth">
-        <div class="logo-explanation logo-explanation-eth" data-explanation="eth">
-          <h4>ETH</h4>
-          <p>Standing for ETH Zurich, the institution that brings us together.</p>
-        </div>
-      </div>
-      
-      <div class="logo-part logo-part-stars" data-part="stars">
-        <div class="logo-explanation logo-explanation-stars" data-explanation="stars">
-          <h4>STARS</h4>
-          <p>Symbolizing Zurich and our aspirations.</p>
-        </div>
-      </div>
-      
-      <div class="logo-part logo-part-text-1" data-part="text-1"></div>
-      <div class="logo-part logo-part-text-2" data-part="text-2"></div>
-    </div>
+<div class="ab-intro-section">
+  <div class="ab-intro-text">
+    <p>MAPZ (Moroccan Association of Polytechnicians in Zurich) is the official association for Moroccan students and alumni at ETH Zurich. We are a dynamic, welcoming community dedicated to fostering connections, supporting professional growth, and celebrating our shared Moroccan heritage.</p>
+    <p>Founded on the <strong>50th anniversary of the Green March</strong> 🇲🇦, MAPZ brings together Moroccan polytechnicians who share a passion for excellence, culture, and community.</p>
   </div>
 </div>
 
@@ -48,53 +18,31 @@ Founded over 15 years ago, MAPZ has grown into one of the most active and engage
 
 ## Our Mission
 
-We empower Moroccan students and alumni at ETH Zurich by:
-
-- **Building Community** - Creating meaningful connections and lasting friendships among Moroccan students, alumni, and professionals
-- **Supporting Academic Success** - Providing mentorship, study groups, and peer support to help students excel
-- **Fostering Professional Growth** - Connecting members with career opportunities, industry insights, and professional development resources
-- **Celebrating Culture** - Celebrating and sharing our Moroccan heritage with the broader ETH community
-- **Strengthening Networks** - Creating bridges between current students and successful alumni, facilitating knowledge transfer and career guidance
-
----
-
-## Our Values
-
-<div class="values-grid">
-  <div class="value-card">
-    <div class="value-icon">🤝</div>
-    <h3>Community</h3>
-    <p>We believe in the power of community and support. Together, we are stronger, and success is shared.</p>
+<div class="ab-mission-grid">
+  <div class="ab-mission-card">
+    <div class="ab-mission-icon">🤝</div>
+    <h4>Building Community</h4>
+    <p>Creating meaningful connections and lasting friendships among Moroccan students, alumni, and professionals.</p>
   </div>
-
-  <div class="value-card">
-    <div class="value-icon">🌟</div>
-    <h3>Excellence</h3>
-    <p>We strive for excellence in everything we do - from organizing events to supporting our members' goals.</p>
+  <div class="ab-mission-card">
+    <div class="ab-mission-icon">🎓</div>
+    <h4>Supporting Academic Success</h4>
+    <p>Providing mentorship, study groups, and peer support to help students excel at ETH Zurich.</p>
   </div>
-
-  <div class="value-card">
-    <div class="value-icon">🌍</div>
-    <h3>Inclusivity</h3>
-    <p>We welcome everyone. MAPZ is open to all students interested in Moroccan culture and community.</p>
+  <div class="ab-mission-card">
+    <div class="ab-mission-icon">💼</div>
+    <h4>Fostering Professional Growth</h4>
+    <p>Connecting members with career opportunities, industry insights, and professional development resources.</p>
   </div>
-
-  <div class="value-card">
-    <div class="value-icon">💡</div>
-    <h3>Innovation</h3>
-    <p>We embrace new ideas and approaches to create meaningful experiences for our community.</p>
+  <div class="ab-mission-card">
+    <div class="ab-mission-icon">🇲🇦</div>
+    <h4>Celebrating Culture</h4>
+    <p>Sharing our Moroccan heritage with the broader ETH community through events and cultural activities.</p>
   </div>
-
-  <div class="value-card">
-    <div class="value-icon">🇲🇦</div>
-    <h3>Heritage</h3>
-    <p>We proudly celebrate our Moroccan identity and traditions while embracing our diverse, international environment.</p>
-  </div>
-
-  <div class="value-card">
-    <div class="value-icon">🚀</div>
-    <h3>Growth</h3>
-    <p>We invest in personal, professional, and academic growth for all our members.</p>
+  <div class="ab-mission-card">
+    <div class="ab-mission-icon">🌍</div>
+    <h4>Strengthening Networks</h4>
+    <p>Creating bridges between current students and successful alumni, facilitating knowledge transfer and career guidance.</p>
   </div>
 </div>
 
@@ -104,77 +52,104 @@ We empower Moroccan students and alumni at ETH Zurich by:
 
 ### Meet the Founders of MAPZ
 
-On this special day - the 50th anniversary of the Green March 🇲🇦 - we are excited to introduce ourselves: eight ETH Zürich students who came together to launch MAPZ - the Moroccan Association of Polytechnicians in Zurich. 🇲🇦🇨🇭
-
-Our goal is to connect Moroccan students and professionals, foster collaboration, and create opportunities, while sharing and celebrating Moroccan culture.
-
-**MAPZ is for anyone interested in joining the journey, learning, and growing together!** 🌍
+<p class="ab-section-desc">On this special day — the 50th anniversary of the Green March 🇲🇦 — we are excited to introduce ourselves: eight ETH Zürich students who came together to launch MAPZ. Our goal is to connect Moroccan students and professionals, foster collaboration, and create opportunities. <strong>MAPZ is for anyone interested in joining the journey!</strong> 🌍</p>
 
 ### The Board
 
-<div class="team-grid">
-  <div class="team-member">
-    <div class="member-image">
-      <img src="/assets/images/team/elhassan-jamaly.jpeg" alt="El Hassan Jamaly">
-    </div>
-    <h3>El Hassan Jamaly</h3>
-    <p class="member-role">President</p>
+{% include team-grid.html %}
+
+---
+
+## Our Logo Story
+
+<div class="logo-story-section">
+  <p class="logo-story-intro">Every element of the MAPZ logo carries a piece of our identity — a story of heritage, knowledge, and ambition.</p>
+
+  <!-- Full assembled logo -->
+  <div class="logo-story-assembled">
+    <img src="/logoSVG/all.svg" alt="MAPZ Logo" class="logo-story-full-img">
   </div>
 
-  <div class="team-member">
-    <div class="member-image">
-      <img src="/assets/images/team/ismail-lataoui.jpeg" alt="Ismail Lataoui">
-    </div>
-    <h3>Ismail Lataoui</h3>
-    <p class="member-role">VP Membership</p>
-  </div>
+  <!-- Individual part explanations -->
+  <div class="logo-story-parts">
 
-  <div class="team-member">
-    <div class="member-image">
-      <img src="/assets/images/team/abdellah-janati.jpeg" alt="Abdellah JANATI IDRISSI">
+    <div class="logo-story-part logo-story-reveal" data-direction="left">
+      <div class="logo-story-part-img">
+        <img src="/logoSVG/map.svg" alt="Map of Morocco">
+      </div>
+      <div class="logo-story-part-text">
+        <h3>🇲🇦 The Map</h3>
+        <p>The outline of Morocco sits at the heart of our logo — a proud reminder of where we come from. It symbolizes our <strong>Moroccan heritage</strong> and the geographical roots that connect every member of MAPZ, no matter where in the world they study or work.</p>
+      </div>
     </div>
-    <h3>Abdellah JANATI IDRISSI</h3>
-    <p class="member-role">VP Administration</p>
-  </div>
 
-  <div class="team-member">
-    <div class="member-image">
-      <img src="/assets/images/team/ismail-ibnmajah.jpeg" alt="Ismail Ibnmajah">
+    <div class="logo-story-part logo-story-part--reverse logo-story-reveal" data-direction="right">
+      <div class="logo-story-part-img">
+        <img src="/logoSVG/eth.svg" alt="ETH Zurich Building">
+      </div>
+      <div class="logo-story-part-text">
+        <h3>🏛️ The ETH Building</h3>
+        <p>The iconic ETH Zurich main building represents the <strong>world-class institution</strong> that brings us together. It's a nod to academic excellence, innovation, and the shared journey of every Moroccan polytechnician who walks through ETH's doors.</p>
+      </div>
     </div>
-    <h3>Ismail Ibnmajah</h3>
-    <p class="member-role">VP Finance</p>
-  </div>
 
-  <div class="team-member">
-    <div class="member-image">
-      <img src="/assets/images/team/aya-jroundi.jpeg" alt="Aya Jroundi">
+    <div class="logo-story-part logo-story-reveal" data-direction="left">
+      <div class="logo-story-part-img">
+        <img src="/logoSVG/MAPZ-logo-ONLY-STAR.svg" alt="Stars">
+      </div>
+      <div class="logo-story-part-text">
+        <h3>⭐ The Star</h3>
+        <p>Drawn from the Moroccan flag, the star represents our <strong>aspirations and guiding light</strong>. It reflects the ambition of our community — reaching for the stars while staying grounded in our values and identity.</p>
+      </div>
     </div>
-    <h3>Aya Jroundi</h3>
-    <p class="member-role">VP Communication</p>
-  </div>
 
-  <div class="team-member">
-    <div class="member-image">
-      <img src="/assets/images/team/mamoun-tlemcani.jpeg" alt="Mamoun Rhmari Tlemcani">
+    <div class="logo-story-part logo-story-part--reverse logo-story-reveal" data-direction="right">
+      <div class="logo-story-part-img">
+        <img src="/logoSVG/MAPZ-logo-ONLY-WRITING.svg" alt="Moroccan Association of Polytechnicians in Zurich">
+      </div>
+      <div class="logo-story-part-text">
+        <h3>✍️ The Name</h3>
+        <p>The curved text wrapping the emblem reads <strong>"Moroccan Association of Polytechnicians in Zurich"</strong> — our full identity, arcing around the symbols like a unifying embrace that ties heritage, institution, and purpose together.</p>
+      </div>
     </div>
-    <h3>Mamoun Rhmari Tlemcani</h3>
-    <p class="member-role">VP Logistics</p>
-  </div>
 
-  <div class="team-member">
-    <div class="member-image">
-      <img src="/assets/images/team/mehdi-hamirifou-1.jpeg" alt="Mehdi Hamirifou">
-    </div>
-    <h3>Mehdi Hamirifou</h3>
-    <p class="member-role">VP Sponsorship</p>
   </div>
+</div>
 
-  <div class="team-member">
-    <div class="member-image">
-      <img src="/assets/images/team/amine-benjelloun.jpeg" alt="Amine Benjelloun Touimi">
-    </div>
-    <h3>Amine Benjelloun Touimi</h3>
-    <p class="member-role">VP IT</p>
+---
+
+## Our Values
+
+<div class="ab-values-grid">
+  <div class="ab-value-card">
+    <div class="ab-value-icon">🤝</div>
+    <h4>Community</h4>
+    <p>We believe in the power of community and support. Together, we are stronger, and success is shared.</p>
+  </div>
+  <div class="ab-value-card">
+    <div class="ab-value-icon">🌟</div>
+    <h4>Excellence</h4>
+    <p>We strive for excellence in everything we do — from organizing events to supporting our members' goals.</p>
+  </div>
+  <div class="ab-value-card">
+    <div class="ab-value-icon">🌍</div>
+    <h4>Inclusivity</h4>
+    <p>We welcome everyone. MAPZ is open to all students interested in Moroccan culture and community.</p>
+  </div>
+  <div class="ab-value-card">
+    <div class="ab-value-icon">💡</div>
+    <h4>Innovation</h4>
+    <p>We embrace new ideas and approaches to create meaningful experiences for our community.</p>
+  </div>
+  <div class="ab-value-card">
+    <div class="ab-value-icon">🇲🇦</div>
+    <h4>Heritage</h4>
+    <p>We proudly celebrate our Moroccan identity and traditions while embracing our diverse, international environment.</p>
+  </div>
+  <div class="ab-value-card">
+    <div class="ab-value-icon">🚀</div>
+    <h4>Growth</h4>
+    <p>We invest in personal, professional, and academic growth for all our members.</p>
   </div>
 </div>
 
@@ -182,295 +157,323 @@ Our goal is to connect Moroccan students and professionals, foster collaboration
 
 ## What We Offer
 
-### Events & Networking
-
-We organize 40+ events per year, including:
-- **Networking dinners** - Connect with fellow Moroccan students, alumni, and professionals
-- **Career workshops** - Learn from industry experts and successful entrepreneurs
-- **Cultural celebrations** - Celebrate Moroccan traditions and share our heritage
-- **Study groups** - Collaborate with peers in your courses and programs
-- **Social gatherings** - Build friendships and enjoy fun activities together
-
-### Mentorship Program
-
-Our structured mentorship program connects experienced alumni and professionals with current students:
-- **Academic mentorship** - Get advice on courses, programs, and study strategies
-- **Career guidance** - Receive guidance on internships, job searches, and career development
-- **Professional networking** - Build relationships that last beyond your time at ETH
-
-### Community Support
-
-- **Peer support groups** - Find friends, discuss challenges, and celebrate successes
-- **Resource sharing** - Access notes, materials, and advice from experienced members
-- **Mental health support** - A supportive community that understands the challenges of being far from home
-- **Alumni network** - Connect with successful graduates for inspiration and guidance
-
-### Cultural Activities
-
-- **Language exchange** - Practice Arabic and French with fellow community members
-- **Cultural workshops** - Learn about Moroccan art, cuisine, music, and traditions
-- **International representation** - Share our culture at ETH events and festivals
-
----
-
-## By the Numbers
-
-<div class="stats-full">
-  <div class="stat-item">
-    <div class="stat-big-number">15+</div>
-    <p>Years of Community</p>
+<div class="ab-offer-grid">
+  <div class="ab-offer-card">
+    <div class="ab-offer-header">
+      <span class="ab-offer-emoji">🎉</span>
+      <h4>Events & Networking</h4>
+    </div>
+    <ul class="ab-offer-list">
+      <li>Networking dinners with students, alumni & professionals</li>
+      <li>Career workshops with industry experts</li>
+      <li>Cultural celebrations of Moroccan traditions</li>
+      <li>Study groups and social gatherings</li>
+    </ul>
   </div>
-  
-  <div class="stat-item">
-    <div class="stat-big-number">500+</div>
-    <p>Active Members</p>
+
+  <div class="ab-offer-card">
+    <div class="ab-offer-header">
+      <span class="ab-offer-emoji">🧭</span>
+      <h4>Mentorship Program</h4>
+    </div>
+    <ul class="ab-offer-list">
+      <li>Academic advice on courses & study strategies</li>
+      <li>Career guidance for internships & job searches</li>
+      <li>Professional networking beyond ETH</li>
+    </ul>
   </div>
-  
-  <div class="stat-item">
-    <div class="stat-big-number">40+</div>
-    <p>Events Per Year</p>
+
+  <div class="ab-offer-card">
+    <div class="ab-offer-header">
+      <span class="ab-offer-emoji">💚</span>
+      <h4>Community Support</h4>
+    </div>
+    <ul class="ab-offer-list">
+      <li>Peer support for challenges & successes</li>
+      <li>Resource sharing — notes, materials & advice</li>
+      <li>Mental health support community</li>
+      <li>Alumni network for inspiration & guidance</li>
+    </ul>
   </div>
-  
-  <div class="stat-item">
-    <div class="stat-big-number">100+</div>
-    <p>Alumni Network</p>
+
+  <div class="ab-offer-card">
+    <div class="ab-offer-header">
+      <span class="ab-offer-emoji">🎨</span>
+      <h4>Cultural Activities</h4>
+    </div>
+    <ul class="ab-offer-list">
+      <li>Language exchange — Arabic & French</li>
+      <li>Workshops on art, cuisine & traditions</li>
+      <li>Representing Morocco at ETH festivals</li>
+    </ul>
   </div>
-</div>
-
----
-
-## Join Our Community
-
-Whether you're a first-year student, a doctoral candidate, or a successful alumnus, MAPZ welcomes you. We're committed to supporting your academic, professional, and personal growth while celebrating our shared heritage.
-
-<div class="join-cta">
-  <h3>Ready to Join?</h3>
-  <p>Become part of a vibrant, supportive community of Moroccan polytechnicians.</p>
-  <a href="/join/" class="btn btn--primary">Join MAPZ Today</a>
-</div>
-
----
-
-## Get to Know Us Better
-
-Have questions about MAPZ? Want to learn more about specific initiatives? We'd love to hear from you!
-
-<div class="contact-cta">
-  <a href="/contact/" class="btn btn--secondary">Contact Us</a>
-  <a href="/events/" class="btn btn--secondary">View Our Events</a>
 </div>
 
 <style>
-/* Values Grid */
-.values-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: $space-xl;
-  margin: $space-2xl 0;
-  padding: 0 $space-xl;
+/* ============================================================
+   ABOUT PAGE — Modern Design
+   ============================================================ */
+
+/* ---- Section Description ---- */
+.ab-section-desc {
+  text-align: center;
+  font-size: 1.05rem;
+  color: #5a5754;
+  line-height: 1.7;
+  margin: 0 0 2rem 0;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.value-card {
-  background-color: $light-gray;
-  padding: $space-xl;
-  border-radius: $border-radius-md;
+/* ---- Intro Section ---- */
+.ab-intro-section {
+  max-width: 780px;
+  margin: 1rem auto;
+}
+
+.ab-intro-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #5a5754;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+/* ---- Mission Grid ---- */
+.ab-mission-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.ab-mission-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.75rem 1.5rem;
   text-align: center;
-  transition: all 0.25s ease-in-out;
-  border-top: 4px solid $primary-color;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  border-top: 3px solid #9f1319;
 
   &:hover {
-    box-shadow: $shadow-md;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+    transform: translateY(-3px);
+  }
+}
+
+.ab-mission-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.ab-mission-card h4 {
+  font-size: 1.05rem;
+  color: #2a2825;
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+.ab-mission-card p {
+  font-size: 0.9rem;
+  color: #5a5754;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- Team Grid ---- */
+.ab-team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.ab-team-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+
+  &:hover {
+    box-shadow: 0 8px 28px rgba(0,0,0,0.12);
     transform: translateY(-4px);
   }
-
-  .value-icon {
-    font-size: 3rem;
-    margin-bottom: $space-md;
-  }
-
-  h3 {
-    padding: 0;
-    margin: 0 0 $space-sm 0;
-    color: $primary-dark;
-    font-size: $font-size-lg;
-  }
-
-  p {
-    padding: 0;
-    margin: 0;
-    color: $dark-gray;
-    font-size: $font-size-sm;
-  }
 }
 
-/* Team Grid */
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: $space-xl;
-  margin: $space-2xl 0;
-  padding: 0 $space-xl;
-}
-
-.team-member {
-  background-color: $white;
-  border: 1px solid $medium-gray;
-  border-radius: $border-radius-md;
+.ab-team-img {
+  width: 100%;
+  aspect-ratio: 1;
   overflow: hidden;
-  transition: all 0.25s ease-in-out;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+  }
+}
+
+.ab-team-card:hover .ab-team-img img {
+  transform: scale(1.05);
+}
+
+.ab-team-info {
+  padding: 1rem 0.75rem 1.5rem;
+
+  h4 {
+    font-size: 1rem;
+    color: #2a2825;
+    margin: 0 0 0.25rem 0;
+    padding: 0;
+    font-weight: 700;
+  }
+}
+
+.ab-team-role {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #fff;
+  background: linear-gradient(135deg, #6d0d10, #9f1319);
+  padding: 0.2rem 0.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* ---- Values Grid ---- */
+.ab-values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.ab-value-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.75rem 1.5rem;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  border-left: 4px solid #caa64f;
 
   &:hover {
-    box-shadow: $shadow-lg;
-    transform: scale(1.05);
-  }
-
-  .member-image {
-    width: 200px;
-    height: 200px;
-    background-color: $light-gray;
-    overflow: hidden;
-    border-radius: 50%;
-    margin: $space-lg auto 0 auto;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-  }
-
-  h3 {
-    padding: $space-lg $space-md 0 $space-md;
-    margin: 0;
-    color: $primary-dark;
-    font-size: $font-size-lg;
-    text-align: center;
-  }
-
-  p {
-    padding: 0 $space-md;
-    margin: $space-sm 0;
-    font-size: $font-size-sm;
-    text-align: center;
-
-    &.member-role {
-      color: $dark-gray;
-      font-weight: $font-weight-semibold;
-      margin-bottom: $space-lg;
-    }
-
-    &.member-contact {
-      color: $primary-color;
-      margin-bottom: $space-md;
-      
-      a {
-        color: $primary-color;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
+    box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+    transform: translateY(-3px);
   }
 }
 
-/* Statistics */
-.stats-full {
+.ab-value-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.ab-value-card h4 {
+  font-size: 1.05rem;
+  color: #2a2825;
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+.ab-value-card p {
+  font-size: 0.9rem;
+  color: #5a5754;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- What We Offer ---- */
+.ab-offer-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: $space-xl;
-  margin: $space-2xl 0;
-  padding: 0 $space-xl;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
 }
 
-.stat-item {
-  background: linear-gradient(135deg, $primary-color, $primary-light);
-  color: $white;
-  padding: $space-2xl $space-lg;
-  border-radius: $border-radius-md;
-  text-align: center;
-  box-shadow: $shadow-md;
+.ab-offer-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.75rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
 
-  .stat-big-number {
-    font-size: $font-size-5xl;
-    font-weight: $font-weight-bold;
-    margin-bottom: $space-sm;
-  }
-
-  p {
-    padding: 0;
-    margin: 0;
-    font-size: $font-size-sm;
+  &:hover {
+    box-shadow: 0 8px 28px rgba(0,0,0,0.10);
+    transform: translateY(-3px);
   }
 }
 
-/* Join CTA */
-.join-cta {
-  background: linear-gradient(135deg, $secondary-color, $secondary-light);
-  color: $white;
-  padding: $space-2xl $space-xl;
-  border-radius: $border-radius-md;
-  text-align: center;
-  margin: $space-2xl 0;
-
-  h3 {
-    padding: 0;
-    margin: 0 0 $space-md 0;
-    color: $white;
-    font-size: $font-size-2xl;
-  }
-
-  p {
-    padding: 0;
-    margin: 0 0 $space-lg 0;
-    color: rgba(255, 255, 255, 0.95);
-  }
-
-  .btn--primary {
-    background-color: $white;
-    color: $secondary-color;
-    border-color: $white;
-
-    &:hover {
-      background-color: $light-gray;
-    }
-  }
-}
-
-/* Contact CTA */
-.contact-cta {
+.ab-offer-header {
   display: flex;
-  gap: $space-lg;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 0 $space-xl;
-  margin: $space-2xl 0;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #f1efe7;
 }
 
-@media (max-width: $breakpoint-md) {
-  .values-grid,
-  .team-grid,
-  .stats-full {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: $space-lg;
-  }
+.ab-offer-emoji {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
 
-  .join-cta {
-    padding: $space-lg;
-  }
+.ab-offer-header h4 {
+  font-size: 1.1rem;
+  color: #2a2825;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
 
-  .contact-cta {
-    flex-direction: column;
+.ab-offer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
-    .btn {
-      width: 100%;
+  li {
+    position: relative;
+    padding: 0.4rem 0 0.4rem 1.2rem;
+    font-size: 0.9rem;
+    color: #5a5754;
+    line-height: 1.5;
+
+    &::before {
+      content: "›";
+      position: absolute;
+      left: 0;
+      color: #9f1319;
+      font-weight: 700;
+      font-size: 1.1rem;
     }
+  }
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .ab-mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ab-team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .ab-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ab-offer-grid {
+    grid-template-columns: 1fr;
   }
 }
 </style>
@@ -496,10 +499,5 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
-<!-- GSAP Library for scroll animations -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-<!-- Logo Animation Script -->
+<!-- Logo Story Scroll Reveal -->
 <script src="/assets/js/logo-animation.js"></script>
-

@@ -5,373 +5,353 @@ title: Gallery
 excerpt: "Explore memorable moments from MAPZ events, activities, and community gatherings."
 ---
 
-## Gallery
+{% include gallery-grid.html %}
 
-Explore our community moments! Browse photos from our events, team activities, and memorable gatherings throughout the year.
-
----
-
-## Filter
-
-<div class="gallery-filters">
-  <button class="filter-btn active" onclick="filterGallery('all')">All</button>
-  <button class="filter-btn" onclick="filterGallery('events')">Events</button>
-  <button class="filter-btn" onclick="filterGallery('networking')">Networking</button>
-  <button class="filter-btn" onclick="filterGallery('cultural')">Cultural</button>
-  <button class="filter-btn" onclick="filterGallery('team')">Team</button>
-</div>
-
----
-
-## Photos
-
-<div class="gallery-placeholder" style="text-align: center; padding: 4em 1em; background: #f9f9f9; border-radius: 8px;">
-  <h3>📸 Gallery Coming Soon!</h3>
-  <p>We are currently gathering the best moments from our recent events. Check back soon!</p>
-  <p>In the meantime, you can view our shared album on Google Photos:</p>
-  <a href="https://photos.google.com/placeholder" class="btn btn--primary" target="_blank">View Google Photos Album</a>
-</div>
-
----
-
-## Share Your Photos
-
-Have a memorable photo from a MAPZ event? We'd love to see it! Send us your photos and they might be featured in our gallery.
-
-<div class="photo-submission">
-  <a href="/contact/" class="btn btn--primary">Submit Photos</a>
-  <a href="/events/" class="btn btn--secondary">View Upcoming Events</a>
-</div>
 
 <!-- Lightbox Modal -->
-<div id="lightbox" class="lightbox">
-  <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
-  <img class="lightbox-content" id="lightbox-img">
-  <div class="lightbox-nav">
-    <button class="lightbox-prev" onclick="prevImage()">&#10094;</button>
-    <button class="lightbox-next" onclick="nextImage()">&#10095;</button>
+<div id="lightbox" class="gl-lightbox">
+  <span class="gl-lightbox-close" onclick="closeLightbox()">&times;</span>
+  <img class="gl-lightbox-img" id="lightbox-img">
+  <div class="gl-lightbox-nav">
+    <button class="gl-lightbox-btn" onclick="prevImage()">&#10094;</button>
+    <button class="gl-lightbox-btn" onclick="nextImage()">&#10095;</button>
   </div>
 </div>
 
 <style>
-/* Gallery Filters */
-.gallery-filters {
-  display: flex;
-  gap: $space-md;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: $space-2xl 0;
-  padding: 0 $space-lg;
+/* ============================================================
+   GALLERY PAGE — Modern Design
+   ============================================================ */
+
+/* ---- Intro ---- */
+.gl-intro {
+  text-align: center;
+  font-size: 1.05rem;
+  color: #5a5754;
+  line-height: 1.7;
+  margin: 0 auto 2rem;
+  max-width: 600px;
 }
 
-.filter-btn {
-  padding: $space-md $space-lg;
-  border: 2px solid $medium-gray;
-  background-color: $white;
-  color: $primary-dark;
-  border-radius: $border-radius-md;
+/* ---- Filter Buttons ---- */
+.gl-filters {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 0 2rem;
+}
+
+.gl-filter-btn {
+  padding: 0.5rem 1.2rem;
+  border: 1.5px solid #dcd7c9;
+  background: #fff;
+  color: #2a2825;
+  border-radius: 50px;
   cursor: pointer;
-  font-size: $font-size-sm;
-  font-weight: $font-weight-semibold;
-  transition: all 0.25s ease-in-out;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
 
   &:hover {
-    border-color: $primary-color;
-    background-color: $light-gray;
+    border-color: #9f1319;
+    color: #9f1319;
   }
 
   &.active {
-    background-color: $primary-color;
-    color: $white;
-    border-color: $primary-color;
+    background: linear-gradient(135deg, #9f1319, #c0392b);
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 2px 8px rgba(159, 19, 25, 0.3);
   }
 }
 
-/* Gallery Grid */
-.gallery-grid {
+/* ---- Gallery Grid ---- */
+.gl-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: $space-xl;
-  padding: $space-xl;
-  margin: $space-2xl 0;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 0 0 2rem;
 }
 
-/* Gallery Item */
-.gallery-item {
-  background: $white;
-  border-radius: $border-radius-md;
+.gl-item {
+  position: relative;
+  border-radius: 14px;
   overflow: hidden;
-  box-shadow: $shadow-sm;
-  transition: all 0.3s ease-in-out;
   cursor: pointer;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: all 0.35s ease;
 
   &:hover {
-    box-shadow: $shadow-lg;
-    transform: translateY(-4px);
-
-    .gallery-overlay {
-      opacity: 1;
-    }
-  }
-}
-
-.gallery-image {
-  position: relative;
-  width: 100%;
-  height: 280px;
-  overflow: hidden;
-  background-color: $light-gray;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    transform: translateY(-3px);
   }
 
   &:hover img {
-    transform: scale(1.05);
+    transform: scale(1.06);
+  }
+
+  &:hover .gl-caption {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.45s ease;
   }
 }
 
-.gallery-overlay {
+.gl-item--wide {
+  grid-column: span 2;
+
+  img {
+    height: 320px;
+  }
+}
+
+/* ---- Photo Caption Overlay ---- */
+.gl-caption {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba($primary-color, 0.85);
+  right: 0;
+  padding: 1.25rem;
+  background: linear-gradient(transparent, rgba(0,0,0,0.75));
+  opacity: 0;
+  transform: translateY(8px);
+  transition: all 0.35s ease;
   display: flex;
   align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  gap: 0.75rem;
 }
 
-.gallery-btn {
-  padding: $space-md $space-lg;
-  background-color: $white;
-  color: $primary-color;
-  border: none;
-  border-radius: $border-radius-sm;
-  font-size: $font-size-base;
-  font-weight: $font-weight-semibold;
-  cursor: pointer;
-  transition: all 0.25s ease-in-out;
-
-  &:hover {
-    background-color: $secondary-color;
-    color: $white;
-    transform: scale(1.05);
-  }
+.gl-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #fff;
+  background: rgba(159, 19, 25, 0.8);
+  padding: 0.2rem 0.6rem;
+  border-radius: 50px;
+  font-weight: 700;
+  flex-shrink: 0;
 }
 
-.gallery-info {
-  padding: $space-lg;
+.gl-caption h4 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* ---- CTA Banner ---- */
+.gl-cta-banner {
+  background: linear-gradient(135deg, #1a2332, #2a3a4e);
+  border-radius: 1.15rem;
+  padding: 3rem 2.5rem;
   text-align: center;
+  margin: 1.5rem 0;
+  position: relative;
+  overflow: hidden;
+}
 
-  h4 {
-    margin: 0 0 $space-sm 0;
-    color: $primary-dark;
-    font-size: $font-size-base;
+.gl-cta-banner::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: rgba(159, 19, 25, 0.12);
+  pointer-events: none;
+}
+
+.gl-cta-content {
+  position: relative;
+  z-index: 1;
+
+  h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 0 0.75rem 0;
+    padding: 0;
   }
 
   p {
-    margin: 0;
-    color: $dark-gray;
-    font-size: $font-size-sm;
+    color: rgba(255,255,255,0.85);
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    font-size: 1rem;
   }
 }
 
-/* Photo Submission Section */
-.photo-submission {
+.gl-cta-actions {
   display: flex;
-  gap: $space-lg;
+  gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
-  padding: $space-2xl $space-xl;
-  background: linear-gradient(135deg, $primary-color, $primary-light);
-  border-radius: $border-radius-md;
-  margin: $space-2xl 0;
-
-  .btn {
-    padding: $space-lg $space-2xl;
-  }
-
-  .btn--primary {
-    background-color: $white;
-    color: $primary-color;
-
-    &:hover {
-      background-color: $secondary-color;
-      color: $white;
-    }
-  }
-
-  .btn--secondary {
-    background-color: transparent;
-    border: 2px solid $white;
-    color: $white;
-
-    &:hover {
-      background-color: $white;
-      color: $primary-color;
-    }
-  }
 }
 
-/* Lightbox */
-.lightbox {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.95);
-  animation: fadeIn 0.3s ease-in-out;
+.gl-cta-btn {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
 }
 
-.lightbox.active {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.lightbox-content {
-  max-width: 90%;
-  max-height: 90vh;
-  object-fit: contain;
-  animation: zoomIn 0.3s ease-in-out;
-}
-
-@keyframes zoomIn {
-  from {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.lightbox-close {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-  color: $white;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: color 0.25s ease-in-out;
+.gl-cta-btn--primary {
+  background: linear-gradient(135deg, #9f1319, #c0392b);
+  color: #fff !important;
+  box-shadow: 0 4px 14px rgba(159, 19, 25, 0.35);
 
   &:hover {
-    color: $secondary-color;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(159, 19, 25, 0.45);
+    text-decoration: none;
   }
 }
 
-.lightbox-nav {
+.gl-cta-btn--outline {
+  background: transparent;
+  color: #fff !important;
+  border: 1.5px solid rgba(255,255,255,0.35);
+
+  &:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.6);
+    text-decoration: none;
+  }
+}
+
+/* ---- Lightbox ---- */
+.gl-lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.92);
+  align-items: center;
+  justify-content: center;
+  animation: glFadeIn 0.25s ease;
+}
+
+.gl-lightbox.active {
+  display: flex;
+}
+
+@keyframes glFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.gl-lightbox-img {
+  max-width: 88%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 8px;
+  animation: glZoomIn 0.3s ease;
+}
+
+@keyframes glZoomIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.gl-lightbox-close {
   position: absolute;
-  bottom: 30px;
+  top: 24px;
+  right: 32px;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 300;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  line-height: 1;
+
+  &:hover {
+    color: #caa64f;
+  }
+}
+
+.gl-lightbox-nav {
+  position: absolute;
+  bottom: 28px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: $space-lg;
+  gap: 1rem;
 }
 
-.lightbox-prev,
-.lightbox-next {
-  padding: $space-md $space-lg;
-  background-color: rgba($white, 0.2);
-  border: 2px solid $white;
-  color: $white;
-  font-size: $font-size-xl;
+.gl-lightbox-btn {
+  padding: 0.6rem 1.2rem;
+  background: rgba(255,255,255,0.12);
+  border: 1.5px solid rgba(255,255,255,0.4);
+  color: #fff;
+  font-size: 1.15rem;
   cursor: pointer;
-  border-radius: $border-radius-sm;
-  transition: all 0.25s ease-in-out;
+  border-radius: 50px;
+  transition: all 0.25s ease;
 
   &:hover {
-    background-color: $secondary-color;
-    border-color: $secondary-color;
+    background: rgba(255,255,255,0.25);
+    border-color: #fff;
   }
 }
 
-/* Responsive */
-@media (max-width: $breakpoint-md) {
-  .gallery-grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: $space-lg;
-    padding: $space-lg;
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .gl-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
   }
 
-  .gallery-filters {
-    gap: $space-sm;
+  .gl-item--wide {
+    grid-column: span 2;
   }
 
-  .filter-btn {
-    padding: $space-sm $space-md;
-    font-size: $font-size-xs;
+  .gl-item img {
+    height: 180px;
   }
 
-  .gallery-image {
-    height: 200px;
+  .gl-item--wide img {
+    height: 220px;
   }
 
-  .lightbox-close {
-    top: 15px;
-    right: 15px;
-    font-size: 30px;
+  .gl-caption {
+    opacity: 1;
+    transform: translateY(0);
   }
 
-  .lightbox-content {
-    max-width: 95%;
-    max-height: 80vh;
-  }
-
-  .lightbox-nav {
-    bottom: 15px;
-    gap: $space-sm;
-  }
-
-  .lightbox-prev,
-  .lightbox-next {
-    padding: $space-sm $space-md;
-    font-size: $font-size-lg;
-  }
-
-  .photo-submission {
-    flex-direction: column;
-
-    .btn {
-      width: 100%;
-      text-align: center;
-    }
+  .gl-cta-banner {
+    padding: 2rem 1.5rem;
   }
 }
 
-@media (max-width: $breakpoint-sm) {
-  .gallery-grid {
+@media (max-width: 480px) {
+  .gl-grid {
     grid-template-columns: 1fr;
   }
 
-  .gallery-filters {
-    gap: $space-xs;
-    padding: 0 $space-md;
+  .gl-item--wide {
+    grid-column: span 1;
   }
 
-  .filter-btn {
-    padding: $space-sm $space-md;
+  .gl-item img,
+  .gl-item--wide img {
+    height: 220px;
   }
 }
 </style>
@@ -399,77 +379,60 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <script>
 function filterGallery(category) {
-  // Update active button
-  const buttons = document.querySelectorAll('.filter-btn');
+  const buttons = document.querySelectorAll('.gl-filter-btn');
   buttons.forEach(btn => btn.classList.remove('active'));
   event.target.classList.add('active');
 
-  // Filter items
-  const items = document.querySelectorAll('.gallery-item');
+  const items = document.querySelectorAll('.gl-item');
   items.forEach(item => {
     if (category === 'all' || item.dataset.category === category) {
-      item.style.display = 'block';
-      setTimeout(() => {
-        item.style.opacity = '1';
-      }, 10);
+      item.style.display = '';
+      setTimeout(() => { item.style.opacity = '1'; }, 10);
     } else {
       item.style.opacity = '0';
-      setTimeout(() => {
-        item.style.display = 'none';
-      }, 300);
+      setTimeout(() => { item.style.display = 'none'; }, 300);
     }
   });
 }
 
 let currentImageIndex = 0;
-let visibleImages = [];
+let galleryImages = [];
 
-function openLightbox(button) {
-  const img = button.parentElement.parentElement.querySelector('img');
-  document.getElementById('lightbox-img').src = img.src;
+function openLightbox(imgEl) {
+  document.getElementById('lightbox-img').src = imgEl.src;
   document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow = 'hidden';
 
-  // Get all visible images for navigation
-  visibleImages = Array.from(document.querySelectorAll('.gallery-item[style*="display: block"], .gallery-item:not([style*="display: none"])')).map(item => item.querySelector('img'));
-  currentImageIndex = visibleImages.findIndex(image => image.src === img.src);
+  galleryImages = Array.from(document.querySelectorAll('.gl-item:not([style*="display: none"]) img'));
+  currentImageIndex = galleryImages.indexOf(imgEl);
 }
 
 function closeLightbox() {
   document.getElementById('lightbox').classList.remove('active');
+  document.body.style.overflow = '';
 }
 
 function nextImage() {
-  if (visibleImages.length > 0) {
-    currentImageIndex = (currentImageIndex + 1) % visibleImages.length;
-    document.getElementById('lightbox-img').src = visibleImages[currentImageIndex].src;
+  if (galleryImages.length > 0) {
+    currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+    document.getElementById('lightbox-img').src = galleryImages[currentImageIndex].src;
   }
 }
 
 function prevImage() {
-  if (visibleImages.length > 0) {
-    currentImageIndex = (currentImageIndex - 1 + visibleImages.length) % visibleImages.length;
-    document.getElementById('lightbox-img').src = visibleImages[currentImageIndex].src;
+  if (galleryImages.length > 0) {
+    currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+    document.getElementById('lightbox-img').src = galleryImages[currentImageIndex].src;
   }
 }
 
-// Close lightbox on escape key
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') {
-    closeLightbox();
-  }
-  if (event.key === 'ArrowRight') {
-    nextImage();
-  }
-  if (event.key === 'ArrowLeft') {
-    prevImage();
-  }
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowRight') nextImage();
+  if (e.key === 'ArrowLeft') prevImage();
 });
 
-// Close lightbox when clicking outside the image
-document.addEventListener('click', (event) => {
-  const lightbox = document.getElementById('lightbox');
-  if (event.target === lightbox) {
-    closeLightbox();
-  }
+document.addEventListener('click', (e) => {
+  if (e.target === document.getElementById('lightbox')) closeLightbox();
 });
 </script>
