@@ -3,6 +3,9 @@ layout: single
 permalink: /about/
 title: About Us
 excerpt: "Learn about MAPZ, our mission, values, and the vibrant community we've built."
+header:
+  overlay_image: /assets/images/headers/about_riad.png
+  overlay_filter: 0
 ---
 
 ## Who We Are
@@ -20,27 +23,27 @@ excerpt: "Learn about MAPZ, our mission, values, and the vibrant community we've
 
 <div class="ab-mission-grid">
   <div class="ab-mission-card">
-    <div class="ab-mission-icon">🤝</div>
+    <div class="ab-mission-icon mapz-icon-gold"><i class="far fa-user"></i> <i class="far fa-user" style="margin-left: -0.3em; font-size: 0.8em; opacity: 0.8;"></i></div>
     <h4>Building Community</h4>
     <p>Creating meaningful connections and lasting friendships among Moroccan students, alumni, and professionals.</p>
   </div>
   <div class="ab-mission-card">
-    <div class="ab-mission-icon">🎓</div>
+    <div class="ab-mission-icon mapz-icon-red"><i class="fas fa-graduation-cap"></i></div>
     <h4>Supporting Academic Success</h4>
     <p>Providing mentorship, study groups, and peer support to help students excel at ETH Zurich.</p>
   </div>
   <div class="ab-mission-card">
-    <div class="ab-mission-icon">💼</div>
+    <div class="ab-mission-icon mapz-icon-green"><i class="fas fa-briefcase"></i></div>
     <h4>Fostering Professional Growth</h4>
     <p>Connecting members with career opportunities, industry insights, and professional development resources.</p>
   </div>
   <div class="ab-mission-card">
-    <div class="ab-mission-icon">🇲🇦</div>
+    <div class="ab-mission-icon mapz-icon-red"><i class="fas fa-globe"></i></div>
     <h4>Celebrating Culture</h4>
     <p>Sharing our Moroccan heritage with the broader ETH community through events and cultural activities.</p>
   </div>
   <div class="ab-mission-card">
-    <div class="ab-mission-icon">🌍</div>
+    <div class="ab-mission-icon mapz-icon-gold"><i class="fas fa-network-wired"></i></div>
     <h4>Strengthening Networks</h4>
     <p>Creating bridges between current students and successful alumni, facilitating knowledge transfer and career guidance.</p>
   </div>
@@ -122,32 +125,32 @@ excerpt: "Learn about MAPZ, our mission, values, and the vibrant community we've
 
 <div class="ab-values-grid">
   <div class="ab-value-card">
-    <div class="ab-value-icon">🤝</div>
+    <div class="ab-value-icon mapz-icon-gold"><i class="far fa-user"></i> <i class="far fa-user" style="margin-left: -0.3em; font-size: 0.8em; opacity: 0.8;"></i></div>
     <h4>Community</h4>
     <p>We believe in the power of community and support. Together, we are stronger, and success is shared.</p>
   </div>
   <div class="ab-value-card">
-    <div class="ab-value-icon">🌟</div>
+    <div class="ab-value-icon mapz-icon-red"><i class="far fa-star"></i></div>
     <h4>Excellence</h4>
     <p>We strive for excellence in everything we do — from organizing events to supporting our members' goals.</p>
   </div>
   <div class="ab-value-card">
-    <div class="ab-value-icon">🌍</div>
+    <div class="ab-value-icon mapz-icon-green"><i class="fas fa-globe"></i></div>
     <h4>Inclusivity</h4>
     <p>We welcome everyone. MAPZ is open to all students interested in Moroccan culture and community.</p>
   </div>
   <div class="ab-value-card">
-    <div class="ab-value-icon">💡</div>
+    <div class="ab-value-icon mapz-icon-gold"><i class="far fa-lightbulb"></i></div>
     <h4>Innovation</h4>
     <p>We embrace new ideas and approaches to create meaningful experiences for our community.</p>
   </div>
   <div class="ab-value-card">
-    <div class="ab-value-icon">🇲🇦</div>
+    <div class="ab-value-icon mapz-icon-red"><i class="far fa-flag"></i></div>
     <h4>Heritage</h4>
     <p>We proudly celebrate our Moroccan identity and traditions while embracing our diverse, international environment.</p>
   </div>
   <div class="ab-value-card">
-    <div class="ab-value-icon">🚀</div>
+    <div class="ab-value-icon mapz-icon-green"><i class="fas fa-chart-line"></i></div>
     <h4>Growth</h4>
     <p>We invest in personal, professional, and academic growth for all our members.</p>
   </div>
@@ -160,7 +163,7 @@ excerpt: "Learn about MAPZ, our mission, values, and the vibrant community we've
 <div class="ab-offer-grid">
   <div class="ab-offer-card">
     <div class="ab-offer-header">
-      <span class="ab-offer-emoji">🎉</span>
+      <span class="ab-offer-emoji mapz-icon-red"><i class="far fa-calendar-alt"></i></span>
       <h4>Events & Networking</h4>
     </div>
     <ul class="ab-offer-list">
@@ -173,7 +176,7 @@ excerpt: "Learn about MAPZ, our mission, values, and the vibrant community we've
 
   <div class="ab-offer-card">
     <div class="ab-offer-header">
-      <span class="ab-offer-emoji">🧭</span>
+      <span class="ab-offer-emoji mapz-icon-gold"><i class="far fa-compass"></i></span>
       <h4>Mentorship Program</h4>
     </div>
     <ul class="ab-offer-list">
@@ -185,7 +188,7 @@ excerpt: "Learn about MAPZ, our mission, values, and the vibrant community we've
 
   <div class="ab-offer-card">
     <div class="ab-offer-header">
-      <span class="ab-offer-emoji">💚</span>
+      <span class="ab-offer-emoji mapz-icon-green"><i class="far fa-heart"></i></span>
       <h4>Community Support</h4>
     </div>
     <ul class="ab-offer-list">
@@ -198,7 +201,7 @@ excerpt: "Learn about MAPZ, our mission, values, and the vibrant community we've
 
   <div class="ab-offer-card">
     <div class="ab-offer-header">
-      <span class="ab-offer-emoji">🎨</span>
+      <span class="ab-offer-emoji mapz-icon-red"><i class="fas fa-palette"></i></span>
       <h4>Cultural Activities</h4>
     </div>
     <ul class="ab-offer-list">
@@ -253,19 +256,26 @@ excerpt: "Learn about MAPZ, our mission, values, and the vibrant community we've
   border-radius: 14px;
   padding: 1.75rem 1.5rem;
   text-align: center;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-  transition: all 0.3s ease;
   border-top: 3px solid #9f1319;
+  border: 1px solid rgba(150, 28, 32, 0.12);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 
   &:hover {
-    box-shadow: 0 6px 24px rgba(0,0,0,0.10);
-    transform: translateY(-3px);
+    box-shadow: 0 6px 24px rgba(150, 28, 32, 0.12);
+    transform: translateY(-2px);
   }
 }
 
 .ab-mission-icon {
-  font-size: 2.2rem;
-  margin-bottom: 0.75rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1;
+  font-weight: 300;
+  
+  &.mapz-icon-gold { color: #a47b30; }
+  &.mapz-icon-red { color: #9f1319; }
+  &.mapz-icon-green { color: #2d6630; }
 }
 
 .ab-mission-card h4 {
@@ -296,13 +306,14 @@ excerpt: "Learn about MAPZ, our mission, values, and the vibrant community we've
   background: #fff;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-  transition: all 0.3s ease;
+  border: 1px solid rgba(150, 28, 32, 0.12);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
   text-align: center;
 
   &:hover {
-    box-shadow: 0 8px 28px rgba(0,0,0,0.12);
-    transform: translateY(-4px);
+    box-shadow: 0 6px 24px rgba(150, 28, 32, 0.12);
+    transform: translateY(-2px);
   }
 }
 
@@ -360,19 +371,26 @@ excerpt: "Learn about MAPZ, our mission, values, and the vibrant community we've
   border-radius: 14px;
   padding: 1.75rem 1.5rem;
   text-align: center;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-  transition: all 0.3s ease;
   border-left: 4px solid #caa64f;
+  border: 1px solid rgba(150, 28, 32, 0.12);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 
   &:hover {
-    box-shadow: 0 6px 24px rgba(0,0,0,0.10);
-    transform: translateY(-3px);
+    box-shadow: 0 6px 24px rgba(150, 28, 32, 0.12);
+    transform: translateY(-2px);
   }
 }
 
 .ab-value-icon {
-  font-size: 2.2rem;
-  margin-bottom: 0.75rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1;
+  font-weight: 300;
+  
+  &.mapz-icon-gold { color: #a47b30; }
+  &.mapz-icon-red { color: #9f1319; }
+  &.mapz-icon-green { color: #2d6630; }
 }
 
 .ab-value-card h4 {
@@ -403,12 +421,13 @@ excerpt: "Learn about MAPZ, our mission, values, and the vibrant community we've
   background: #fff;
   border-radius: 16px;
   padding: 1.75rem;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-  transition: all 0.3s ease;
+  border: 1px solid rgba(150, 28, 32, 0.12);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 
   &:hover {
-    box-shadow: 0 8px 28px rgba(0,0,0,0.10);
-    transform: translateY(-3px);
+    box-shadow: 0 6px 24px rgba(150, 28, 32, 0.12);
+    transform: translateY(-2px);
   }
 }
 
@@ -424,6 +443,12 @@ excerpt: "Learn about MAPZ, our mission, values, and the vibrant community we've
 .ab-offer-emoji {
   font-size: 1.8rem;
   flex-shrink: 0;
+  line-height: 1;
+  font-weight: 300;
+  
+  &.mapz-icon-gold { color: #a47b30; }
+  &.mapz-icon-red { color: #9f1319; }
+  &.mapz-icon-green { color: #2d6630; }
 }
 
 .ab-offer-header h4 {

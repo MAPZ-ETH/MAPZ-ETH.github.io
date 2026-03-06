@@ -2,6 +2,9 @@
 layout: single
 permalink: /sponsors/
 title: Our Sponsors
+header:
+  overlay_image: /assets/images/headers/sponsors_abstract.png
+  overlay_filter: 0
 excerpt: "Proud partners supporting the MAPZ community and our mission to empower Moroccan students at ETH Zurich."
 ---
 
@@ -162,7 +165,7 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
   <iframe name="hidden_iframe_sponsor" id="hidden_iframe_sponsor" style="display:none;" onload="if(sponsorSubmitted){showSponsorThankYou();}"></iframe>
 
   <div id="sponsor-thank-you" class="thank-you-message" style="display:none;">
-    <div class="thank-you-icon">✅</div>
+    <div class="thank-you-icon mapz-icon-green"><i class="fas fa-check-circle"></i></div>
     <h3>Thank you!</h3>
     <p>Your sponsorship application has been received. We'll be in touch soon.</p>
   </div>
@@ -356,102 +359,6 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
   transform: scale(1.2);
 }
 
-/* ═══════════ SPONSORSHIP TIERS ═══════════ */
-.sp-tiers-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  margin: 1.5rem 0;
-  align-items: stretch;
-}
-
-.sp-tier-card {
-  position: relative;
-  background: #fff;
-  border-radius: 1.15rem;
-  padding: 2.25rem 1.75rem 2rem;
-  text-align: center;
-  border: 1.5px solid rgba(0,0,0,0.06);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-}
-
-.sp-tier-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 28px -6px rgba(0,0,0,0.12);
-}
-
-.sp-tier-badge {
-  font-size: 2.5rem;
-  margin-bottom: 0.6rem;
-  line-height: 1;
-}
-
-.sp-tier-name {
-  font-size: 1.35rem;
-  font-weight: 800;
-  margin: 0 0 1.25rem 0;
-  padding: 0;
-  letter-spacing: -0.01em;
-}
-
-.sp-tier--silver .sp-tier-name { color: #6b7280; }
-.sp-tier--gold .sp-tier-name   { color: #b8860b; }
-.sp-tier--platinum .sp-tier-name { color: #4a5568; }
-
-.sp-tier-perks {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-}
-
-.sp-tier-perks li {
-  padding: 0.6rem 0;
-  font-size: 0.9rem;
-  color: #444;
-  border-bottom: 1px solid rgba(0,0,0,0.04);
-  display: flex;
-  align-items: flex-start;
-  gap: 0.6rem;
-}
-
-.sp-tier-perks li:last-child {
-  border-bottom: none;
-}
-
-.sp-check {
-  color: #16a34a;
-  font-weight: 700;
-  flex-shrink: 0;
-}
-
-/* Featured tier (Gold) */
-.sp-tier--featured {
-  border-color: #b8860b;
-  box-shadow: 0 4px 24px rgba(184, 134, 11, 0.15);
-  transform: scale(1.04);
-}
-
-.sp-tier--featured:hover {
-  transform: scale(1.04) translateY(-6px);
-}
-
-.sp-tier-ribbon {
-  position: absolute;
-  top: 14px;
-  right: -28px;
-  background: linear-gradient(135deg, #b8860b, #d4a838);
-  color: #fff;
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding: 0.3rem 2.5rem;
-  transform: rotate(45deg);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-}
 
 /* ═══════════ CTA BANNER ═══════════ */
 .sp-cta-banner {
@@ -546,6 +453,7 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
   flex-direction: column;
   gap: 1.25rem;
   margin: 1rem 0;
+  padding: 0 2rem;
 }
 
 .sp-past-year {
@@ -609,6 +517,7 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
   grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
   margin: 1.5rem 0;
+  padding: 0 2rem;
 }
 
 .sp-contact-item {
@@ -663,6 +572,7 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
   .sp-tiers-grid {
     grid-template-columns: 1fr;
     gap: 1.25rem;
+    padding: 0 1rem;
   }
 
   .sp-tier--featured {
@@ -684,6 +594,7 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
 
   .sp-contact-bar {
     grid-template-columns: 1fr;
+    padding: 0 1rem;
   }
 
   .sp-past-year {

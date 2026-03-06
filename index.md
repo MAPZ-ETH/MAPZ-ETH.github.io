@@ -61,24 +61,24 @@ excerpt: "Building a vibrant community of Moroccan students and alumni at ETH Zu
   <h2 class="mapz-section-title">What We Offer</h2>
   <div class="mapz-features-grid">
     <div class="mapz-feature-card">
-      <div class="mapz-feature-icon">🤝</div>
+      <div class="mapz-feature-icon mapz-icon-gold"><i class="far fa-user"></i> <i class="far fa-user" style="margin-left: -0.3em; font-size: 0.8em; opacity: 0.8;"></i></div>
       <h3>Networking</h3>
       <p>Connect with fellow Moroccan polytechnicians and build lasting professional relationships.</p>
     </div>
     <div class="mapz-feature-card">
-      <div class="mapz-feature-icon">🎓</div>
+      <div class="mapz-feature-icon mapz-icon-red"><i class="far fa-calendar-alt"></i></div>
       <h3>Events &amp; Workshops</h3>
       <p>Participate in regular meetups, seminars, and social events throughout the year.</p>
     </div>
     <div class="mapz-feature-card">
-      <div class="mapz-feature-icon">🚀</div>
+      <div class="mapz-feature-icon mapz-icon-green"><i class="fas fa-briefcase"></i></div>
       <h3>Career Support</h3>
       <p>Access mentorship, job opportunities, and professional development resources.</p>
     </div>
     <div class="mapz-feature-card">
-      <div class="mapz-feature-icon">🇲🇦</div>
-      <h3>Cultural Exchange</h3>
-      <p>Celebrate our Moroccan heritage while embracing the diverse ETH community.</p>
+      <div class="mapz-feature-icon mapz-icon-red"><i class="fas fa-globe"></i></div>
+      <h3>Swiss-Moroccan Synergy</h3>
+      <p>Bridging cultures and fostering collaboration. Our community is open and welcoming to everyone interested in this unique exchange.</p>
     </div>
   </div>
 </div>

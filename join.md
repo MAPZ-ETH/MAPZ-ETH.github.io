@@ -1,8 +1,11 @@
 ---
 layout: single
 permalink: /join/
-title: Join MAPZ
-excerpt: "Become part of a vibrant community of Moroccan students and professionals at ETH Zurich."
+title: Join Us
+header:
+  overlay_image: /assets/images/headers/join_pattern.png
+  overlay_filter: 0
+excerpt: "Become a part of the official Moroccan student association at ETH Zurich."
 ---
 
 ---
@@ -11,17 +14,17 @@ excerpt: "Become part of a vibrant community of Moroccan students and profession
 
 <div class="jn-eligibility">
   <div class="jn-elig-card">
-    <span class="jn-elig-icon">🎓</span>
+    <span class="jn-elig-icon mapz-icon-gold"><i class="fas fa-graduation-cap"></i></span>
     <h4>Current Students</h4>
     <p>Moroccan students at ETH Zurich — all levels and departments</p>
   </div>
   <div class="jn-elig-card">
-    <span class="jn-elig-icon">🏛️</span>
+    <span class="jn-elig-icon mapz-icon-red"><i class="fas fa-university"></i></span>
     <h4>Alumni</h4>
     <p>Moroccan graduates of ETH Zurich around the world</p>
   </div>
   <div class="jn-elig-card">
-    <span class="jn-elig-icon">🌍</span>
+    <span class="jn-elig-icon mapz-icon-green"><i class="fas fa-globe"></i></span>
     <h4>Friends & Allies</h4>
     <p>Anyone interested in Moroccan culture and our community</p>
   </div>
@@ -113,7 +116,7 @@ excerpt: "Become part of a vibrant community of Moroccan students and profession
   <iframe name="hidden_iframe_join" id="hidden_iframe_join" style="display:none;" onload="if(joinSubmitted){showJoinThankYou();}"></iframe>
 
   <div id="join-thank-you" class="thank-you-message" style="display:none;">
-    <div class="thank-you-icon">🎉</div>
+    <div class="thank-you-icon mapz-icon-green"><i class="fas fa-check-circle"></i></div>
     <h3>Welcome to MAPZ!</h3>
     <p>Your membership request has been received. We'll reach out to you soon!</p>
   </div>
@@ -190,20 +193,27 @@ excerpt: "Become part of a vibrant community of Moroccan students and profession
   border-radius: 14px;
   padding: 2rem 1.5rem;
   text-align: center;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-  transition: all 0.3s ease;
   border-top: 3px solid #9f1319;
+  border: 1px solid rgba(150, 28, 32, 0.12);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 
   &:hover {
-    box-shadow: 0 6px 24px rgba(0,0,0,0.10);
-    transform: translateY(-3px);
+    box-shadow: 0 6px 24px rgba(150, 28, 32, 0.12);
+    transform: translateY(-2px);
   }
 }
 
 .jn-elig-icon {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   display: block;
   margin-bottom: 0.75rem;
+  line-height: 1;
+  font-weight: 300;
+  
+  &.mapz-icon-gold { color: #a47b30; }
+  &.mapz-icon-red { color: #9f1319; }
+  &.mapz-icon-green { color: #2d6630; }
 }
 
 .jn-elig-card h4 {
@@ -279,16 +289,18 @@ excerpt: "Become part of a vibrant community of Moroccan students and profession
 .jn-faq-item {
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border: 1px solid rgba(150, 28, 32, 0.12);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
   overflow: hidden;
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 
   &:hover {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 24px rgba(150, 28, 32, 0.12);
+    transform: translateY(-2px);
   }
 
   &[open] {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 24px rgba(150, 28, 32, 0.12);
   }
 
   &[open] summary {

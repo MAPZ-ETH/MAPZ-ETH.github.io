@@ -2,6 +2,9 @@
 layout: single
 permalink: /contact/
 title: Get in Touch
+header:
+  overlay_image: /assets/images/headers/lanterns.png
+  overlay_filter: 0
 excerpt: "Have questions or want to connect? We'd love to hear from you!"
 ---
 
@@ -134,7 +137,7 @@ Have a specific question or proposal? Fill out the form below and we'll get back
   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){showThankYou();}"></iframe>
 
   <div id="thank-you-message" class="thank-you-message" style="display:none;">
-    <div class="thank-you-icon">✅</div>
+    <div class="thank-you-icon mapz-icon-green"><i class="fas fa-check-circle"></i></div>
     <h3>Thank you!</h3>
     <p>Your message has been sent successfully. We'll get back to you soon.</p>
   </div>
@@ -184,10 +187,10 @@ Have a specific question or proposal? Fill out the form below and we'll get back
   border-radius: 1rem;
   text-decoration: none;
   color: inherit;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
   position: relative;
-  border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  border: 1px solid rgba(150, 28, 32, 0.12);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 
 .contact-card,
@@ -199,8 +202,8 @@ Have a specific question or proposal? Fill out the form below and we'll get back
 }
 
 .contact-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px -8px rgba(0,0,0,0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(150, 28, 32, 0.12);
 }
 
 .contact-card:hover .contact-card__body h3 {
@@ -220,7 +223,7 @@ Have a specific question or proposal? Fill out the form below and we'll get back
   transition: opacity 0.3s ease;
 }
 .contact-card:hover::after { opacity: 1; }
-.contact-card--whatsapp::after  { background: #25D366; }
+.contact-card--whatsapp::after  { background: #24620e; }
 .contact-card--instagram::after { background: linear-gradient(90deg, #F58529, #DD2A7B, #8134AF); }
 .contact-card--linkedin::after  { background: #0A66C2; }
 .contact-card--email::after     { background: #caa64f; }
@@ -276,7 +279,7 @@ Have a specific question or proposal? Fill out the form below and we'll get back
   transition: opacity 0.2s ease;
 }
 
-.contact-card--whatsapp .contact-card__action  { color: #25D366; }
+.contact-card--whatsapp .contact-card__action  { color: #24620e; }
 .contact-card--instagram .contact-card__action { color: #DD2A7B; }
 .contact-card--linkedin .contact-card__action  { color: #0A66C2; }
 .contact-card--email .contact-card__action     { color: #b8942e; }
@@ -299,13 +302,13 @@ Have a specific question or proposal? Fill out the form below and we'll get back
   padding: 1.25rem 1.5rem;
   background: #fff;
   border-radius: 0.85rem;
-  border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  border: 1px solid rgba(150, 28, 32, 0.12);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .location-item:hover {
-  box-shadow: 0 6px 16px -4px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 24px rgba(150, 28, 32, 0.12);
   transform: translateY(-2px);
 }
 

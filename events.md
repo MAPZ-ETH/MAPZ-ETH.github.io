@@ -2,6 +2,9 @@
 layout: single
 permalink: /events/
 title: Events
+header:
+  overlay_image: /assets/images/headers/events.png
+  overlay_filter: 0
 excerpt: "Join us for networking, learning, and celebrating our community together!"
 ---
 
@@ -45,14 +48,15 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
   display: flex;
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  border: 1px solid rgba(150, 28, 32, 0.12);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
   overflow: hidden;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
   position: relative;
 
   &:hover {
-    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
-    transform: translateY(-3px);
+    box-shadow: 0 6px 24px rgba(150, 28, 32, 0.12);
+    transform: translateY(-2px);
   }
 }
 
@@ -199,19 +203,25 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
   background: #fff;
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
   border-top: 3px solid transparent;
+  border: 1px solid rgba(150, 28, 32, 0.12);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 
   &:hover {
-    box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+    box-shadow: 0 6px 24px rgba(150, 28, 32, 0.12);
     transform: translateY(-2px);
     border-top-color: #caa64f;
   }
 
   .ev-past-icon {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 0.75rem;
+    line-height: 1;
+    font-weight: 300;
+
+    &.mapz-icon-gold { color: #a47b30; }
+    &.mapz-icon-red { color: #9f1319; }
   }
 
   h4 {
