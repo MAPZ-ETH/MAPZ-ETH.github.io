@@ -34,13 +34,13 @@ upcoming:
 
 past:
   - title: "MAPZ Launch Event"
-    icon: "🇲🇦"
+    icon: "fas fa-globe"
     date_label: "November 2025"
     year: 2025
     description: "The official founding event of MAPZ — eight ETH Zürich students came together on the 50th anniversary of the Green March to launch the Moroccan Association of Polytechnicians in Zurich."
 
   - title: "First Community Meetup"
-    icon: "🤝"
+    icon: "far fa-user"
     date_label: "November 2025"
     year: 2025
     description: "Our first informal gathering to welcome Moroccan students and friends at ETH, share our vision, and build connections over tea and conversations."

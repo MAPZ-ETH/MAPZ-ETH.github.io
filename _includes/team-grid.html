@@ -3,7 +3,13 @@
     {% for member in site.data.team.body %}
     <div class="ab-team-card">
         <div class="ab-team-img">
-            <img src="{{ member.photo }}" alt="{{ member.name }}">
+            {% if member.linkedin %}
+            <a href="{{ member.linkedin }}" target="_blank" rel="noopener noreferrer">
+                {% endif %}
+                <img src="{{ member.photo }}" alt="{{ member.name }}">
+                {% if member.linkedin %}
+            </a>
+            {% endif %}
         </div>
         <div class="ab-team-info">
             <h4>{{ member.name }}</h4>

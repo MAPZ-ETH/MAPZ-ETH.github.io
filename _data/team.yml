@@ -2,24 +2,31 @@ body:
   - name: El Hassan Jamaly
     role: President
     photo: /assets/images/team/elhassan-jamaly.jpeg
+    linkedin: https://www.linkedin.com/in/elhassan-jamaly/
   - name: Ismail Lataoui
     role: VP Membership
     photo: /assets/images/team/ismail-lataoui.jpeg
+    linkedin: https://www.linkedin.com/in/ismail-lataoui/
   - name: Amine Benjelloun Touimi
     role: VP IT
     photo: /assets/images/team/amine-benjelloun.jpeg
+    linkedin: https://www.linkedin.com/in/amine-benjelloun-touimi/
   - name: Abdellah JANATI IDRISSI
     role: VP Administration
     photo: /assets/images/team/abdellah-janati.jpeg
+    linkedin: https://www.linkedin.com/in/abdellah-janatiidrissi/
   - name: Aya Jroundi
     role: VP Communication
     photo: /assets/images/team/aya-jroundi.jpeg
+    linkedin: https://www.linkedin.com/in/aya-jroundi-7191ab325/
   - name: Mamoun Rhmari Tlemcani
     role: VP Logistics
     photo: /assets/images/team/mamoun-tlemcani.jpeg
+    linkedin: https://www.linkedin.com/in/mamoun-rhmari-tlemcani-b9714224a/
   - name: Mehdi Hamirifou
     role: VP Sponsorship
     photo: /assets/images/team/mehdi-hamirifou-1.jpeg
+    linkedin: https://www.linkedin.com/in/mehdi-hamirifou-482486388/
   - name: Ismail Ibnmajah
     role: VP Finance
     photo: /assets/images/team/ismail-ibnmajah.jpeg

@@ -29,6 +29,7 @@ collections:
               - { name: name, label: "Full Name", widget: string }
               - { name: role, label: "Role / Title", widget: string }
               - { name: photo, label: "Photo", widget: image }
+              - { name: linkedin, label: "LinkedIn URL", widget: string, required: false }
 
       - name: "gallery"
         label: "Gallery Photos"

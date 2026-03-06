@@ -9,7 +9,10 @@
             {% for event in past_events %}
             {% if event.year == yr %}
             <div class="ev-past-card">
-                <div class="ev-past-icon">{{ event.icon }}</div>
+                <div
+                    class="ev-past-icon {%- if event.icon contains 'globe' %} mapz-icon-red{%- else %} mapz-icon-gold{%- endif %}">
+                    <i class="{{ event.icon }}"></i>
+                </div>
                 <h4>{{ event.title }}</h4>
                 <span class="ev-past-date">{{ event.date_label }}</span>
                 <p>{{ event.description }}</p>
