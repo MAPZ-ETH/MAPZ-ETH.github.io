@@ -7,31 +7,31 @@
 
 // --- Color Palette ---
 // MAPZ Official Brand Colors
-$background-color: #f1efe7;        // Official logo background
-$primary-color: #9f1319;           // Moroccan Map & Text (Red)
-$primary-light: #c23a42;           // Lighter version of primary
-$primary-dark: #6d0d10;            // Darker version of primary
+$background-color: #f1efe7; // Official logo background
+$primary-color: #9f1319; // Moroccan Map & Text (Red)
+$primary-light: #c23a42; // Lighter version of primary
+$primary-dark: #6d0d10; // Darker version of primary
 
-$secondary-color: #24620e;         // Moroccan Stars (Green)
-$secondary-light: #3d8b1a;         // Lighter green
-$secondary-dark: #1a4609;          // Darker green
+$secondary-color: #24620e; // Moroccan Stars (Green)
+$secondary-light: #3d8b1a; // Lighter green
+$secondary-dark: #1a4609; // Darker green
 
-$accent-color: #caa64f;            // ETH Zurich drawing (Gold)
-$accent-light: #dbb866;            // Lighter gold
-$accent-dark: #9f8337;             // Darker gold
+$accent-color: #caa64f; // ETH Zurich drawing (Gold)
+$accent-light: #dbb866; // Lighter gold
+$accent-dark: #9f8337; // Darker gold
 
 // Neutral Colors (based on background)
 $white: #ffffff;
-$light-gray: #f1efe7;              // Match background for subtle contrast
-$medium-gray: #d9d6ce;             // Slightly darker than background
-$dark-gray: #5a5754;               // Dark neutral
-$black: #2a2825;                   // Almost black
+$light-gray: #f1efe7; // Match background for subtle contrast
+$medium-gray: #d9d6ce; // Slightly darker than background
+$dark-gray: #5a5754; // Dark neutral
+$black: #2a2825; // Almost black
 
 // Status/Utility Colors
-$success-color: #24620e;           // Use secondary (stars color)
-$warning-color: #caa64f;           // Use accent (gold)
-$danger-color: #9f1319;            // Use primary (red)
-$info-color: #3d8b1a;              // Use secondary light
+$success-color: #24620e; // Use secondary (stars color)
+$warning-color: #caa64f; // Use accent (gold)
+$danger-color: #9f1319; // Use primary (red)
+$info-color: #3d8b1a; // Use secondary light
 
 // --- Typography ---
 // Font Families
@@ -40,16 +40,16 @@ $font-family-heading: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 $font-family-monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
 
 // Font Sizes
-$font-size-base: 1rem;             // 16px
-$font-size-lg: 1.125rem;           // 18px
-$font-size-xl: 1.25rem;            // 20px
-$font-size-2xl: 1.5rem;            // 24px
-$font-size-3xl: 1.875rem;          // 30px
-$font-size-4xl: 2.25rem;           // 36px
-$font-size-5xl: 3rem;              // 48px
+$font-size-base: 1rem; // 16px
+$font-size-lg: 1.125rem; // 18px
+$font-size-xl: 1.25rem; // 20px
+$font-size-2xl: 1.5rem; // 24px
+$font-size-3xl: 1.875rem; // 30px
+$font-size-4xl: 2.25rem; // 36px
+$font-size-5xl: 3rem; // 48px
 
-$font-size-sm: 0.875rem;           // 14px
-$font-size-xs: 0.75rem;            // 12px
+$font-size-sm: 0.875rem; // 14px
+$font-size-xs: 0.75rem; // 12px
 
 // Font Weights
 $font-weight-light: 300;
@@ -66,20 +66,20 @@ $line-height-loose: 2;
 
 // --- Spacing ---
 // Use these variables for consistent spacing throughout the site
-$space-xs: 0.25rem;                // 4px
-$space-sm: 0.5rem;                 // 8px
-$space-md: 1rem;                   // 16px
-$space-lg: 1.5rem;                 // 24px
-$space-xl: 2rem;                   // 32px
-$space-2xl: 3rem;                  // 48px
-$space-3xl: 4rem;                  // 64px
-$space-4xl: 6rem;                  // 96px
+$space-xs: 0.25rem; // 4px
+$space-sm: 0.5rem; // 8px
+$space-md: 1rem; // 16px
+$space-lg: 1.5rem; // 24px
+$space-xl: 2rem; // 32px
+$space-2xl: 3rem; // 48px
+$space-3xl: 4rem; // 64px
+$space-4xl: 6rem; // 96px
 
 // --- Border Radius ---
-$border-radius-sm: 0.25rem;        // 4px
-$border-radius-md: 0.5rem;         // 8px
-$border-radius-lg: 1rem;           // 16px
-$border-radius-xl: 1.5rem;         // 24px
+$border-radius-sm: 0.25rem; // 4px
+$border-radius-md: 0.5rem; // 8px
+$border-radius-lg: 1rem; // 16px
+$border-radius-xl: 1.5rem; // 24px
 $border-radius-full: 9999px;
 
 // --- Shadows ---
@@ -95,11 +95,11 @@ $transition-base: 250ms ease-in-out;
 $transition-slow: 350ms ease-in-out;
 
 // --- Breakpoints (Mobile First) ---
-$breakpoint-sm: 640px;             // Small devices
-$breakpoint-md: 768px;             // Medium devices (tablets)
-$breakpoint-lg: 1024px;            // Large devices (desktops)
-$breakpoint-xl: 1280px;            // Extra large devices
-$breakpoint-2xl: 1536px;           // Ultra-wide devices
+$breakpoint-sm: 640px; // Small devices
+$breakpoint-md: 768px; // Medium devices (tablets)
+$breakpoint-lg: 1024px; // Large devices (desktops)
+$breakpoint-xl: 1280px; // Extra large devices
+$breakpoint-2xl: 1536px; // Ultra-wide devices
 
 // --- Container Widths ---
 $container-max-width: 1200px;

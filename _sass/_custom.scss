@@ -664,6 +664,11 @@ a.active[href],
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: $space-xl;
   margin: $space-3xl 0;
+  padding: 0 2rem;
+
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
 
   .sponsor-interactive-item {
     position: relative;
@@ -683,12 +688,13 @@ a.active[href],
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: $space-xl;
+      padding: $space-md;
       transition: all 0.3s ease;
 
       img {
-        max-height: 120px;
-        max-width: 80%;
+        max-height: 200px;
+        max-width: 90%;
+        transform: scale(1.5);
       }
     }
 
@@ -737,33 +743,97 @@ a.active[href],
 // GLOBAL FOOTER
 // ============================================================================
 
+.page__footer {
+  background: linear-gradient(to bottom,
+      $background-color 0%,
+      $background-color 20%,
+      mix($background-color, $primary-color, 90%) 35%,
+      mix($background-color, $primary-color, 65%) 55%,
+      mix($background-color, $primary-color, 30%) 75%,
+      $primary-color 100%) !important;
+  color: $white;
+  margin-top: 0;
+
+  footer {
+    padding-top: 60px;
+    padding-bottom: $space-md;
+  }
+}
+
+.page__footer-logo {
+  text-align: center;
+  margin-bottom: $space-md;
+
+  img {
+    max-height: 55px;
+    filter: brightness(0) invert(1); // Make the logo white
+    opacity: 1;
+  }
+}
+
 .page__footer-quicklinks {
   text-align: center;
-  padding: $space-lg $space-xl;
-  margin-bottom: $space-sm;
+  padding: 0 $space-xl;
+  margin-bottom: $space-lg;
 
   a {
-    color: $primary-color;
-    text-decoration: none;
-    font-weight: $font-weight-semibold;
-    font-size: $font-size-sm;
+    color: rgba($white, 0.85) !important;
+    text-decoration: none !important;
+    font-weight: $font-weight-semibold !important;
+    font-size: $font-size-base;
+    transition: color 0.2s ease;
+    border-bottom: none !important;
 
-    &:hover {
-      text-decoration: underline;
+    &:hover,
+    &.active {
+      color: $secondary-color !important; // Green on hover and active
+      background: transparent !important;
+      border-bottom: none !important; // Override global a.active[href] rule
     }
   }
 
   .sep {
-    color: $medium-gray;
+    color: rgba($white, 0.3);
     margin: 0 $space-sm;
+  }
+}
+
+.page__footer-divider {
+  text-align: center;
+  color: #C6A54B; // Gold
+  font-size: 0.8rem;
+  letter-spacing: 0.4em;
+  margin: $space-md auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 400px;
+
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid rgba(198, 165, 75, 0.4); // #C6A54B with opacity
+    margin: 0 15px;
   }
 }
 
 .page__footer-copyright {
   text-align: center;
-  font-size: $font-size-xs;
-  color: $dark-gray;
-  padding-bottom: $space-lg;
+  font-size: $font-size-sm;
+  color: rgba($white, 0.7); // 0.7 opacity
+  padding-bottom: $space-md;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: $white;
+    }
+  }
 }
 
 // ============================================================================
@@ -892,6 +962,11 @@ a.active[href],
   .thank-you-icon {
     font-size: $font-size-5xl;
     margin-bottom: 0.75rem;
+    line-height: 1;
+
+    &.mapz-icon-green {
+      color: $secondary-color;
+    }
   }
 
   h3 {
@@ -946,8 +1021,8 @@ a.active[href],
 // --- Shared section title ---
 .mapz-section-title {
   font-family: $font-family-heading;
-  font-size: $font-size-3xl;
-  font-weight: $font-weight-extrabold;
+  font-size: 2.1rem; // ≥ 2rem for strong presence
+  font-weight: $font-weight-bold;
   color: $black;
   letter-spacing: -0.02em;
   margin-bottom: $space-md;
@@ -1013,16 +1088,28 @@ a.active[href],
 
 // --- Our Impact stats ---
 .mapz-impact-section {
-  padding: $space-sm $space-sm;
+  padding: 5rem $space-xl;
   text-align: center;
+  background-color: $background-color;
+}
+
+.mapz-impact-section .mapz-section-title {
+  color: $black;
+}
+
+.mapz-impact-section .mapz-section-subtitle {
+  color: $dark-gray;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mapz-stats-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: $space-xl;
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 960px;
+  margin: $space-2xl auto 0;
 }
 
 .mapz-stat-card {
@@ -1037,7 +1124,7 @@ a.active[href],
 
   &:hover {
     transform: translateY(-4px);
-    box-shadow: $shadow-md;
+    box-shadow: 0 10px 30px rgba(150, 28, 32, 0.35); // red-tinted, stronger than before
   }
 }
 
@@ -1076,21 +1163,34 @@ a.active[href],
   background: $white;
   border-radius: $border-radius-lg;
   padding: $space-2xl $space-lg;
-  box-shadow: $shadow-sm;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba($medium-gray, 0.4);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  border: 1px solid rgba(150, 28, 32, 0.12);
 
   &:hover {
-    transform: translateY(-6px);
-    box-shadow: $shadow-md;
-    border-color: rgba($primary-color, 0.2);
+    box-shadow: 0 6px 24px rgba(150, 28, 32, 0.12);
+    transform: translateY(-2px);
   }
 
   .mapz-feature-icon {
     font-size: 2.8rem;
     margin-bottom: $space-md;
     line-height: 1;
+    font-weight: 300;
+    /* For a lighter line-art look */
+
+    &.mapz-icon-gold {
+      color: #a47b30;
+    }
+
+    &.mapz-icon-red {
+      color: $primary-color;
+    }
+
+    &.mapz-icon-green {
+      color: #2d6630;
+    }
   }
 
   h3 {
@@ -1124,4 +1224,335 @@ a.active[href],
   .mapz-about-section {
     padding: $space-2xl $space-lg;
   }
+}
+
+// ==========================================================================
+// HERO BANNER — Premium Overhaul
+// ==========================================================================
+
+.page__hero--overlay {
+  // 1. Standardized height across all pages
+  display: flex;
+  align-items: center;
+  min-height: 450px !important;
+  padding: 3em 0 4em !important;
+  position: relative;
+  overflow: hidden;
+
+  // 2. Gradient overlay — dark on left/bottom for readability, light on right to let image breathe
+  //    Override the theme's inline linear-gradient flat overlay
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(135deg,
+        rgba(0, 0, 0, 0.58) 0%,
+        rgba(0, 0, 0, 0.40) 40%,
+        rgba(0, 0, 0, 0.15) 100%) !important;
+    pointer-events: none;
+  }
+
+  // 3. Bottom fade — smooth blend into page background
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    z-index: 2;
+    background: linear-gradient(to bottom,
+        rgba(241, 239, 231, 0) 0%, // $background-color transparent
+        rgba(241, 239, 231, 0.6) 60%,
+        rgba(241, 239, 231, 1) 100% // $background-color solid
+      );
+    pointer-events: none;
+  }
+
+  // Make the inner wrapper sit above the overlays
+  .wrapper {
+    position: relative;
+    z-index: 3;
+  }
+
+  // 4. Text treatment
+  .page__title {
+    font-size: 3rem !important; // ~20% larger
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    border-left: 4px solid #8B1A1A; // Red accent bar
+    padding-left: 1rem;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+    margin-bottom: 0.5em;
+    color: #fff;
+  }
+
+  .page__lead {
+    font-size: 1.15rem;
+    letter-spacing: 0.06em; // Wider letter-spacing
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.92);
+    max-width: 650px;
+    line-height: 1.6;
+  }
+
+  // Responsive tweaks
+  @media (max-width: 48em) {
+    min-height: 340px !important;
+    padding: 2.5em 1rem 3em !important;
+
+    .page__title {
+      font-size: 2.2rem !important;
+    }
+
+    .page__lead {
+      font-size: 1rem;
+      letter-spacing: 0.03em;
+    }
+  }
+}
+
+// ==========================================================================
+// 5. MOROCCAN STAR DIVIDER — between hero and content
+// ==========================================================================
+// The theme wraps page content in .page__content or .page__inner-wrap.
+// We target the section right after the hero with a decorative pseudo-element.
+.page__content {
+  position: relative;
+
+  &::before {
+    content: "✦  ✦  ✦";
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 0.5em;
+    color: $accent-color;
+    padding: 1.2rem 0 2rem;
+    opacity: 0.7;
+  }
+}
+
+// ==========================================================================
+// GLOBAL SECTION TITLES
+// Strong, consistent treatment for all H2 section headings
+// ==========================================================================
+
+.page__content {
+  >h2 {
+    position: relative;
+    font-family: $font-family-heading;
+    font-size: 2.1rem;
+    font-weight: $font-weight-bold;
+    letter-spacing: -0.02em;
+    margin-top: 5rem; // ~80px separation before each section
+    margin-bottom: $space-xl;
+    line-height: 1.2;
+  }
+
+  >h2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1.5rem;
+    left: 0;
+    width: 64px;
+    height: 3px;
+    border-radius: 999px;
+    background: $accent-color;
+  }
+}
+
+// ==========================================================================
+// READABILITY CONSTRAINTS FOR STANDALONE TEXT
+// Max-width container for long paragraphs/intros
+// ==========================================================================
+
+.page__content {
+  >p {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// Specific intros that should stay centered within the max width
+.ab-intro-section,
+.sp-intro,
+.sp-section-desc,
+.ev-section-intro,
+.ev-connect-intro,
+.contact-intro,
+.contact-intro p,
+.jn-intro,
+.jn-email-alt,
+.gl-intro {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Centered section titles that live in centered sections
+.mapz-impact-section .mapz-section-title,
+.mapz-features-section .mapz-section-title,
+.contact-intro h2 {
+  text-align: center;
+}
+
+.mapz-impact-section .mapz-section-title::before,
+.mapz-features-section .mapz-section-title::before,
+.contact-intro h2::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: $breakpoint-md) {
+  .page__content>h2 {
+    margin-top: $space-3xl;
+    font-size: 1.75rem;
+  }
+}
+
+// ==========================================================================
+// SPONSORSHIP TIERS
+// ==========================================================================
+
+.sp-tiers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  padding: 0 2rem;
+  align-items: stretch;
+}
+
+.sp-tier-card {
+  position: relative;
+  background: #fff;
+  border-radius: 1.15rem;
+  padding: 2.25rem 1.75rem 2rem;
+  text-align: center;
+  border: 1px solid rgba(150, 28, 32, 0.12);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  overflow: hidden;
+  border-top: 4px solid transparent;
+}
+
+.sp-tier-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(150, 28, 32, 0.12);
+}
+
+.sp-tier-badge {
+  font-size: 2.5rem;
+  margin-bottom: 0.6rem;
+  line-height: 1;
+}
+
+.sp-tier-name {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin: 0 0 1.25rem 0;
+  padding: 0;
+  letter-spacing: -0.01em;
+}
+
+// Brand Colors
+$color-silver: #24620E; // Forest Green placeholder for Silver tier
+$color-gold: #C6A54B; // Gold
+$color-platinum: #961C20; // Crimson
+
+/* Silver = Forest Green */
+.sp-tier--silver {
+  border-top-color: $color-silver;
+  background: rgba(36, 98, 14, 0.05);
+
+  .sp-tier-name {
+    color: $color-silver;
+  }
+
+  .sp-check {
+    color: $color-silver;
+  }
+}
+
+/* Gold */
+.sp-tier--gold {
+  border-top-color: $color-gold;
+  background: rgba(198, 165, 75, 0.05);
+
+  .sp-tier-name {
+    color: $color-gold;
+  }
+
+  .sp-check {
+    color: $color-gold;
+  }
+}
+
+/* Platinum = Crimson */
+.sp-tier--platinum {
+  border-top-color: $color-platinum;
+  background: rgba(150, 28, 32, 0.05);
+
+  .sp-tier-name {
+    color: $color-platinum;
+  }
+
+  .sp-check {
+    color: $color-platinum;
+  }
+}
+
+.sp-tier-perks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.sp-tier-perks li {
+  padding: 0.6rem 0;
+  font-size: 0.9rem;
+  color: #444;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.sp-tier-perks li:last-child {
+  border-bottom: none;
+}
+
+.sp-check {
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Featured tier (Gold) */
+.sp-tier--featured {
+  border-color: $color-gold;
+  box-shadow: 0 4px 24px rgba(198, 165, 75, 0.15);
+  transform: scale(1.04);
+}
+
+.sp-tier--featured:hover {
+  transform: scale(1.04) translateY(-6px);
+}
+
+.sp-tier-ribbon {
+  position: absolute;
+  top: 14px;
+  right: -28px;
+  background: linear-gradient(135deg, $color-gold, lighten($color-gold, 10%));
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.3rem 2.5rem;
+  transform: rotate(45deg);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
