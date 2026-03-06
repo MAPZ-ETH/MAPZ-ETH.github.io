@@ -3,7 +3,7 @@ layout: single
 permalink: /sponsors/
 title: Our Sponsors
 header:
-  overlay_image: /assets/images/headers/sponsors_abstract.png
+  overlay_image: /assets/images/headers/finance_city_opt.jpg
   overlay_filter: 0
 excerpt: "Proud partners supporting the MAPZ community and our mission to empower Moroccan students at ETH Zurich."
 ---

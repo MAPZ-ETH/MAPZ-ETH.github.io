@@ -1238,6 +1238,7 @@ a.active[href],
   padding: 3em 0 4em !important;
   position: relative;
   overflow: hidden;
+  background-attachment: fixed !important; // Parallax effect
 
   // 2. Gradient overlay — dark on left/bottom for readability, light on right to let image breathe
   //    Override the theme's inline linear-gradient flat overlay
