@@ -1238,7 +1238,15 @@ a.active[href],
   padding: 3em 0 4em !important;
   position: relative;
   overflow: hidden;
-  background-attachment: fixed !important; // Parallax effect
+
+  // Parallax effect on desktop, disabled on mobile to fix iOS Safari background-size: cover bug
+  @media (min-width: 768px) {
+    background-attachment: fixed !important;
+  }
+
+  @media (max-width: 767px) {
+    background-attachment: scroll !important;
+  }
 
   // 2. Gradient overlay — dark on left/bottom for readability, light on right to let image breathe
   //    Override the theme's inline linear-gradient flat overlay
