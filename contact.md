@@ -10,7 +10,7 @@ excerpt: "Have questions or want to connect? We'd love to hear from you!"
 
 <div class="contact-intro">
   <h2>Let's Connect!</h2>
-  <p>We're a student association — so the quickest way to reach us is through our community channels.<br>Jump into the group chat, DM us on socials, or drop us an email!</p>
+  <p>We're a student association, so the quickest way to reach us is through our community channels.<br>Jump into the group chat, DM us on socials, or drop us an email!</p>
 </div>
 
 ---
@@ -24,7 +24,7 @@ excerpt: "Have questions or want to connect? We'd love to hear from you!"
     </div>
     <div class="contact-card__body">
       <h3>WhatsApp Group</h3>
-      <p>Our main community chat — ask questions, get updates, and meet members in real time.</p>
+      <p>Our main community chat: ask questions, get updates, and meet members in real time.</p>
       <span class="contact-card__action">Join the group →</span>
     </div>
   </a>
@@ -72,21 +72,21 @@ excerpt: "Have questions or want to connect? We'd love to hear from you!"
     <span class="location-emoji"><i class="fas fa-map-marker-alt"></i></span>
     <div>
       <strong>ETH Zurich Campus</strong>
-      <p>Zurich, Switzerland — Come say hi at our events!</p>
+      <p>Zurich, Switzerland. Come say hi at our events!</p>
     </div>
   </div>
   <div class="location-item">
     <span class="location-emoji"><i class="fas fa-calendar-alt"></i></span>
     <div>
       <strong>Events & Meetups</strong>
-      <p>The best way to meet us in person — <a href="/events/">see upcoming events</a></p>
+      <p>The best way to meet us in person: <a href="/events/">see upcoming events</a></p>
     </div>
   </div>
   <div class="location-item">
     <span class="location-emoji"><i class="fas fa-clock"></i></span>
     <div>
       <strong>Response Time</strong>
-      <p>We usually reply within 24h on WhatsApp — email may take a bit longer.</p>
+      <p>We usually reply within 24h on WhatsApp, email may take a bit longer.</p>
     </div>
   </div>
 </div>

@@ -12,7 +12,7 @@ body:
     category: "about"
 
   - question: "Who can join MAPZ?"
-    answer: "<p>MAPZ welcomes:</p><ul><li>Current Moroccan students at ETH Zurich (all levels and departments)</li><li>Moroccan alumni of ETH Zurich</li><li>Anyone interested in Moroccan culture and community</li></ul><p>You don't need to be from Morocco to join — if you're interested in our community, we welcome you!</p>"
+    answer: "<p>MAPZ welcomes:</p><ul><li>Current Moroccan students at ETH Zurich (all levels and departments)</li><li>Moroccan alumni of ETH Zurich</li><li>Anyone interested in Moroccan culture and community</li></ul><p>You don't need to be from Morocco to join. If you're interested in our community, we welcome you!</p>"
     category: "membership"
 
   - question: "Is there a membership fee?"

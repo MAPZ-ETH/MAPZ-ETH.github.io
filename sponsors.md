@@ -22,8 +22,6 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
 
 ## Event Highlights with Sponsors
 
-<p class="sp-section-desc">Recent events made possible by our generous sponsors.</p>
-
 <div class="carousel-container">
   <div class="carousel-wrapper">
     <div class="carousel-item">

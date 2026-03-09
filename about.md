@@ -62,7 +62,7 @@ header:
 ## Our Logo Story
 
 <div class="logo-story-section">
-  <p class="logo-story-intro">Every element of the MAPZ logo carries a piece of our identity — a story of heritage, knowledge, and ambition.</p>
+  <p class="logo-story-intro">Every element of the MAPZ logo carries a piece of our identity,a story of heritage, knowledge, and ambition.</p>
 
   <!-- Full assembled logo -->
   <div class="logo-story-assembled">
@@ -78,7 +78,7 @@ header:
       </div>
       <div class="logo-story-part-text">
         <h3>The Map</h3>
-        <p>The outline of Morocco sits at the heart of our logo — a proud reminder of where we come from. It symbolizes our <strong>Moroccan heritage</strong> and the geographical roots that connect every member of MAPZ, no matter where in the world they study or work.</p>
+        <p>The outline of Morocco sits at the heart of our logo, a proud reminder of where we come from. It symbolizes our <strong>Moroccan heritage</strong> and the geographical roots that connect every member of MAPZ, no matter where in the world they study or work.</p>
       </div>
     </div>
 
@@ -98,7 +98,7 @@ header:
       </div>
       <div class="logo-story-part-text">
         <h3>The Star</h3>
-        <p>Drawn from the Moroccan flag, the star represents our <strong>aspirations and guiding light</strong>. It reflects the ambition of our community — reaching for the stars while staying grounded in our values and identity.</p>
+        <p>Drawn from the Moroccan flag, the star represents our <strong>aspirations and guiding light</strong>. It reflects the ambition of our community, reaching for the stars while staying grounded in our values and identity.</p>
       </div>
     </div>
 
@@ -108,7 +108,7 @@ header:
       </div>
       <div class="logo-story-part-text">
         <h3>The Name</h3>
-        <p>The curved text wrapping the emblem reads <strong>"Moroccan Association of Polytechnicians in Zurich"</strong> — our full identity, arcing around the symbols like a unifying embrace that ties heritage, institution, and purpose together.</p>
+        <p>The curved text wrapping the emblem reads <strong>"Moroccan Association of Polytechnicians in Zurich"</strong>: our full identity, arcing around the symbols like a unifying embrace that ties heritage, institution, and purpose together.</p>
       </div>
     </div>
 
@@ -128,7 +128,7 @@ header:
   <div class="ab-value-card">
     <div class="ab-value-icon mapz-icon-red"><i class="far fa-star"></i></div>
     <h4>Excellence</h4>
-    <p>We strive for excellence in everything we do — from organizing events to supporting our members' goals.</p>
+    <p>We strive for excellence in everything we do, from organizing events to supporting our members' goals.</p>
   </div>
   <div class="ab-value-card">
     <div class="ab-value-icon mapz-icon-green"><i class="fas fa-globe"></i></div>
@@ -189,7 +189,7 @@ header:
     </div>
     <ul class="ab-offer-list">
       <li>Peer support for challenges & successes</li>
-      <li>Resource sharing — notes, materials & advice</li>
+      <li>Resource sharing: notes, materials & advice</li>
       <li>Mental health support community</li>
       <li>Alumni network for inspiration & guidance</li>
     </ul>
@@ -201,7 +201,7 @@ header:
       <h4>Cultural Activities</h4>
     </div>
     <ul class="ab-offer-list">
-      <li>Language exchange — Arabic & French</li>
+      <li>Language exchange: Arabic & French</li>
       <li>Workshops on art, cuisine & traditions</li>
       <li>Representing Morocco at ETH festivals</li>
     </ul>

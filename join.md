@@ -16,7 +16,7 @@ excerpt: "Become a part of the official Moroccan student association at ETH Zuri
   <div class="jn-elig-card">
     <span class="jn-elig-icon mapz-icon-gold"><i class="fas fa-graduation-cap"></i></span>
     <h4>Current Students</h4>
-    <p>Moroccan students at ETH Zurich — all levels and departments</p>
+    <p>Moroccan students at ETH Zurich, all levels and departments</p>
   </div>
   <div class="jn-elig-card">
     <span class="jn-elig-icon mapz-icon-red"><i class="fas fa-university"></i></span>
@@ -151,7 +151,7 @@ excerpt: "Become a part of the official Moroccan student association at ETH Zuri
   </details>
   <details class="jn-faq-item">
     <summary>What if I'm shy or new to ETH?</summary>
-    <p>Many of our members felt the same way. Our community is built on support and inclusivity. Come to an event — you'll feel welcomed!</p>
+    <p>Many of our members felt the same way. Our community is built on support and inclusivity. Come to an event, you'll feel welcomed!</p>
   </details>
   <details class="jn-faq-item">
     <summary>Can I help organize events?</summary>
@@ -371,11 +371,11 @@ var joinSubmitted = false;
 
 function joinFormSubmitted() {
   joinSubmitted = true;
-  // Trigger success message shortly after submission
-  setTimeout(function() {
-    document.getElementById('join-form').style.display = 'none';
-    document.getElementById('join-thank-you').style.display = 'block';
-  }, 1200);
+}
+
+function showJoinThankYou() {
+  document.getElementById('join-form').style.display = 'none';
+  document.getElementById('join-thank-you').style.display = 'block';
 }
 </script>
 
