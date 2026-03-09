@@ -13,7 +13,7 @@ header:
 <div class="ab-intro-section">
   <div class="ab-intro-text">
     <p>MAPZ (Moroccan Association of Polytechnicians in Zurich) is the official association for Moroccan students and alumni at ETH Zurich. We are a dynamic, welcoming community dedicated to fostering connections, supporting professional growth, and celebrating our shared Moroccan heritage.</p>
-    <p>Founded on the <strong>50th anniversary of the Green March</strong> 🇲🇦, MAPZ brings together Moroccan polytechnicians who share a passion for excellence, culture, and community.</p>
+    <p>Founded on the <strong>50th anniversary of the Green March</strong>, MAPZ brings together Moroccan polytechnicians who share a passion for excellence, culture, and community.</p>
   </div>
 </div>
 
@@ -53,10 +53,6 @@ header:
 
 ## Leadership Team
 
-### Meet the Founders of MAPZ
-
-<p class="ab-section-desc">On this special day — the 50th anniversary of the Green March 🇲🇦 — we are excited to introduce ourselves: eight ETH Zürich students who came together to launch MAPZ. Our goal is to connect Moroccan students and professionals, foster collaboration, and create opportunities. <strong>MAPZ is for anyone interested in joining the journey!</strong> 🌍</p>
-
 ### The Board
 
 {% include team-grid.html %}
@@ -81,7 +77,7 @@ header:
         <img src="/logoSVG/map.svg" alt="Map of Morocco">
       </div>
       <div class="logo-story-part-text">
-        <h3>🇲🇦 The Map</h3>
+        <h3>The Map</h3>
         <p>The outline of Morocco sits at the heart of our logo — a proud reminder of where we come from. It symbolizes our <strong>Moroccan heritage</strong> and the geographical roots that connect every member of MAPZ, no matter where in the world they study or work.</p>
       </div>
     </div>
@@ -91,7 +87,7 @@ header:
         <img src="/logoSVG/eth.svg" alt="ETH Zurich Building">
       </div>
       <div class="logo-story-part-text">
-        <h3>🏛️ The ETH Building</h3>
+        <h3>The ETH Building</h3>
         <p>The iconic ETH Zurich main building represents the <strong>world-class institution</strong> that brings us together. It's a nod to academic excellence, innovation, and the shared journey of every Moroccan polytechnician who walks through ETH's doors.</p>
       </div>
     </div>
@@ -101,7 +97,7 @@ header:
         <img src="/logoSVG/MAPZ-logo-ONLY-STAR.svg" alt="Stars">
       </div>
       <div class="logo-story-part-text">
-        <h3>⭐ The Star</h3>
+        <h3>The Star</h3>
         <p>Drawn from the Moroccan flag, the star represents our <strong>aspirations and guiding light</strong>. It reflects the ambition of our community — reaching for the stars while staying grounded in our values and identity.</p>
       </div>
     </div>
@@ -111,7 +107,7 @@ header:
         <img src="/logoSVG/MAPZ-logo-ONLY-WRITING.svg" alt="Moroccan Association of Polytechnicians in Zurich">
       </div>
       <div class="logo-story-part-text">
-        <h3>✍️ The Name</h3>
+        <h3>The Name</h3>
         <p>The curved text wrapping the emblem reads <strong>"Moroccan Association of Polytechnicians in Zurich"</strong> — our full identity, arcing around the symbols like a unifying embrace that ties heritage, institution, and purpose together.</p>
       </div>
     </div>
@@ -361,7 +357,7 @@ header:
 /* ---- Values Grid ---- */
 .ab-values-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
   margin: 2rem 0;
 }
