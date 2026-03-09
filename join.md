@@ -371,11 +371,11 @@ var joinSubmitted = false;
 
 function joinFormSubmitted() {
   joinSubmitted = true;
-}
-
-function showJoinThankYou() {
-  document.getElementById('join-form').style.display = 'none';
-  document.getElementById('join-thank-you').style.display = 'block';
+  // Trigger success message shortly after submission
+  setTimeout(function() {
+    document.getElementById('join-form').style.display = 'none';
+    document.getElementById('join-thank-you').style.display = 'block';
+  }, 1200);
 }
 </script>
 
