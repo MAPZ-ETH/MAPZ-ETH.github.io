@@ -130,22 +130,22 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
 
 
 <div class="mapz-form-wrapper">
-  <form id="sponsor-form" action="https://docs.google.com/forms/d/e/YOUR_SPONSOR_FORM_ID/formResponse" method="POST" target="hidden_iframe_sponsor" onsubmit="sponsorFormSubmitted()">
+  <form id="sponsor-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdGzp67AYbj5uMDpeG3KnJxsWmApAoQnwGwwcnPjd0KzIPIxg/formResponse" method="POST" target="hidden_iframe_sponsor" onsubmit="sponsorFormSubmitted()">
 
     <div class="form-row">
       <div class="form-group">
         <label for="company-name">Company / Organization <span class="required">*</span></label>
-        <input type="text" id="company-name" name="entry.XXXXXXX1" placeholder="e.g. Acme Corp" required>
+        <input type="text" id="company-name" name="entry.720171759" placeholder="e.g. Acme Corp" required>
       </div>
       <div class="form-group">
         <label for="sponsor-email">Contact Email <span class="required">*</span></label>
-        <input type="email" id="sponsor-email" name="entry.XXXXXXX2" placeholder="you@company.com" required>
+        <input type="email" id="sponsor-email" name="entry.1334708109" placeholder="you@company.com" required>
       </div>
     </div>
 
     <div class="form-group">
       <label for="sponsor-level">Sponsorship Level <span class="required">*</span></label>
-      <select id="sponsor-level" name="entry.XXXXXXX3" required>
+      <select id="sponsor-level" name="entry.1089558777" required>
         <option value="" disabled selected>Choose a level…</option>
         <option value="Platinum">Platinum</option>
         <option value="Gold">Gold</option>
@@ -156,7 +156,7 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
 
     <div class="form-group">
       <label for="sponsor-message">Message <span class="required">*</span></label>
-      <textarea id="sponsor-message" name="entry.XXXXXXX4" rows="5" placeholder="Tell us about your interest in sponsoring MAPZ…" required></textarea>
+      <textarea id="sponsor-message" name="entry.625689920" rows="5" placeholder="Tell us about your interest in sponsoring MAPZ…" required></textarea>
     </div>
 
     <button type="submit" class="form-submit-btn">
