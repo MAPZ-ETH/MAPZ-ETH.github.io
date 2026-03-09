@@ -9,7 +9,7 @@ excerpt: "Have questions or want to connect? We'd love to hear from you!"
 ---
 
 <div class="contact-intro">
-  <h2>Let's Connect! 👋</h2>
+  <h2>Let's Connect!</h2>
   <p>We're a student association — so the quickest way to reach us is through our community channels.<br>Jump into the group chat, DM us on socials, or drop us an email!</p>
 </div>
 
@@ -69,21 +69,21 @@ excerpt: "Have questions or want to connect? We'd love to hear from you!"
 
 <div class="contact-location-bar">
   <div class="location-item">
-    <span class="location-emoji">📍</span>
+    <span class="location-emoji"><i class="fas fa-map-marker-alt"></i></span>
     <div>
       <strong>ETH Zurich Campus</strong>
       <p>Zurich, Switzerland — Come say hi at our events!</p>
     </div>
   </div>
   <div class="location-item">
-    <span class="location-emoji">📅</span>
+    <span class="location-emoji"><i class="fas fa-calendar-alt"></i></span>
     <div>
       <strong>Events & Meetups</strong>
       <p>The best way to meet us in person — <a href="/events/">see upcoming events</a></p>
     </div>
   </div>
   <div class="location-item">
-    <span class="location-emoji">⏰</span>
+    <span class="location-emoji"><i class="fas fa-clock"></i></span>
     <div>
       <strong>Response Time</strong>
       <p>We usually reply within 24h on WhatsApp — email may take a bit longer.</p>
@@ -316,6 +316,7 @@ Have a specific question or proposal? Fill out the form below and we'll get back
   font-size: 1.5rem;
   flex-shrink: 0;
   margin-top: 2px;
+  color: #961C20;
 }
 
 .location-item strong {
