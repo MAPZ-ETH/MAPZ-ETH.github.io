@@ -70,6 +70,7 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
   </div>
 </div>
 
+{% comment %}
 ---
 
 ## Sponsorship Tiers
@@ -120,6 +121,8 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
     </ul>
   </div>
 </div>
+{% endcomment %}
+
 
 ---
 
