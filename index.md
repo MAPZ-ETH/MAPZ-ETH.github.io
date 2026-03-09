@@ -85,7 +85,7 @@ excerpt: "Building a vibrant community of Moroccan students and alumni at ETH Zu
 
 ## Upcoming Events & Activities
 
-Stay tuned for our upcoming events and activities. 🎉 **Join our next event!** We organize seminars and social gatherings monthly. Check our [Events Page](/events/) or join our WhatsApp group for real-time updates.
+<p style="text-align: left;">Stay tuned for our upcoming events and activities. <strong>Join our next event!</strong> We organize seminars and social gatherings monthly. Check our <a href="/events/">Events Page</a> or join our WhatsApp group for real-time updates.</p>
 
 
 <style>
