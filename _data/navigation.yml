@@ -9,8 +9,8 @@ main:
     url: /events/
   - title: "About Us"
     url: /about/
-  - title: "Gallery"
-    url: /gallery/
+#  - title: "Gallery"
+#    url: /gallery/
   - title: "Join Us"
     url: /join/
   - title: "FAQ"

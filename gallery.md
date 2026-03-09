@@ -6,6 +6,7 @@ header:
   overlay_image: /assets/images/headers/sponsors_abstract.png
   overlay_filter: 0
 excerpt: "Explore memorable moments from MAPZ events, activities, and community gatherings."
+published: false
 ---
 
 {% include gallery-grid.html %}
