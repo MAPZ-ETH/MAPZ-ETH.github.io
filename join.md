@@ -70,23 +70,23 @@ excerpt: "Become a part of the official Moroccan student association at ETH Zuri
 ## Membership Form
 
 <div class="mapz-form-wrapper">
-  <form id="join-form" action="https://docs.google.com/forms/d/e/YOUR_JOIN_FORM_ID/formResponse" method="POST" target="hidden_iframe_join" onsubmit="joinFormSubmitted()">
+  <form id="join-form" action="https://docs.google.com/forms/d/e/1FAIpQLSeuvogpy9sSfNV3FtfS6zUHUvZGnmCJQD0ynfKomFgKvBn92w/formResponse" method="POST" target="hidden_iframe_join" onsubmit="joinFormSubmitted()">
 
     <div class="form-row">
       <div class="form-group">
         <label for="join-name">Full Name <span class="required">*</span></label>
-        <input type="text" id="join-name" name="entry.XXXXXXX1" placeholder="e.g. Amine Alaoui" required>
+        <input type="text" id="join-name" name="entry.1270793148" placeholder="e.g. Amine Alaoui" required>
       </div>
       <div class="form-group">
         <label for="join-email">Email Address <span class="required">*</span></label>
-        <input type="email" id="join-email" name="entry.XXXXXXX2" placeholder="you@example.com" required>
+        <input type="email" id="join-email" name="entry.1893654745" placeholder="you@example.com" required>
       </div>
     </div>
 
     <div class="form-row">
       <div class="form-group">
         <label for="join-level">Study Level <span class="required">*</span></label>
-        <select id="join-level" name="entry.XXXXXXX3" required>
+        <select id="join-level" name="entry.279234732" required>
           <option value="" disabled selected>Select your level…</option>
           <option value="Bachelor">Bachelor</option>
           <option value="Master">Master</option>
@@ -98,13 +98,13 @@ excerpt: "Become a part of the official Moroccan student association at ETH Zuri
       </div>
       <div class="form-group">
         <label for="join-department">Department</label>
-        <input type="text" id="join-department" name="entry.XXXXXXX4" placeholder="e.g. Computer Science">
+        <input type="text" id="join-department" name="entry.47764181" placeholder="e.g. Computer Science">
       </div>
     </div>
 
     <div class="form-group">
       <label for="join-message">Anything you'd like to share?</label>
-      <textarea id="join-message" name="entry.XXXXXXX5" rows="3" placeholder="Tell us what interests you about MAPZ…"></textarea>
+      <textarea id="join-message" name="entry.1359452439" rows="3" placeholder="Tell us what interests you about MAPZ…"></textarea>
     </div>
 
     <button type="submit" class="form-submit-btn">
