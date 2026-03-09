@@ -214,14 +214,14 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
 
 <div class="sp-contact-bar">
   <a href="mailto:sponsors@mapz.org" class="sp-contact-item">
-    <span class="sp-contact-icon">✉️</span>
+    <span class="sp-contact-icon"><i class="fas fa-envelope"></i></span>
     <div>
       <strong>Email</strong>
       <p>sponsors@mapz.org</p>
     </div>
   </a>
   <a href="/contact/" class="sp-contact-item">
-    <span class="sp-contact-icon">💬</span>
+    <span class="sp-contact-icon"><i class="fas fa-comment"></i></span>
     <div>
       <strong>Contact Page</strong>
       <p>Reach us through our contact form</p>
@@ -553,6 +553,7 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
   font-size: 1.75rem;
   flex-shrink: 0;
   margin-top: 2px;
+  color: #961C20;
 }
 
 .sp-contact-item strong {
