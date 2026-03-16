@@ -1,10 +1,11 @@
 # --- Site settings ---
 title: MAPZ - Moroccan Association of Polytechnicians in Zurich
-description: "The official community for Moroccan students and alumni at ETH Zurich. Networking, internal events, mentorship, and cultural exchange for Polytechnicians."
-keywords: "MAPZ, ETH Zurich, Moroccan, Students, Alumni, Association, Polytechnicians, Zurich, Morocco, Community, Networking"
+tagline: "Moroccan Association of Polytechnicians in Zurich"
+description: "MAPZ is the official association for Moroccan students and alumni at ETH Zurich. Join our community for networking, events, mentorship, and cultural exchange at mapz.ch."
+keywords: "MAPZ, MAPZ ETH, mapz.ch, Moroccan Association Zurich, ETH Zurich Moroccan, Moroccan Students ETH, Polytechnicians Zurich, Morocco Switzerland, Moroccan Alumni Zurich"
 theme: minimal-mistakes-jekyll
 
-url: "https://MAPZ-ETH.github.io"
+url: "https://mapz.ch"
 baseurl: ""
 permalink: pretty
 
@@ -17,7 +18,16 @@ analytics:
   google:
     tracking_id: "G-PTKMXM8NKP"
 
+# --- Social / SEO ---
+social:
+  type: Organization
+  name: MAPZ
+  links:
+    - https://www.instagram.com/mapz.eth/
+    - https://www.linkedin.com/company/mapz-eth/
+
 # --- Plugins ---
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
