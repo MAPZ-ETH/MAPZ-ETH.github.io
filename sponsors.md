@@ -128,6 +128,7 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
   </div>
 </div>
 
+{% comment %}
 ---
 
 ## Past Sponsors & Partners
@@ -161,6 +162,7 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
     </div>
   </div>
 </div>
+{% endcomment %}
 
 ---
 
