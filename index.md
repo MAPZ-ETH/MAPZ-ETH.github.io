@@ -28,6 +28,9 @@ excerpt: "Building a vibrant community of Moroccan students and alumni at ETH Zu
     <p class="mapz-about-text">
       Whether you're just starting your studies or are a successful alumnus, MAPZ provides a welcoming space to network, learn, and grow.
     </p>
+    <p class="mapz-about-text" style="font-size:0.9em; opacity:0.75;">
+      Association des étudiants et alumni marocains à l'ETH Zurich — réseautage, événements, mentorat et échange culturel.
+    </p>
     <a href="/join/" class="mapz-cta-btn">Join MAPZ →</a>
   </div>
 </div>
