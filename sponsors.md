@@ -22,51 +22,7 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
 
 ## Event Highlights with Sponsors
 
-<div class="carousel-container">
-  <div class="carousel-wrapper">
-    <div class="carousel-item">
-      <img src="/assets/images/events/event-1.jpg" alt="Event Highlight 1">
-      <div class="carousel-caption">
-        <h4>Annual Networking Event</h4>
-        <p>Connecting Moroccan professionals and students across industries</p>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <img src="/assets/images/events/event-2.jpg" alt="Event Highlight 2">
-      <div class="carousel-caption">
-        <h4>Cultural Celebration</h4>
-        <p>Celebrating our Moroccan heritage with the ETH community</p>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <img src="/assets/images/events/event-3.jpg" alt="Event Highlight 3">
-      <div class="carousel-caption">
-        <h4>Career Workshop</h4>
-        <p>Industry insights and career development opportunities</p>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <img src="/assets/images/events/event-4.jpg" alt="Event Highlight 4">
-      <div class="carousel-caption">
-        <h4>Alumni Meetup</h4>
-        <p>Reconnecting with successful MAPZ alumni</p>
-      </div>
-    </div>
-  </div>
-
-  <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1)">❮</button>
-  <button class="carousel-btn carousel-next" onclick="moveCarousel(1)">❯</button>
-
-  <div class="carousel-dots">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-  </div>
-</div>
+{% include highlights-carousel.html %}
 
 {% comment %}
 ---

@@ -112,3 +112,16 @@ collections:
               - { name: year, label: "Year (number)", widget: number, value_type: int }
               - { name: location, label: "Location", widget: string, required: false }
               - { name: description, label: "Description", widget: text }
+
+      - name: "highlights"
+        label: "Event Highlights (Carousel)"
+        file: "_data/highlights.yml"
+        description: "Photos shown in the Event Highlights carousel on the Sponsors page"
+        fields:
+          - name: body
+            label: Highlights
+            widget: list
+            fields:
+              - { name: title, label: "Title", widget: string }
+              - { name: caption, label: "Caption", widget: string }
+              - { name: photo, label: "Photo", widget: image }

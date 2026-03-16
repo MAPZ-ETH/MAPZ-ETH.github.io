@@ -1,0 +1,13 @@
+body:
+  - title: Annual Networking Event
+    caption: Connecting Moroccan professionals and students across industries
+    photo: /assets/images/events/event-1.jpg
+  - title: Cultural Celebration
+    caption: Celebrating our Moroccan heritage with the ETH community
+    photo: /assets/images/events/event-2.jpg
+  - title: Career Workshop
+    caption: Industry insights and career development opportunities
+    photo: /assets/images/events/event-3.jpg
+  - title: Alumni Meetup
+    caption: Reconnecting with successful MAPZ alumni
+    photo: /assets/images/events/event-4.jpg
