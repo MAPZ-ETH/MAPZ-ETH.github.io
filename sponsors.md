@@ -211,6 +211,7 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
   position: relative;
   max-width: 100%;
   margin: 2rem 0;
+  padding: 0 !important; /* Override global padding so images go full-bleed to border-radius */
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
