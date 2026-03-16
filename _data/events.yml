@@ -1,46 +1,55 @@
 upcoming:
-  - title: "Winter Networking Dinner"
-    date: "2025-12-15"
-    month: "DEC"
+  - month: DEC
+    time: 18:00 – 21:00
+    date: 2025-12-15
+    link_text: Learn More →
+    location: ETH Zurich, Main Building
+    title: Winter Networking Dinner
+    link: "#"
     day: "15"
+    description: Join fellow MAPZ members for an evening of networking, delicious
+      food, and great conversations. A perfect opportunity to meet new people
+      and strengthen connections.
     year: "2025"
-    time: "18:00 – 21:00"
-    location: "ETH Zurich, Main Building"
-    description: "Join fellow MAPZ members for an evening of networking, delicious food, and great conversations. A perfect opportunity to meet new people and strengthen connections."
+  - month: JAN
+    time: 17:00 – 19:00
+    date: 2026-01-20
+    link_text: Register →
+    location: Online & Campus
+    title: "Career Workshop: Tech Industry"
     link: "#"
-    link_text: "Learn More →"
-
-  - title: "Career Workshop: Tech Industry"
-    date: "2026-01-20"
-    month: "JAN"
     day: "20"
+    description: Expert speakers from leading tech companies share insights on
+      career development, interview preparation, and industry trends. Q&A
+      session included.
     year: "2026"
-    time: "17:00 – 19:00"
-    location: "Online & Campus"
-    description: "Expert speakers from leading tech companies share insights on career development, interview preparation, and industry trends. Q&A session included."
+  - month: FEB
+    time: 19:00 – 22:00
+    date: 2026-02-10
+    link_text: Join Us →
+    location: ETH Student Center
+    title: "Cultural Evening: Moroccan Traditions"
     link: "#"
-    link_text: "Register →"
-
-  - title: "Cultural Evening: Moroccan Traditions"
-    date: "2026-02-10"
-    month: "FEB"
     day: "10"
+    description: Celebrate our heritage with traditional music, food, and stories. A
+      great way to share our culture with the broader ETH community and welcome
+      new members.
     year: "2026"
-    time: "19:00 – 22:00"
-    location: "ETH Student Center"
-    description: "Celebrate our heritage with traditional music, food, and stories. A great way to share our culture with the broader ETH community and welcome new members."
-    link: "#"
-    link_text: "Join Us →"
-
 past:
-  - title: "MAPZ Launch Event"
-    icon: "fas fa-globe"
-    date_label: "November 2025"
+  - title: MAPZ Launch Event
+    icon: fas fa-globe
+    date_label: November 2025
     year: 2025
-    description: "The official founding event of MAPZ: eight ETH Zürich students came together on the 50th anniversary of the Green March to launch the Moroccan Association of Polytechnicians in Zurich."
-
-  - title: "First Community Meetup"
-    icon: "far fa-user"
-    date_label: "November 2025"
-    year: 2025
-    description: "Our first informal gathering to welcome Moroccan students and friends at ETH, share our vision, and build connections over tea and conversations."
+    description: "The official founding event of MAPZ: eight ETH Zürich students
+      came together on the 50th anniversary of the Green March to launch the
+      Moroccan Association of Polytechnicians in Zurich."
+  - title: Annual Ramadan Ftour with ACOMS & BCP
+    icon: far fa-user
+    date_label: March 2026
+    year: 2026
+    description: 🌙 Proud to represent MAPZ alongside His Excellency Si Lahcen
+      Azoulay, Ambassador of Morocco in Switzerland, Mohammed Tayyou,
+      Representative of Banque Centrale Populaire (BCP) in Switzerland, Hassan
+      Achoumi, Founder of ACOMS, and our friends from APML at the annual Ramadan
+      Ftour organized by ACOMS in collaboration with Banque Populaire du Maroc.
+      A beautiful evening of connection, warmth, and community. ✨
