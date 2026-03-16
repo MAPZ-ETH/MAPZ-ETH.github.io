@@ -213,7 +213,8 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
   margin: 2rem 0;
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  border: none;
 }
 
 .carousel-wrapper {
@@ -221,7 +222,7 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
   width: 100%;
   padding-bottom: 56.25%;
   overflow: hidden;
-  background: #e8e6e3;
+  background: #1a1a1a;
 }
 
 .carousel-item {
@@ -248,9 +249,9 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);
   color: white;
-  padding: 2.5rem 1.5rem 1.25rem;
+  padding: 3rem 1.5rem 2.5rem;
   text-align: left;
 }
 
@@ -298,22 +299,29 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.85rem;
-  background: #fff;
+  padding: 0.75rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: transparent;
 }
 
 .dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #d0d0d0;
+  background: rgba(255,255,255,0.4);
   cursor: pointer;
   transition: all 0.25s ease;
+  border: 1px solid rgba(255,255,255,0.3);
 }
 
 .dot.active {
-  background: #9f1319;
+  background: #fff;
   transform: scale(1.2);
+  border-color: transparent;
 }
 
 
