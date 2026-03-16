@@ -2,6 +2,11 @@ body:
   - name: Brands for Students
     logo: /assets/images/sponsors/brands-for-students.jpg
     description: Exclusive offers and benefits tailored for students in Switzerland.
+  - name: ACOMS
+    logo: /assets/images/acoms_logo-6.png
+    description: ACOMS (Association des Cadres d’Origine Marocaine en Suisse) is a
+      non-profit organization that connects highly qualified Moroccan
+      professionals and executives living in Switzerland.
   - name: FED-MS
     logo: /assets/images/sponsors/fed-ms.jpg
     description: Fédération de la Diaspora Marocaine en Suisse.
