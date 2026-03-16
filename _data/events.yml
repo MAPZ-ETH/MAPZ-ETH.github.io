@@ -40,6 +40,7 @@ past:
     icon: fas fa-globe
     date_label: November 2025
     year: 2025
+    location: ETH Zurich
     description: "The official founding event of MAPZ: eight ETH Zürich students
       came together on the 50th anniversary of the Green March to launch the
       Moroccan Association of Polytechnicians in Zurich."
@@ -47,6 +48,7 @@ past:
     icon: far fa-user
     date_label: March 2026
     year: 2026
+    location: EPFL, Lausanne
     description: 🌙 MAPZ at the annual Ramadan Ftour organized by ACOMS & Banque
       Populaire du Maroc, alongside H.E. the Ambassador of Morocco in
       Switzerland, BCP, and APML. ✨

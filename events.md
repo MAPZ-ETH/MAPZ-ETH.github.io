@@ -240,6 +240,14 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
     letter-spacing: 0.5px;
   }
 
+  .ev-past-location {
+    display: block;
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 0.2rem;
+    i { margin-right: 0.25rem; color: #9f1319; }
+  }
+
   p {
     font-size: 0.9rem;
     color: #666;

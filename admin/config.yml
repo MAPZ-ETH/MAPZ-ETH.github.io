@@ -110,4 +110,5 @@ collections:
               - { name: icon, label: "Icon (emoji)", widget: string }
               - { name: date_label, label: "Date Label (e.g. November 2025)", widget: string }
               - { name: year, label: "Year (number)", widget: number, value_type: int }
+              - { name: location, label: "Location", widget: string, required: false }
               - { name: description, label: "Description", widget: text }

@@ -15,6 +15,9 @@
                 </div>
                 <h4>{{ event.title }}</h4>
                 <span class="ev-past-date">{{ event.date_label }}</span>
+                {% if event.location %}
+                <span class="ev-past-location"><i class="fas fa-map-marker-alt"></i> {{ event.location }}</span>
+                {% endif %}
                 <p>{{ event.description }}</p>
             </div>
             {% endif %}
