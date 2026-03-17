@@ -122,7 +122,7 @@ excerpt: "Become a part of the official Moroccan student association at ETH Zuri
   </div>
 </div>
 
-<p class="jn-email-alt"><em>Having trouble? You can also email us directly at <a href="mailto:contact@mapz.ch">contact@mapz.ch</a>.</em></p>
+<p class="jn-email-alt"><em>Having trouble? You can also email us directly at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</em></p>
 
 ---
 

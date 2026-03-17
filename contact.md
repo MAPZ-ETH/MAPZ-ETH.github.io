@@ -51,14 +51,14 @@ excerpt: "Have questions or want to connect? We'd love to hear from you!"
     </div>
   </a>
 
-  <a href="mailto:contact@mapz.ch" class="contact-card contact-card--email">
+  <a href="mailto:{{ site.email }}" class="contact-card contact-card--email">
     <div class="contact-card__icon">
       <span class="email-icon">✉️</span>
     </div>
     <div class="contact-card__body">
       <h3>Email Us</h3>
       <p>For formal inquiries, partnerships, sponsorship requests, or anything official.</p>
-      <span class="contact-card__action">contact@mapz.ch →</span>
+      <span class="contact-card__action">{{ site.email }} →</span>
     </div>
   </a>
 </div>
