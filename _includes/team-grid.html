@@ -4,10 +4,13 @@
     <div class="ab-team-card">
         <div class="ab-team-img">
             {% if member.linkedin %}
-            <a href="{{ member.linkedin }}" target="_blank" rel="noopener noreferrer">
-                {% endif %}
+            <a href="{{ member.linkedin }}" target="_blank" rel="noopener noreferrer" class="ab-team-link" aria-label="LinkedIn profile of {{ member.name }}">
+                <div class="ab-team-linkedin-badge" title="View LinkedIn Profile">
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            {% endif %}
                 <img src="{{ member.photo }}" alt="{{ member.name }}">
-                {% if member.linkedin %}
+            {% if member.linkedin %}
             </a>
             {% endif %}
         </div>

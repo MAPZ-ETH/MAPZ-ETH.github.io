@@ -317,6 +317,7 @@ header:
   width: 100%;
   aspect-ratio: 1;
   overflow: hidden;
+  position: relative;
 
   img {
     width: 100%;
@@ -329,6 +330,30 @@ header:
 
 .ab-team-card:hover .ab-team-img img {
   transform: scale(1.05);
+}
+
+.ab-team-linkedin-badge {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #0A66C2;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  z-index: 2;
+  opacity: 0.85;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.ab-team-card:hover .ab-team-linkedin-badge {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .ab-team-info {

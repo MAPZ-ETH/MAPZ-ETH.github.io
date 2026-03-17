@@ -169,11 +169,11 @@ excerpt: "Proud partners supporting the MAPZ community and our mission to empowe
 ## Get in Touch
 
 <div class="sp-contact-bar">
-  <a href="mailto:sponsors@mapz.org" class="sp-contact-item">
+  <a href="mailto:{{ site.email }}" class="sp-contact-item">
     <span class="sp-contact-icon"><i class="fas fa-envelope"></i></span>
     <div>
       <strong>Email</strong>
-      <p>sponsors@mapz.org</p>
+      <p>{{ site.email }}</p>
     </div>
   </a>
   <a href="/contact/" class="sp-contact-item">

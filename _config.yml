@@ -5,6 +5,7 @@ description: "MAPZ est l'association officielle des étudiants et alumni marocai
 keywords: "MAPZ, MAPZ ETH, mapz.ch, Moroccan Association Zurich, ETH Zurich Moroccan, Moroccan Students ETH, Polytechnicians Zurich, Morocco Switzerland, Moroccan Alumni Zurich"
 theme: minimal-mistakes-jekyll
 
+email: "mapz.board@gmail.com"
 url: "https://mapz.ch"
 baseurl: ""
 permalink: pretty
