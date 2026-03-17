@@ -26,6 +26,7 @@ body {
   font-family: $font-family-base;
   color: $dark-gray;
   background-color: $background-color;
+  overflow-x: hidden;
 }
 
 // Main content area with same background for consistency
@@ -52,6 +53,7 @@ section {
   max-width: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .page__inner {
