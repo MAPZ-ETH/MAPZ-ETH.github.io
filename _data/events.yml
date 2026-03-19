@@ -1,39 +1,25 @@
 upcoming:
-  - month: DEC
+  - month: MAR
     time: 18:00 – 21:00
-    date: 2025-12-15
+    date: 2026-03-27
     link_text: Learn More →
-    location: ETH Zurich, Main Building
-    title: Winter Networking Dinner
+    location: Lausanne, Switzerland
+    title: ACOMS General Assembly & Partnership Signing
     link: "#"
-    day: "15"
-    description: Join fellow MAPZ members for an evening of networking, delicious
-      food, and great conversations. A perfect opportunity to meet new people
-      and strengthen connections.
-    year: "2025"
-  - month: JAN
-    time: 17:00 – 19:00
-    date: 2026-01-20
-    link_text: Register →
-    location: Online & Campus
-    title: "Career Workshop: Tech Industry"
-    link: "#"
-    day: "20"
-    description: Expert speakers from leading tech companies share insights on
-      career development, interview preparation, and industry trends. Q&A
-      session included.
+    day: "27"
+    description: Official General Assembly of ACOMS, featuring the formal signature
+      of our partnership and discussions on future collaborations.
     year: "2026"
-  - month: FEB
-    time: 19:00 – 22:00
-    date: 2026-02-10
-    link_text: Join Us →
-    location: ETH Student Center
-    title: "Cultural Evening: Moroccan Traditions"
+  - month: MAR
+    time: 09:00 – 11:00
+    date: 2026-03-29
+    link_text: Register →
+    location: Zurich, Switzerland
+    title: Morning Run & Brunch
     link: "#"
-    day: "10"
-    description: Celebrate our heritage with traditional music, food, and stories. A
-      great way to share our culture with the broader ETH community and welcome
-      new members.
+    day: "29"
+    description: Join us for a refreshing run followed by a well-deserved brunch
+      with the community.
     year: "2026"
 past:
   - title: MAPZ Launch Event
