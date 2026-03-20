@@ -21,7 +21,7 @@ jobs:
 
       # This step builds the site using the gems you installed
       - name: Build with Jekyll
-        run: bundle exec jekyll build --destination ./_site
+        run: JEKYLL_ENV=production bundle exec jekyll build --destination ./_site
       
       # This step uploads the finished site
       - name: Upload artifact
