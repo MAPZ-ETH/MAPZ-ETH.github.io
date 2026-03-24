@@ -662,11 +662,15 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
 function submitRunForm(e) {
   e.preventDefault();
   var form = document.getElementById('run-form');
+  var params = new URLSearchParams(new FormData(form));
   fetch(form.action, {
     method: 'POST',
     mode: 'no-cors',
-    body: new FormData(form)
-  }).finally(function() {
+    body: params
+  }).then(function() {
+    form.style.display = 'none';
+    document.getElementById('run-thank-you').style.display = 'block';
+  }).catch(function() {
     form.style.display = 'none';
     document.getElementById('run-thank-you').style.display = 'block';
   });
