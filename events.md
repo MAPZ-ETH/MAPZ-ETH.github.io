@@ -20,7 +20,7 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
   <div class="ev-featured-layout">
     <div class="ev-featured-flyer">
       <a href="https://www.instagram.com/mapz_ethz" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/events/morning-run-brunch.jpg" alt="MAPZ Morning Run & Brunch flyer" />
+        <img src="/assets/images/events/gma.jpg" alt="MAPZ Morning Run & Brunch flyer" />
       </a>
     </div>
     <div class="ev-featured-form">
