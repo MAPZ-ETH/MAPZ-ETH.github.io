@@ -26,7 +26,7 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
     <div class="ev-featured-form">
       <p class="ev-featured-form-label">Secure your spot — fill in the form below:</p>
       <div class="mapz-form-wrapper">
-        <form id="run-form" action="https://docs.google.com/forms/d/e/1FAIpQLSf2qw-Die6hSJyxTgBTJnWahHoyYIp28Xu6-ZPyEmv00zOd5w/formResponse" method="POST" onsubmit="submitRunForm(event)">
+        <form id="run-form" action="https://docs.google.com/forms/d/e/1FAIpQLSf2qw-Die6hSJyxTgBTJnWahHoyYIp28Xu6-ZPyEmv00zOd5w/formResponse" method="POST" target="run_hidden_iframe" onsubmit="submitRunForm()">
 
           <div class="form-group">
             <label for="run-name">Full Name <span class="required">*</span></label>
@@ -91,6 +91,7 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
           </button>
         </form>
 
+        <iframe name="run_hidden_iframe" style="display:none;"></iframe>
 
         <div id="run-thank-you" class="thank-you-message" style="display:none;">
           <div class="thank-you-icon mapz-icon-green"><i class="fas fa-check-circle"></i></div>
@@ -659,21 +660,11 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
 </style>
 
 <script>
-function submitRunForm(e) {
-  e.preventDefault();
-  var form = document.getElementById('run-form');
-  var params = new URLSearchParams(new FormData(form));
-  fetch(form.action, {
-    method: 'POST',
-    mode: 'no-cors',
-    body: params
-  }).then(function() {
-    form.style.display = 'none';
+function submitRunForm() {
+  setTimeout(function() {
+    document.getElementById('run-form').style.display = 'none';
     document.getElementById('run-thank-you').style.display = 'block';
-  }).catch(function() {
-    form.style.display = 'none';
-    document.getElementById('run-thank-you').style.display = 'block';
-  });
+  }, 800);
 }
 
 function toggleSchool(val) {
