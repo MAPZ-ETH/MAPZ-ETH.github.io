@@ -91,7 +91,7 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
           </button>
         </form>
 
-        <iframe name="run_hidden_iframe" style="display:none;"></iframe>
+        <iframe name="run_hidden_iframe" id="run_hidden_iframe" style="display:none;" onload="if(runSubmitted){showRunThankYou();}"></iframe>
 
         <div id="run-thank-you" class="thank-you-message" style="display:none;">
           <div class="thank-you-icon mapz-icon-green"><i class="fas fa-check-circle"></i></div>
@@ -660,11 +660,15 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
 </style>
 
 <script>
+var runSubmitted = false;
+
 function submitRunForm() {
-  setTimeout(function() {
-    document.getElementById('run-form').style.display = 'none';
-    document.getElementById('run-thank-you').style.display = 'block';
-  }, 800);
+  runSubmitted = true;
+}
+
+function showRunThankYou() {
+  document.getElementById('run-form').style.display = 'none';
+  document.getElementById('run-thank-you').style.display = 'block';
 }
 
 function toggleSchool(val) {
