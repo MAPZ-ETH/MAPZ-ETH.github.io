@@ -696,7 +696,7 @@ a.active[href],
       img {
         max-height: 200px;
         max-width: 90%;
-        transform: scale(1.5);
+        object-fit: contain;
       }
     }
 
