@@ -1,27 +1,23 @@
 upcoming:
   - month: MAR
-    time: 18:00 – 21:00
-    date: 2026-03-27
-    link_text: Learn More →
-    location: Lausanne, Switzerland
-    title: ACOMS General Assembly & Partnership Signing
-    link: "#"
-    day: "27"
-    description: Official General Assembly of ACOMS, featuring the formal signature
-      of our partnership and discussions on future collaborations.
-    year: "2026"
-  - month: MAR
     time: 09:00 – 11:00
     date: 2026-03-29
     link_text: Register →
     location: Zurich, Switzerland
-    title: Morning Run & Brunch
-    link: "#"
+    title: MAPZ Morning Run & Brunch
+    link: "#morning-run-register"
     day: "29"
     description: Join us for a refreshing run followed by a well-deserved brunch
       with the community.
     year: "2026"
 past:
+  - title: ACOMS General Assembly & Partnership Signing
+    icon: fas fa-handshake
+    date_label: March 2026
+    year: 2026
+    location: Lausanne, Switzerland
+    description: Official General Assembly of ACOMS, featuring the formal signature
+      of our partnership and discussions on future collaborations.
   - title: MAPZ Launch Event
     icon: fas fa-globe
     date_label: November 2025
