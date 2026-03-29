@@ -8,103 +8,6 @@ header:
 excerpt: "Join us for networking, learning, and celebrating our community together!"
 ---
 
-<!-- ═══════════ FEATURED: MORNING RUN & BRUNCH ═══════════ -->
-<div class="ev-featured-section" id="morning-run-register">
-  <div class="ev-featured-badge">Next Event — Register Now</div>
-  <h2 class="ev-featured-title">MAPZ Morning Run &amp; Brunch</h2>
-  <p class="ev-featured-subtitle">Join us for a Sunday morning run in Zurich — followed by a well-deserved brunch with the community.</p>
-  <div class="ev-featured-meta">
-    <span>📅 Sunday, March 29 · 09:00–11:00</span>
-    <span>📍 Zurich, Switzerland</span>
-  </div>
-  <div class="ev-featured-layout">
-    <div class="ev-featured-flyer">
-      <a href="https://www.instagram.com/mapz_ethz" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/events/gma.jpg" alt="MAPZ Morning Run & Brunch flyer" />
-      </a>
-    </div>
-    <div class="ev-featured-form">
-      <p class="ev-featured-form-label">Secure your spot — fill in the form below:</p>
-      <div class="mapz-form-wrapper">
-        <form id="run-form" action="https://docs.google.com/forms/d/e/1FAIpQLSf2qw-Die6hSJyxTgBTJnWahHoyYIp28Xu6-ZPyEmv00zOd5w/formResponse" method="POST" target="run_hidden_iframe" onsubmit="submitRunForm()">
-
-          <div class="form-group">
-            <label for="run-name">Full Name <span class="required">*</span></label>
-            <input type="text" id="run-name" name="entry.1581260360" placeholder="e.g. Amine Alaoui" required>
-          </div>
-
-          <div class="form-group">
-            <label for="run-participation">Participation <span class="required">*</span></label>
-            <select id="run-participation" name="entry.302516738" required>
-              <option value="" disabled selected>Choose your participation…</option>
-              <option value="I'm coming for the Run + Brunch 🏃‍♀️🥐">Run + Brunch 🏃‍♀️🥐</option>
-              <option value="Only the Run 🏃‍♀️">Only the Run 🏃‍♀️</option>
-              <option value="Only the Brunch 🥐">Only the Brunch 🥐</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="run-pace">Running Pace (5km) <span class="required">*</span></label>
-            <select id="run-pace" name="entry.1274903532" required>
-              <option value="" disabled selected>Choose your pace…</option>
-              <option value="Casual (Above 7:00 min/km)">Casual — Above 7:00 min/km</option>
-              <option value="Moderate (5:30 - 7:00 min/km)">Moderate — 5:30–7:00 min/km</option>
-              <option value="Fast (Below 5:30 min/km)">Fast — Below 5:30 min/km</option>
-              <option value="I will walk/run at my own pace">Walk/Run at my own pace</option>
-            </select>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="run-gender">Gender <span class="required">*</span></label>
-              <select id="run-gender" name="entry.20154657" required>
-                <option value="" disabled selected>Select…</option>
-                <option value="Female">Female</option>
-                <option value="Male">Male</option>
-                <option value="Prefer not to say">Prefer not to say</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="run-student">Are you a student? <span class="required">*</span></label>
-              <select id="run-student" name="entry.274378874" required onchange="toggleSchool(this.value)">
-                <option value="" disabled selected>Select…</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-group" id="school-group" style="display:none;">
-            <label for="run-school">Which school are you attending?</label>
-            <select id="run-school" name="entry.1056687834">
-              <option value="" disabled selected>Select your school…</option>
-              <option value="ETHZ">ETHZ</option>
-              <option value="UZH">UZH</option>
-              <option value="EPFL">EPFL</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-
-          <button type="submit" class="form-submit-btn">
-            <span class="btn-text">Register Now</span>
-            <span class="btn-icon">→</span>
-          </button>
-        </form>
-
-        <iframe name="run_hidden_iframe" id="run_hidden_iframe" style="display:none;" onload="if(runSubmitted){showRunThankYou();}"></iframe>
-
-        <div id="run-thank-you" class="thank-you-message" style="display:none;">
-          <div class="thank-you-icon mapz-icon-green"><i class="fas fa-check-circle"></i></div>
-          <h3>You're registered! 🏃‍♀️🥐</h3>
-          <p>See you on March 29th — get ready to run and brunch with the MAPZ community!</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
----
-
 ## Upcoming Events
 
 <p class="ev-section-intro">Mark your calendars! Here are the events we have planned. Follow our social media for updates and last-minute announcements.</p>
@@ -117,6 +20,12 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
 
 {% include events-past.html %}
 
+---
+
+## Event Highlights
+
+{% include highlights-carousel.html %}
+
 
 
 <style>
@@ -124,100 +33,123 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
    EVENTS PAGE — Modern Design
    ============================================================ */
 
-/* ---- Featured Event ---- */
-.ev-featured-section {
-  padding: 0;
-  margin: 0 0 2.5rem 0;
+/* ─── Carousel ─── */
+.carousel-container {
   position: relative;
+  max-width: 100%;
+  margin: 2rem 0;
+  padding: 0 !important;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  border: none;
 }
 
-.ev-featured-badge {
-  display: inline-block;
-  background: linear-gradient(135deg, #caa64f, #9f8337);
-  color: #fff;
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  padding: 4px 14px;
-  border-radius: 50px;
-  margin-bottom: 0.85rem;
-}
-
-.ev-featured-title {
-  font-size: 1.75rem;
-  font-weight: 800;
-  color: #2a2825;
-  margin: 0 0 0.4rem 0;
-  padding: 0;
-}
-
-.ev-featured-subtitle {
-  font-size: 1rem;
-  color: #666;
-  margin: 0 0 0.75rem 0;
-  line-height: 1.6;
-}
-
-.ev-featured-meta {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  font-size: 0.9rem;
-  color: #888;
-  margin-bottom: 1.75rem;
-}
-
-.ev-featured-layout {
-  display: grid;
-  grid-template-columns: 38% 62%;
-  gap: 2rem;
-  align-items: start;
-}
-
-.ev-featured-flyer img {
+.carousel-wrapper {
+  position: relative;
   width: 100%;
-  height: auto;
-  border-radius: 14px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.14);
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  background: #1a1a1a;
+}
+
+.carousel-item {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.carousel-item.active {
   display: block;
 }
 
-.ev-featured-form-label {
-  font-size: 0.85rem;
-  color: #888;
-  margin: 0 0 0.5rem 0;
-  font-style: italic;
-  text-align: center;
-}
-
-.ev-featured-form .form-group {
-  margin-bottom: 0.6rem;
-}
-
-.ev-featured-form .mapz-form-wrapper input,
-.ev-featured-form .mapz-form-wrapper select {
-  padding: 0.45rem 0.75rem;
-  font-size: 0.9rem;
-}
-
-.ev-featured-form iframe {
-  border-radius: 12px;
+.carousel-item img {
   width: 100%;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-  border: 1px solid rgba(0,0,0,0.06);
+  height: 100%;
+  object-fit: cover;
 }
 
-@media (max-width: 768px) {
-  .ev-featured-layout {
-    grid-template-columns: 1fr;
-  }
-  .ev-featured-section {
-    padding: 1.5rem;
-  }
-  .ev-featured-title {
-    font-size: 1.4rem;
-  }
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);
+  color: white;
+  padding: 3rem 1.5rem 2.5rem;
+  text-align: left;
+}
+
+.carousel-caption h4 {
+  margin: 0 0 0.35rem 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.carousel-caption p {
+  margin: 0;
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+  font-size: 1.25rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+.carousel-btn:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+.carousel-prev { left: 0.75rem; }
+.carousel-next { right: 0.75rem; }
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: transparent;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.dot.active {
+  background: #fff;
+  transform: scale(1.2);
+  border-color: transparent;
 }
 
 /* Section intro */
@@ -660,21 +592,6 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
 </style>
 
 <script>
-var runSubmitted = false;
-
-function submitRunForm() {
-  runSubmitted = true;
-}
-
-function showRunThankYou() {
-  document.getElementById('run-form').style.display = 'none';
-  document.getElementById('run-thank-you').style.display = 'block';
-}
-
-function toggleSchool(val) {
-  document.getElementById('school-group').style.display = val === 'Yes' ? 'block' : 'none';
-}
-
 document.addEventListener("DOMContentLoaded", function() {
   let currentPath = window.location.pathname;
   if (currentPath !== "/" && currentPath.endsWith("/")) {
@@ -692,5 +609,32 @@ document.addEventListener("DOMContentLoaded", function() {
       link.classList.add("active");
     }
   });
+});
+</script>
+
+<script>
+let currentSlideIndex = 1;
+
+function moveCarousel(n) {
+  showSlides(currentSlideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(currentSlideIndex = n);
+}
+
+function showSlides(n) {
+  const slides = document.querySelectorAll('.carousel-item');
+  const dots = document.querySelectorAll('.dot');
+  if (n > slides.length) { currentSlideIndex = 1; }
+  if (n < 1) { currentSlideIndex = slides.length; }
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+  if (slides[currentSlideIndex - 1]) { slides[currentSlideIndex - 1].classList.add('active'); }
+  if (dots[currentSlideIndex - 1]) { dots[currentSlideIndex - 1].classList.add('active'); }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  showSlides(currentSlideIndex);
 });
 </script>

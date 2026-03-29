@@ -1,16 +1,11 @@
 upcoming:
-  - month: MAR
-    time: 09:00 – 11:00
-    date: 2026-03-29
-    link_text: Register →
-    location: Zurich, Switzerland
-    title: MAPZ Morning Run & Brunch
-    link: "#morning-run-register"
-    day: "29"
-    description: Join us for a refreshing run followed by a well-deserved brunch
-      with the community.
-    year: "2026"
 past:
+  - title: MAPZ Morning Run & Brunch
+    icon: fas fa-running
+    date_label: March 2026
+    year: 2026
+    location: Zurich, Switzerland
+    description: A refreshing morning run followed by a well-deserved brunch with the community.
   - title: ACOMS General Assembly & Partnership Signing
     icon: fas fa-handshake
     date_label: March 2026
