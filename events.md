@@ -50,7 +50,7 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
   width: 100%;
   padding-bottom: 56.25%;
   overflow: hidden;
-  background: #1a1a1a;
+  background: #f1efe7;
 }
 
 .carousel-item {
@@ -70,7 +70,7 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
   width: 100%;
   height: 100%;
   object-fit: contain;
-  background: #1a1a1a;
+  background: #f1efe7;
 }
 
 .carousel-item::before,
@@ -86,12 +86,12 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
 
 .carousel-item::before {
   left: 0;
-  background: linear-gradient(to right, rgba(26,26,26,0.85), transparent);
+  background: linear-gradient(to right, rgba(241,239,231,0.95), transparent);
 }
 
 .carousel-item::after {
   right: 0;
-  background: linear-gradient(to left, rgba(26,26,26,0.85), transparent);
+  background: linear-gradient(to left, rgba(241,239,231,0.95), transparent);
 }
 
 .carousel-caption {
