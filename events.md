@@ -69,7 +69,29 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
 .carousel-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: #1a1a1a;
+}
+
+.carousel-item::before,
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.carousel-item::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(26,26,26,0.85), transparent);
+}
+
+.carousel-item::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(26,26,26,0.85), transparent);
 }
 
 .carousel-caption {
@@ -81,6 +103,7 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
   color: white;
   padding: 3rem 1.5rem 2.5rem;
   text-align: left;
+  z-index: 2;
 }
 
 .carousel-caption h4 {
