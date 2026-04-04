@@ -20,7 +20,7 @@ header:
 
 <div id="admission" class="guide-anchor"></div>
 
-## 🎓 Admission
+## <i class="fas fa-graduation-cap"></i> Admission
 
 For Moroccan students wishing to join ETH Zurich, several pathways are available depending on their prior education.
 
@@ -46,7 +46,7 @@ For **Bachelor's admission**, international students must meet strict academic c
 
 <div id="housing" class="guide-anchor"></div>
 
-## 🏠 Student Housing in Zurich
+## <i class="fas fa-home"></i> Student Housing in Zurich
 
 Finding housing in Zurich is often one of the most challenging steps for students. The number of student residences is relatively limited compared to the total number of students at ETH Zurich and the University of Zurich. In practice, student housing covers only a small fraction of demand, making spots highly competitive.
 
@@ -82,7 +82,7 @@ The most widely used platforms for searching private accommodation in Switzerlan
 
 <div id="permit" class="guide-anchor"></div>
 
-## 📋 Arriving in the Canton of Zurich and Residence Permit
+## <i class="fas fa-id-card"></i> Arriving in the Canton of Zurich and Residence Permit
 
 Any student staying in Switzerland for more than 90 days must hold a residence permit.
 
@@ -123,7 +123,7 @@ After this registration, the authorities forward the file to the **Cantonal Migr
 
 <div id="insurance" class="guide-anchor"></div>
 
-## 🏥 Health Insurance and Exemption Process
+## <i class="fas fa-heartbeat"></i> Health Insurance and Exemption Process
 
 In Switzerland, health insurance is **mandatory** for anyone residing in the country for more than 3 months, including international students. Upon arriving in the Canton of Zurich — or after a canton change — students must regularise their insurance situation within 3 months.
 
@@ -172,7 +172,7 @@ These insurances operate under **contract insurance law (VVG)** and not under th
 
 <div id="timeline" class="guide-anchor"></div>
 
-## 🗓️ Indicative Timeline
+## <i class="far fa-calendar-alt"></i> Indicative Timeline
 
 <div class="guide-timeline">
   <div class="guide-timeline-item">
