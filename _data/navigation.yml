@@ -15,3 +15,5 @@ main:
     url: /join/
   - title: "FAQ"
     url: /faq/
+  - title: "ETH Guide"
+    url: /eth-guide/
