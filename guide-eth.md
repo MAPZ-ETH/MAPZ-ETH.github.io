@@ -4,7 +4,7 @@ permalink: /eth-guide/
 title: ETH Zürich Student Guide
 excerpt: "Everything you need to know to prepare your arrival at ETH Zurich: admission, housing, residence permit, and health insurance."
 header:
-  overlay_image: /assets/images/headers/moroccan_arch_hero_1772791910277.png
+  overlay_image: /assets/images/headers/eth_default_og.jpg
   overlay_filter: 0.3
 ---
 
