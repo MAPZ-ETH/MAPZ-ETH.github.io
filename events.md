@@ -18,6 +18,9 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
     <span>📍 Unipadel Zurich</span>
   </div>
   <div class="ev-featured-layout ev-padel-layout">
+    <div class="ev-padel-embed">
+      <iframe src="https://www.instagram.com/p/DW1EL_JCEBr/embed/" frameborder="0" scrolling="no" allowtransparency="true" class="ev-padel-iframe"></iframe>
+    </div>
     <div class="ev-padel-details">
       <ul class="ev-padel-list">
         <li>⏱ At least 1 hour guaranteed play per team</li>
@@ -27,10 +30,6 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
       </ul>
       <p class="ev-padel-warning">⚠️ Limited spots — secure your place now!</p>
       <a href="https://eventfrog.ch/de/p/sport-fitness/sonstige-veranstaltungen/lsvz-x-mapz-padel-tournament-7447243789503041095.html?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener" class="ev-cta-btn ev-cta-btn--primary">Register on Eventfrog →</a>
-    </div>
-    <div class="ev-padel-embed">
-      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DW1EL_JCEBr/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:1px;max-width:540px;min-width:326px;padding:0;width:99.375%;width:calc(100% - 2px);"></blockquote>
-      <script async src="//www.instagram.com/embed.js"></script>
     </div>
   </div>
 </div>
@@ -207,8 +206,21 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
 /* ---- Padel Featured ---- */
 .ev-padel-layout {
   grid-template-columns: 38% 60%;
-  gap: 2.5rem;
+  gap: 2rem;
   align-items: start;
+}
+
+.ev-padel-embed {
+  width: 100%;
+}
+
+.ev-padel-iframe {
+  width: 100%;
+  height: 480px;
+  border-radius: 14px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.14);
+  border: none;
+  display: block;
 }
 
 .ev-padel-details {
@@ -237,15 +249,6 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
   color: #9f1319;
   font-weight: 600;
   margin: 0;
-}
-
-.ev-padel-embed {
-  display: flex;
-  justify-content: center;
-}
-
-.ev-padel-embed .instagram-media {
-  margin: 0 auto !important;
 }
 
 @media (max-width: 768px) {
