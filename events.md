@@ -19,7 +19,8 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
   </div>
   <div class="ev-featured-layout ev-padel-layout">
     <div class="ev-padel-embed">
-      <iframe src="https://www.instagram.com/p/DW1EL_JCEBr/embed/" frameborder="0" scrolling="no" allowtransparency="true" class="ev-padel-iframe"></iframe>
+      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DW1EL_JCEBr/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:1px;max-width:540px;min-width:326px;padding:0;width:calc(100% - 2px);"></blockquote>
+      <script async src="//www.instagram.com/embed.js"></script>
     </div>
     <div class="ev-padel-details">
       <ul class="ev-padel-list">
@@ -203,6 +204,66 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
   border-color: transparent;
 }
 
+/* ---- Featured Event ---- */
+.ev-featured-section {
+  padding: 0;
+  margin: 0 0 2.5rem 0;
+  position: relative;
+}
+
+.ev-featured-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #caa64f, #9f8337);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 4px 14px;
+  border-radius: 50px;
+  margin-bottom: 0.85rem;
+}
+
+.ev-featured-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #2a2825;
+  margin: 0 0 0.4rem 0;
+  padding: 0;
+}
+
+.ev-featured-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.6;
+}
+
+.ev-featured-meta {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 1.75rem;
+}
+
+.ev-featured-layout {
+  display: grid;
+  grid-template-columns: 38% 62%;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .ev-featured-layout {
+    grid-template-columns: 1fr;
+  }
+  .ev-featured-title {
+    font-size: 1.4rem;
+  }
+}
+
 /* ---- Padel Featured ---- */
 .ev-padel-layout {
   grid-template-columns: 38% 60%;
@@ -212,15 +273,6 @@ excerpt: "Join us for networking, learning, and celebrating our community togeth
 
 .ev-padel-embed {
   width: 100%;
-}
-
-.ev-padel-iframe {
-  width: 100%;
-  height: 480px;
-  border-radius: 14px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.14);
-  border: none;
-  display: block;
 }
 
 .ev-padel-details {
