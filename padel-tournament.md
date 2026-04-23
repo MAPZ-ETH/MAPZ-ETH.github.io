@@ -733,20 +733,21 @@ title: ""
 
 /* ─── Responsive ─── */
 @media (max-width: 768px) {
-  .pt-bg-wrapper { padding: 1.5rem 1rem 1.5rem; }
-  .pt-container { padding: 0 0.5rem; }
+  .pt-bg-wrapper { padding: 1.5rem 0.5rem 1.5rem; }
+  .pt-container { padding: 0; }
   .pt-hero-title { font-size: 1.5rem; }
-  .pt-groups-grid { grid-template-columns: 1fr; }
+  .pt-groups-grid { grid-template-columns: 1fr; gap: 1rem; }
   .pt-bracket { min-width: 700px; }
   .pt-team-name { max-width: 120px; }
 }
 
 @media (max-width: 480px) {
-  .pt-bg-wrapper { padding: 1rem 0.5rem 1rem; }
-  .pt-container { padding: 0 0.25rem; }
-  .pt-tabs { max-width: 100%; }
-  .pt-tab { font-size: 0.78rem; padding: 0.55rem 0.5rem; }
+  .pt-bg-wrapper { padding: 1rem 0 1rem; }
+  .pt-container { padding: 0; }
+  .pt-tabs { max-width: 100%; border-radius: 0; }
+  .pt-tab { font-size: 0.78rem; padding: 0.55rem 0.5rem; border-radius: 0; }
   .pt-hero-meta { flex-direction: column; gap: 0.3rem; }
+  .pt-group-card { border-radius: 0; border-left: none; border-right: none; }
 }
 </style>
 
