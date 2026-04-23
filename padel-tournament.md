@@ -611,19 +611,28 @@ title: ""
 }
 
 .pt-bracket {
+  position: relative;
   display: flex;
   gap: 1.5rem;
   min-width: 900px;
-  align-items: flex-start;
+  align-items: stretch;
   padding: 0 0.5rem;
 }
 
 .pt-bracket-round {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
   min-width: 200px;
   flex: 1;
+}
+
+.pt-bracket-matches {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+  gap: 0.75rem;
+  position: relative;
 }
 
 .pt-round-title {
@@ -710,25 +719,12 @@ title: ""
   text-align: right;
 }
 
-/* Space bracket matches for visual alignment */
-.pt-bracket-round:nth-child(2) .pt-bracket-match {
-  margin-top: calc(0.75rem + 0.375rem);
-}
+/* Remove old margin hacks */
 
-.pt-bracket-round:nth-child(2) .pt-bracket-match + .pt-bracket-match {
-  margin-top: calc(0.75rem * 2 + 0.75rem);
-}
-
-.pt-bracket-round:nth-child(3) .pt-bracket-match:first-of-type {
-  margin-top: calc(0.75rem * 3 + 1.5rem);
-}
-
-.pt-bracket-round:nth-child(3) .pt-bracket-match + .pt-bracket-match {
-  margin-top: calc(0.75rem * 6 + 3rem);
-}
-
-.pt-bracket-round:nth-child(4) .pt-bracket-match:first-of-type {
-  margin-top: calc(0.75rem * 7 + 6rem);
+/* ─── Bracket Lines ─── */
+.pt-bracket-match {
+  position: relative;
+  z-index: 2; /* keep matches above lines */
 }
 
 /* ─── Responsive ─── */
@@ -1044,5 +1040,77 @@ document.addEventListener('DOMContentLoaded', function() {
     if (href !== '/' && href.endsWith('/')) href = href.slice(0, -1);
     if (currentPath === href) link.classList.add('active');
   });
+
+  // ─── Draw Bracket SVG Lines ───
+  function drawBracketLines() {
+    let svg = document.getElementById('pt-bracket-svg');
+    const bracketContainer = document.querySelector('.pt-bracket');
+    
+    if (!bracketContainer) return;
+    
+    if (!svg) {
+      svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      svg.id = 'pt-bracket-svg';
+      svg.style.position = 'absolute';
+      svg.style.top = '0';
+      svg.style.left = '0';
+      svg.style.width = '100%';
+      svg.style.height = '100%';
+      svg.style.pointerEvents = 'none';
+      svg.style.zIndex = '1';
+      bracketContainer.appendChild(svg);
+    } else {
+      svg.innerHTML = ''; // clear previous lines
+    }
+
+    const rounds = bracketContainer.querySelectorAll('.pt-bracket-round');
+    const containerRect = bracketContainer.getBoundingClientRect();
+
+    for (let i = 0; i < rounds.length - 1; i++) {
+      const currentRound = rounds[i];
+      const nextRound = rounds[i+1];
+      const currentMatches = currentRound.querySelectorAll('.pt-bracket-match');
+      const nextMatches = nextRound.querySelectorAll('.pt-bracket-match');
+      
+      for (let j = 0; j < currentMatches.length; j++) {
+        const m1 = currentMatches[j];
+        // In a binary tree, pairs of current matches point to a single next match
+        const nextM = nextMatches[Math.floor(j/2)];
+        if (!nextM) continue;
+        
+        const r1 = m1.getBoundingClientRect();
+        const r2 = nextM.getBoundingClientRect();
+        
+        const startX = r1.right - containerRect.left + 4; // Add 4px to connect nicely
+        const startY = r1.top + (r1.height / 2) - containerRect.top;
+        const endX = r2.left - containerRect.left - 4;
+        const endY = r2.top + (r2.height / 2) - containerRect.top;
+        
+        const midX = startX + (endX - startX) / 2;
+        
+        const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        // M = move to, L = line to
+        // Draw right, then down/up to midpoint, then right to next match
+        path.setAttribute('d', `M ${startX} ${startY} L ${midX} ${startY} L ${midX} ${endY} L ${endX} ${endY}`);
+        path.setAttribute('stroke', '#cbd4de');
+        path.setAttribute('stroke-width', '2');
+        path.setAttribute('fill', 'none');
+        path.setAttribute('stroke-linejoin', 'round');
+        path.setAttribute('stroke-linecap', 'round');
+        
+        svg.appendChild(path);
+      }
+    }
+  }
+
+  // Draw initially and on window resize
+  setTimeout(drawBracketLines, 150);
+  window.addEventListener('resize', drawBracketLines);
+
+  // Re-draw when tabs change because display:none messes up bounding rects
+  document.querySelectorAll('.pt-tab').forEach(tab => {
+    tab.addEventListener('click', () => setTimeout(drawBracketLines, 50));
+  });
+
 });
 </script>

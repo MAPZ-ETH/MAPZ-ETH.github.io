@@ -200,66 +200,74 @@
         <!-- Round of 16 -->
         <div class="pt-bracket-round">
           <div class="pt-round-title">Round of 16</div>
-          {% for match in site.data.padel_tournament.knockout.r16 %}
-          <div class="pt-bracket-match" data-match-id="{{ match.id }}" data-s1="{{ match.score1 }}" data-s2="{{ match.score2 }}">
-            <div class="pt-bm-pair" data-from="{{ match.pair1_from }}">
-              <span class="pt-bm-name">{{ match.pair1_from }}</span>
-              <span class="pt-bm-score"></span>
+          <div class="pt-bracket-matches">
+            {% for match in site.data.padel_tournament.knockout.r16 %}
+            <div class="pt-bracket-match" data-match-id="{{ match.id }}" data-s1="{{ match.score1 }}" data-s2="{{ match.score2 }}">
+              <div class="pt-bm-pair" data-from="{{ match.pair1_from }}">
+                <span class="pt-bm-name">{{ match.pair1_from }}</span>
+                <span class="pt-bm-score"></span>
+              </div>
+              <div class="pt-bm-pair" data-from="{{ match.pair2_from }}">
+                <span class="pt-bm-name">{{ match.pair2_from }}</span>
+                <span class="pt-bm-score"></span>
+              </div>
             </div>
-            <div class="pt-bm-pair" data-from="{{ match.pair2_from }}">
-              <span class="pt-bm-name">{{ match.pair2_from }}</span>
-              <span class="pt-bm-score"></span>
-            </div>
+            {% endfor %}
           </div>
-          {% endfor %}
         </div>
         <!-- Quarter-Finals -->
         <div class="pt-bracket-round">
           <div class="pt-round-title">Quarter-Finals</div>
-          {% for match in site.data.padel_tournament.knockout.qf %}
-          <div class="pt-bracket-match" data-match-id="{{ match.id }}" data-s1="{{ match.score1 }}" data-s2="{{ match.score2 }}">
-            <div class="pt-bm-pair" data-from="{{ match.pair1_from }}">
-              <span class="pt-bm-name">{{ match.pair1_from }}</span>
-              <span class="pt-bm-score"></span>
+          <div class="pt-bracket-matches">
+            {% for match in site.data.padel_tournament.knockout.qf %}
+            <div class="pt-bracket-match" data-match-id="{{ match.id }}" data-s1="{{ match.score1 }}" data-s2="{{ match.score2 }}">
+              <div class="pt-bm-pair" data-from="{{ match.pair1_from }}">
+                <span class="pt-bm-name">{{ match.pair1_from }}</span>
+                <span class="pt-bm-score"></span>
+              </div>
+              <div class="pt-bm-pair" data-from="{{ match.pair2_from }}">
+                <span class="pt-bm-name">{{ match.pair2_from }}</span>
+                <span class="pt-bm-score"></span>
+              </div>
             </div>
-            <div class="pt-bm-pair" data-from="{{ match.pair2_from }}">
-              <span class="pt-bm-name">{{ match.pair2_from }}</span>
-              <span class="pt-bm-score"></span>
-            </div>
+            {% endfor %}
           </div>
-          {% endfor %}
         </div>
         <!-- Semi-Finals -->
         <div class="pt-bracket-round">
           <div class="pt-round-title">Semi-Finals</div>
-          {% for match in site.data.padel_tournament.knockout.sf %}
-          <div class="pt-bracket-match" data-match-id="{{ match.id }}" data-s1="{{ match.score1 }}" data-s2="{{ match.score2 }}">
-            <div class="pt-bm-pair" data-from="{{ match.pair1_from }}">
-              <span class="pt-bm-name">{{ match.pair1_from }}</span>
-              <span class="pt-bm-score"></span>
+          <div class="pt-bracket-matches">
+            {% for match in site.data.padel_tournament.knockout.sf %}
+            <div class="pt-bracket-match" data-match-id="{{ match.id }}" data-s1="{{ match.score1 }}" data-s2="{{ match.score2 }}">
+              <div class="pt-bm-pair" data-from="{{ match.pair1_from }}">
+                <span class="pt-bm-name">{{ match.pair1_from }}</span>
+                <span class="pt-bm-score"></span>
+              </div>
+              <div class="pt-bm-pair" data-from="{{ match.pair2_from }}">
+                <span class="pt-bm-name">{{ match.pair2_from }}</span>
+                <span class="pt-bm-score"></span>
+              </div>
             </div>
-            <div class="pt-bm-pair" data-from="{{ match.pair2_from }}">
-              <span class="pt-bm-name">{{ match.pair2_from }}</span>
-              <span class="pt-bm-score"></span>
-            </div>
+            {% endfor %}
           </div>
-          {% endfor %}
         </div>
         <!-- Final -->
         <div class="pt-bracket-round pt-bracket-final">
           <div class="pt-round-title">🏆 Final</div>
-          {% for match in site.data.padel_tournament.knockout.final %}
-          <div class="pt-bracket-match pt-bracket-match-final" data-match-id="{{ match.id }}" data-s1="{{ match.score1 }}" data-s2="{{ match.score2 }}">
-            <div class="pt-bm-pair" data-from="{{ match.pair1_from }}">
-              <span class="pt-bm-name">{{ match.pair1_from }}</span>
-              <span class="pt-bm-score"></span>
+          <div class="pt-bracket-matches">
+            {% for match in site.data.padel_tournament.knockout.final %}
+            <div class="pt-bracket-match pt-bracket-match-final" data-match-id="{{ match.id }}" data-s1="{{ match.score1 }}" data-s2="{{ match.score2 }}">
+              <div class="pt-bm-pair" data-from="{{ match.pair1_from }}">
+                <span class="pt-bm-name">{{ match.pair1_from }}</span>
+                <span class="pt-bm-score"></span>
+              </div>
+              <div class="pt-bm-pair" data-from="{{ match.pair2_from }}">
+                <span class="pt-bm-name">{{ match.pair2_from }}</span>
+                <span class="pt-bm-score"></span>
+              </div>
             </div>
-            <div class="pt-bm-pair" data-from="{{ match.pair2_from }}">
-              <span class="pt-bm-name">{{ match.pair2_from }}</span>
-              <span class="pt-bm-score"></span>
-            </div>
+            {% endfor %}
           </div>
-          {% endfor %}
         </div>
       </div>
     </div>
