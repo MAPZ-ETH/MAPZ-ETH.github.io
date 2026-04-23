@@ -5,7 +5,7 @@ backend:
   base_url: https://mapz-cms-auth.vercel.app
 
 # Keep local_backend for local development (npx decap-server)
-# local_backend: true
+local_backend: true
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
@@ -125,3 +125,258 @@ collections:
               - { name: title, label: "Title", widget: string }
               - { name: caption, label: "Caption", widget: string }
               - { name: photo, label: "Photo", widget: image }
+
+      - name: "padel_tournament"
+        label: "Padel Tournament Scores"
+        file: "_data/padel_tournament.yml"
+        description: "Update match scores for the LSVZ × MAPZ Padel Tournament"
+        fields:
+          - name: groups
+            label: "Groups"
+            widget: object
+            fields:
+              - name: A
+                label: "Group A"
+                widget: object
+                fields:
+                  - name: pairs
+                    label: "Pairs"
+                    widget: list
+                    fields:
+                      - { name: seed, label: "Seed", widget: number, value_type: int }
+                      - { name: name, label: "Pair Name", widget: string }
+                  - name: matches
+                    label: "Matches"
+                    widget: list
+                    summary: "{{fields.pair1_name}} vs {{fields.pair2_name}} (R{{fields.round}}, {{fields.time}})"
+                    fields:
+                      - { name: round, label: "Round", widget: number, value_type: int }
+                      - { name: pair1, label: "Pair 1 Seed", widget: number, value_type: int }
+                      - { name: pair2, label: "Pair 2 Seed", widget: number, value_type: int }
+                      - { name: score1, label: "Score Pair 1", widget: string, required: false }
+                      - { name: score2, label: "Score Pair 2", widget: string, required: false }
+                      - { name: time, label: "Time", widget: string }
+                      - { name: court, label: "Court", widget: number, value_type: int }
+                      - { name: pair1_name, label: "Team 1", widget: string, required: false }
+                      - { name: pair2_name, label: "Team 2", widget: string, required: false }
+              - name: B
+                label: "Group B"
+                widget: object
+                fields:
+                  - name: pairs
+                    label: "Pairs"
+                    widget: list
+                    fields:
+                      - { name: seed, label: "Seed", widget: number, value_type: int }
+                      - { name: name, label: "Pair Name", widget: string }
+                  - name: matches
+                    label: "Matches"
+                    widget: list
+                    summary: "{{fields.pair1_name}} vs {{fields.pair2_name}} (R{{fields.round}}, {{fields.time}})"
+                    fields:
+                      - { name: round, label: "Round", widget: number, value_type: int }
+                      - { name: pair1, label: "Pair 1 Seed", widget: number, value_type: int }
+                      - { name: pair2, label: "Pair 2 Seed", widget: number, value_type: int }
+                      - { name: score1, label: "Score Pair 1", widget: string, required: false }
+                      - { name: score2, label: "Score Pair 2", widget: string, required: false }
+                      - { name: time, label: "Time", widget: string }
+                      - { name: court, label: "Court", widget: number, value_type: int }
+                      - { name: pair1_name, label: "Team 1", widget: string, required: false }
+                      - { name: pair2_name, label: "Team 2", widget: string, required: false }
+              - name: C
+                label: "Group C"
+                widget: object
+                fields:
+                  - name: pairs
+                    label: "Pairs"
+                    widget: list
+                    fields:
+                      - { name: seed, label: "Seed", widget: number, value_type: int }
+                      - { name: name, label: "Pair Name", widget: string }
+                  - name: matches
+                    label: "Matches"
+                    widget: list
+                    summary: "{{fields.pair1_name}} vs {{fields.pair2_name}} (R{{fields.round}}, {{fields.time}})"
+                    fields:
+                      - { name: round, label: "Round", widget: number, value_type: int }
+                      - { name: pair1, label: "Pair 1 Seed", widget: number, value_type: int }
+                      - { name: pair2, label: "Pair 2 Seed", widget: number, value_type: int }
+                      - { name: score1, label: "Score Pair 1", widget: string, required: false }
+                      - { name: score2, label: "Score Pair 2", widget: string, required: false }
+                      - { name: time, label: "Time", widget: string }
+                      - { name: court, label: "Court", widget: number, value_type: int }
+                      - { name: pair1_name, label: "Team 1", widget: string, required: false }
+                      - { name: pair2_name, label: "Team 2", widget: string, required: false }
+              - name: D
+                label: "Group D"
+                widget: object
+                fields:
+                  - name: pairs
+                    label: "Pairs"
+                    widget: list
+                    fields:
+                      - { name: seed, label: "Seed", widget: number, value_type: int }
+                      - { name: name, label: "Pair Name", widget: string }
+                  - name: matches
+                    label: "Matches"
+                    widget: list
+                    summary: "{{fields.pair1_name}} vs {{fields.pair2_name}} (R{{fields.round}}, {{fields.time}})"
+                    fields:
+                      - { name: round, label: "Round", widget: number, value_type: int }
+                      - { name: pair1, label: "Pair 1 Seed", widget: number, value_type: int }
+                      - { name: pair2, label: "Pair 2 Seed", widget: number, value_type: int }
+                      - { name: score1, label: "Score Pair 1", widget: string, required: false }
+                      - { name: score2, label: "Score Pair 2", widget: string, required: false }
+                      - { name: time, label: "Time", widget: string }
+                      - { name: court, label: "Court", widget: number, value_type: int }
+                      - { name: pair1_name, label: "Team 1", widget: string, required: false }
+                      - { name: pair2_name, label: "Team 2", widget: string, required: false }
+              - name: E
+                label: "Group E"
+                widget: object
+                fields:
+                  - name: pairs
+                    label: "Pairs"
+                    widget: list
+                    fields:
+                      - { name: seed, label: "Seed", widget: number, value_type: int }
+                      - { name: name, label: "Pair Name", widget: string }
+                  - name: matches
+                    label: "Matches"
+                    widget: list
+                    summary: "{{fields.pair1_name}} vs {{fields.pair2_name}} (R{{fields.round}}, {{fields.time}})"
+                    fields:
+                      - { name: round, label: "Round", widget: number, value_type: int }
+                      - { name: pair1, label: "Pair 1 Seed", widget: number, value_type: int }
+                      - { name: pair2, label: "Pair 2 Seed", widget: number, value_type: int }
+                      - { name: score1, label: "Score Pair 1", widget: string, required: false }
+                      - { name: score2, label: "Score Pair 2", widget: string, required: false }
+                      - { name: time, label: "Time", widget: string }
+                      - { name: court, label: "Court", widget: number, value_type: int }
+                      - { name: pair1_name, label: "Team 1", widget: string, required: false }
+                      - { name: pair2_name, label: "Team 2", widget: string, required: false }
+              - name: F
+                label: "Group F"
+                widget: object
+                fields:
+                  - name: pairs
+                    label: "Pairs"
+                    widget: list
+                    fields:
+                      - { name: seed, label: "Seed", widget: number, value_type: int }
+                      - { name: name, label: "Pair Name", widget: string }
+                  - name: matches
+                    label: "Matches"
+                    widget: list
+                    summary: "{{fields.pair1_name}} vs {{fields.pair2_name}} (R{{fields.round}}, {{fields.time}})"
+                    fields:
+                      - { name: round, label: "Round", widget: number, value_type: int }
+                      - { name: pair1, label: "Pair 1 Seed", widget: number, value_type: int }
+                      - { name: pair2, label: "Pair 2 Seed", widget: number, value_type: int }
+                      - { name: score1, label: "Score Pair 1", widget: string, required: false }
+                      - { name: score2, label: "Score Pair 2", widget: string, required: false }
+                      - { name: time, label: "Time", widget: string }
+                      - { name: court, label: "Court", widget: number, value_type: int }
+                      - { name: pair1_name, label: "Team 1", widget: string, required: false }
+                      - { name: pair2_name, label: "Team 2", widget: string, required: false }
+              - name: G
+                label: "Group G"
+                widget: object
+                fields:
+                  - name: pairs
+                    label: "Pairs"
+                    widget: list
+                    fields:
+                      - { name: seed, label: "Seed", widget: number, value_type: int }
+                      - { name: name, label: "Pair Name", widget: string }
+                  - name: matches
+                    label: "Matches"
+                    widget: list
+                    summary: "{{fields.pair1_name}} vs {{fields.pair2_name}} (R{{fields.round}}, {{fields.time}})"
+                    fields:
+                      - { name: round, label: "Round", widget: number, value_type: int }
+                      - { name: pair1, label: "Pair 1 Seed", widget: number, value_type: int }
+                      - { name: pair2, label: "Pair 2 Seed", widget: number, value_type: int }
+                      - { name: score1, label: "Score Pair 1", widget: string, required: false }
+                      - { name: score2, label: "Score Pair 2", widget: string, required: false }
+                      - { name: time, label: "Time", widget: string }
+                      - { name: court, label: "Court", widget: number, value_type: int }
+                      - { name: pair1_name, label: "Team 1", widget: string, required: false }
+                      - { name: pair2_name, label: "Team 2", widget: string, required: false }
+              - name: H
+                label: "Group H"
+                widget: object
+                fields:
+                  - name: pairs
+                    label: "Pairs"
+                    widget: list
+                    fields:
+                      - { name: seed, label: "Seed", widget: number, value_type: int }
+                      - { name: name, label: "Pair Name", widget: string }
+                  - name: matches
+                    label: "Matches"
+                    widget: list
+                    summary: "{{fields.pair1_name}} vs {{fields.pair2_name}} (R{{fields.round}}, {{fields.time}})"
+                    fields:
+                      - { name: round, label: "Round", widget: number, value_type: int }
+                      - { name: pair1, label: "Pair 1 Seed", widget: number, value_type: int }
+                      - { name: pair2, label: "Pair 2 Seed", widget: number, value_type: int }
+                      - { name: score1, label: "Score Pair 1", widget: string, required: false }
+                      - { name: score2, label: "Score Pair 2", widget: string, required: false }
+                      - { name: time, label: "Time", widget: string }
+                      - { name: court, label: "Court", widget: number, value_type: int }
+                      - { name: pair1_name, label: "Team 1", widget: string, required: false }
+                      - { name: pair2_name, label: "Team 2", widget: string, required: false }
+          - name: knockout
+            label: "Knockout Stage"
+            widget: object
+            fields:
+              - name: r16
+                label: "Round of 16"
+                widget: list
+                summary: "{{fields.id}} · {{fields.pair1_from}} vs {{fields.pair2_from}} · Court {{fields.court}} · {{fields.time}}"
+                fields:
+                  - { name: id, label: "Match ID", widget: string }
+                  - { name: pair1_from, label: "Team 1 (source)", widget: string, hint: "e.g. 1A = 1st of Group A" }
+                  - { name: pair2_from, label: "Team 2 (source)", widget: string, hint: "e.g. 2H = 2nd of Group H" }
+                  - { name: score1, label: "Score Team 1", widget: string, required: false }
+                  - { name: score2, label: "Score Team 2", widget: string, required: false }
+                  - { name: time, label: "Time", widget: string }
+                  - { name: court, label: "Court", widget: number, value_type: int }
+              - name: qf
+                label: "Quarter-Finals"
+                widget: list
+                summary: "{{fields.id}} · Winner {{fields.pair1_from}} vs Winner {{fields.pair2_from}} · {{fields.time}}"
+                fields:
+                  - { name: id, label: "Match ID", widget: string }
+                  - { name: pair1_from, label: "Team 1 (source)", widget: string }
+                  - { name: pair2_from, label: "Team 2 (source)", widget: string }
+                  - { name: score1, label: "Score Team 1", widget: string, required: false }
+                  - { name: score2, label: "Score Team 2", widget: string, required: false }
+                  - { name: time, label: "Time", widget: string }
+                  - { name: court, label: "Court", widget: number, value_type: int }
+              - name: sf
+                label: "Semi-Finals"
+                widget: list
+                summary: "{{fields.id}} · Winner {{fields.pair1_from}} vs Winner {{fields.pair2_from}} · {{fields.time}}"
+                fields:
+                  - { name: id, label: "Match ID", widget: string }
+                  - { name: pair1_from, label: "Team 1 (source)", widget: string }
+                  - { name: pair2_from, label: "Team 2 (source)", widget: string }
+                  - { name: score1, label: "Score Team 1", widget: string, required: false }
+                  - { name: score2, label: "Score Team 2", widget: string, required: false }
+                  - { name: time, label: "Time", widget: string }
+                  - { name: court, label: "Court", widget: number, value_type: int }
+              - name: final
+                label: "Final"
+                widget: list
+                summary: "🏆 Winner {{fields.pair1_from}} vs Winner {{fields.pair2_from}} · {{fields.time}}"
+                fields:
+                  - { name: id, label: "Match ID", widget: string }
+                  - { name: pair1_from, label: "Team 1 (source)", widget: string }
+                  - { name: pair2_from, label: "Team 2 (source)", widget: string }
+                  - { name: score1, label: "Score Team 1", widget: string, required: false }
+                  - { name: score2, label: "Score Team 2", widget: string, required: false }
+                  - { name: time, label: "Time", widget: string }
+                  - { name: court, label: "Court", widget: number, value_type: int }
+

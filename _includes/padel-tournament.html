@@ -1,0 +1,268 @@
+<!-- ═══════════ PADEL TOURNAMENT COMPONENT ═══════════ -->
+<div class="pt-bg-wrapper">
+  <!-- Decorative clouds -->
+  <img src="/assets/images/padel-cloud.webp" class="pt-deco pt-cloud pt-cloud-1" alt="" aria-hidden="true">
+  <img src="/assets/images/padel-cloud.webp" class="pt-deco pt-cloud pt-cloud-2" alt="" aria-hidden="true">
+  <img src="/assets/images/padel-cloud.webp" class="pt-deco pt-cloud pt-cloud-3" alt="" aria-hidden="true">
+  <img src="/assets/images/padel-cloud.webp" class="pt-deco pt-cloud pt-cloud-4" alt="" aria-hidden="true">
+  <img src="/assets/images/padel-cloud.webp" class="pt-deco pt-cloud pt-cloud-5" alt="" aria-hidden="true">
+  <!-- Decorative tennis balls -->
+  <img src="/assets/images/padel-ball.webp" class="pt-deco pt-ball pt-ball-1" alt="" aria-hidden="true">
+  <img src="/assets/images/padel-ball.webp" class="pt-deco pt-ball pt-ball-2" alt="" aria-hidden="true">
+  <img src="/assets/images/padel-ball.webp" class="pt-deco pt-ball pt-ball-3" alt="" aria-hidden="true">
+  <img src="/assets/images/padel-ball.webp" class="pt-deco pt-ball pt-ball-4" alt="" aria-hidden="true">
+  <img src="/assets/images/padel-ball.webp" class="pt-deco pt-ball pt-ball-5" alt="" aria-hidden="true">
+
+<div class="pt-container" id="padel-tournament">
+  <!-- Hero -->
+  <div class="pt-hero">
+    <div class="pt-hero-badge">🏆 Live Tournament</div>
+    <h1 class="pt-hero-title">LSVZ × MAPZ Padel Tournament</h1>
+    <p class="pt-hero-subtitle">32 Pairs · 8 Groups · Knockout Bracket</p>
+    <div class="pt-hero-meta">
+      <span>📅 Saturday, April 25 · 15:00–22:00</span>
+      <span>📍 Unipadel Zurich</span>
+      <span>🎾 4 Courts</span>
+    </div>
+  </div>
+
+  <!-- Tab Navigation -->
+  <div class="pt-tabs">
+    <button class="pt-tab active" data-tab="groups" id="tab-groups">
+      <span class="pt-tab-icon">📊</span> Groups
+    </button>
+    <button class="pt-tab" data-tab="schedule" id="tab-schedule">
+      <span class="pt-tab-icon">📅</span> Schedule
+    </button>
+    <button class="pt-tab" data-tab="bracket" id="tab-bracket">
+      <span class="pt-tab-icon">🏆</span> Knockout
+    </button>
+  </div>
+
+  <!-- ═══ GROUPS TAB ═══ -->
+  <div class="pt-panel active" id="panel-groups">
+    <div class="pt-groups-grid">
+      {% for group_entry in site.data.padel_tournament.groups %}
+      {% assign gkey = group_entry[0] %}
+      {% assign group = group_entry[1] %}
+      <div class="pt-group-card" id="group-{{ gkey }}">
+        <div class="pt-group-header">
+          <span class="pt-group-letter">{{ gkey }}</span>
+          <span class="pt-group-label">Group {{ gkey }}</span>
+        </div>
+        <table class="pt-standings-table">
+          <thead>
+            <tr>
+              <th class="pt-th-pos">#</th>
+              <th class="pt-th-team">Pair</th>
+              <th class="pt-th-stat">MP</th>
+              <th class="pt-th-stat">W</th>
+              <th class="pt-th-stat">L</th>
+              <th class="pt-th-stat">GD</th>
+              <th class="pt-th-stat">GW</th>
+            </tr>
+          </thead>
+          <tbody id="standings-{{ gkey }}">
+            {% for pair in group.pairs %}
+            <tr data-seed="{{ pair.seed }}">
+              <td class="pt-pos">{{ pair.seed }}</td>
+              <td class="pt-team-name">{{ pair.name }}</td>
+              <td class="pt-stat">0</td>
+              <td class="pt-stat">0</td>
+              <td class="pt-stat">0</td>
+              <td class="pt-stat">0</td>
+              <td class="pt-stat">0</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <!-- Group Matches -->
+        <div class="pt-group-matches">
+          <div class="pt-matches-label">Matches</div>
+          {% for match in group.matches %}
+          {% assign p1name = "" %}
+          {% assign p2name = "" %}
+          {% for pair in group.pairs %}
+            {% if pair.seed == match.pair1 %}{% assign p1name = pair.name %}{% endif %}
+            {% if pair.seed == match.pair2 %}{% assign p2name = pair.name %}{% endif %}
+          {% endfor %}
+          <div class="pt-match-row {% if match.score1 != '' %}pt-match-done{% endif %}" 
+               data-group="{{ gkey }}" data-p1="{{ match.pair1 }}" data-p2="{{ match.pair2 }}"
+               data-s1="{{ match.score1 }}" data-s2="{{ match.score2 }}">
+            <span class="pt-match-time">{{ match.time }}</span>
+            <span class="pt-match-team">{{ p1name }}</span>
+            <span class="pt-match-score">
+              {% if match.score1 != '' and match.score2 != '' %}
+                <strong>{{ match.score1 }}</strong> - <strong>{{ match.score2 }}</strong>
+              {% else %}
+                <em>vs</em>
+              {% endif %}
+            </span>
+            <span class="pt-match-team">{{ p2name }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- ═══ SCHEDULE TAB ═══ -->
+  <div class="pt-panel" id="panel-schedule">
+    <h2 class="pt-section-title">Group Stage <span class="pt-time-badge">15:00 – 19:00</span></h2>
+    <div class="pt-schedule-grid">
+      {% assign timeslots = "15:00,15:20,15:40,16:00,16:20,16:40,17:00,17:20,17:40,18:00,18:20,18:40" | split: "," %}
+      {% for ts in timeslots %}
+      <div class="pt-timeslot">
+        <div class="pt-timeslot-header">
+          <span class="pt-timeslot-time">{{ ts }}</span>
+        </div>
+        <div class="pt-courts-row">
+          {% for group_entry in site.data.padel_tournament.groups %}
+          {% assign gkey = group_entry[0] %}
+          {% assign group = group_entry[1] %}
+          {% for match in group.matches %}
+            {% if match.time == ts %}
+              {% assign p1name = "" %}
+              {% assign p2name = "" %}
+              {% for pair in group.pairs %}
+                {% if pair.seed == match.pair1 %}{% assign p1name = pair.name %}{% endif %}
+                {% if pair.seed == match.pair2 %}{% assign p2name = pair.name %}{% endif %}
+              {% endfor %}
+              <div class="pt-court-card {% if match.score1 != '' %}pt-court-done{% endif %}">
+                <div class="pt-court-badge">Court {{ match.court }}</div>
+                <div class="pt-court-group">Group {{ gkey }}</div>
+                <div class="pt-court-matchup">
+                  <span>{{ p1name }}</span>
+                  <span class="pt-court-score">
+                    {% if match.score1 != '' and match.score2 != '' %}
+                      {{ match.score1 }} - {{ match.score2 }}
+                    {% else %}
+                      vs
+                    {% endif %}
+                  </span>
+                  <span>{{ p2name }}</span>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <h2 class="pt-section-title" style="margin-top:2.5rem;">Knockout Stage <span class="pt-time-badge">19:00 – 22:00</span></h2>
+    <div class="pt-schedule-grid">
+      {% assign ko_timeslots = "19:00,19:30,20:00,20:30,21:00" | split: "," %}
+      {% for ts in ko_timeslots %}
+      <div class="pt-timeslot">
+        <div class="pt-timeslot-header">
+          <span class="pt-timeslot-time">{{ ts }}</span>
+          <span class="pt-timeslot-round">
+            {% if ts == "19:00" %}Round of 16{% elsif ts == "19:30" %}Round of 16{% elsif ts == "20:00" %}Quarter-Finals{% elsif ts == "20:30" %}Semi-Finals{% elsif ts == "21:00" %}Final{% endif %}
+          </span>
+        </div>
+        <div class="pt-courts-row">
+          {% assign all_ko = "" | split: "" %}
+          {% for stage_entry in site.data.padel_tournament.knockout %}
+          {% assign matches = stage_entry[1] %}
+          {% for match in matches %}
+            {% if match.time == ts %}
+            <div class="pt-court-card pt-court-ko {% if match.score1 != '' %}pt-court-done{% endif %}">
+              <div class="pt-court-badge">Court {{ match.court }}</div>
+              <div class="pt-court-group">{{ match.id }}</div>
+              <div class="pt-court-matchup">
+                <span class="ko-pair" data-from="{{ match.pair1_from }}">{{ match.pair1_from }}</span>
+                <span class="pt-court-score">
+                  {% if match.score1 != '' and match.score2 != '' %}
+                    {{ match.score1 }} - {{ match.score2 }}
+                  {% else %}
+                    vs
+                  {% endif %}
+                </span>
+                <span class="ko-pair" data-from="{{ match.pair2_from }}">{{ match.pair2_from }}</span>
+              </div>
+            </div>
+            {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- ═══ BRACKET TAB ═══ -->
+  <div class="pt-panel" id="panel-bracket">
+    <div class="pt-bracket-scroll">
+      <div class="pt-bracket">
+        <!-- Round of 16 -->
+        <div class="pt-bracket-round">
+          <div class="pt-round-title">Round of 16</div>
+          {% for match in site.data.padel_tournament.knockout.r16 %}
+          <div class="pt-bracket-match" data-match-id="{{ match.id }}" data-s1="{{ match.score1 }}" data-s2="{{ match.score2 }}">
+            <div class="pt-bm-pair" data-from="{{ match.pair1_from }}">
+              <span class="pt-bm-name">{{ match.pair1_from }}</span>
+              <span class="pt-bm-score"></span>
+            </div>
+            <div class="pt-bm-pair" data-from="{{ match.pair2_from }}">
+              <span class="pt-bm-name">{{ match.pair2_from }}</span>
+              <span class="pt-bm-score"></span>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <!-- Quarter-Finals -->
+        <div class="pt-bracket-round">
+          <div class="pt-round-title">Quarter-Finals</div>
+          {% for match in site.data.padel_tournament.knockout.qf %}
+          <div class="pt-bracket-match" data-match-id="{{ match.id }}" data-s1="{{ match.score1 }}" data-s2="{{ match.score2 }}">
+            <div class="pt-bm-pair" data-from="{{ match.pair1_from }}">
+              <span class="pt-bm-name">{{ match.pair1_from }}</span>
+              <span class="pt-bm-score"></span>
+            </div>
+            <div class="pt-bm-pair" data-from="{{ match.pair2_from }}">
+              <span class="pt-bm-name">{{ match.pair2_from }}</span>
+              <span class="pt-bm-score"></span>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <!-- Semi-Finals -->
+        <div class="pt-bracket-round">
+          <div class="pt-round-title">Semi-Finals</div>
+          {% for match in site.data.padel_tournament.knockout.sf %}
+          <div class="pt-bracket-match" data-match-id="{{ match.id }}" data-s1="{{ match.score1 }}" data-s2="{{ match.score2 }}">
+            <div class="pt-bm-pair" data-from="{{ match.pair1_from }}">
+              <span class="pt-bm-name">{{ match.pair1_from }}</span>
+              <span class="pt-bm-score"></span>
+            </div>
+            <div class="pt-bm-pair" data-from="{{ match.pair2_from }}">
+              <span class="pt-bm-name">{{ match.pair2_from }}</span>
+              <span class="pt-bm-score"></span>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <!-- Final -->
+        <div class="pt-bracket-round pt-bracket-final">
+          <div class="pt-round-title">🏆 Final</div>
+          {% for match in site.data.padel_tournament.knockout.final %}
+          <div class="pt-bracket-match pt-bracket-match-final" data-match-id="{{ match.id }}" data-s1="{{ match.score1 }}" data-s2="{{ match.score2 }}">
+            <div class="pt-bm-pair" data-from="{{ match.pair1_from }}">
+              <span class="pt-bm-name">{{ match.pair1_from }}</span>
+              <span class="pt-bm-score"></span>
+            </div>
+            <div class="pt-bm-pair" data-from="{{ match.pair2_from }}">
+              <span class="pt-bm-name">{{ match.pair2_from }}</span>
+              <span class="pt-bm-score"></span>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

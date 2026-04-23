@@ -1,0 +1,352 @@
+---
+layout: null
+permalink: /score-entry/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Score Entry — Padel Tournament</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f4f0;
+      color: #2a2825;
+      padding: 1rem;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.4rem;
+      margin-bottom: 0.3rem;
+      color: #9f1319;
+    }
+    .subtitle {
+      text-align: center;
+      color: #888;
+      font-size: 0.85rem;
+      margin-bottom: 1.2rem;
+    }
+    .save-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #fff;
+      padding: 0.6rem 1rem;
+      border-bottom: 2px solid #eee;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .save-btn {
+      background: linear-gradient(135deg, #6d0d10, #9f1319);
+      color: #fff;
+      border: none;
+      padding: 0.5rem 2rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .save-btn:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(159,19,25,0.3); }
+    .save-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+    .status { font-size: 0.8rem; color: #888; }
+    .status.success { color: #24620e; }
+    .status.error { color: #c0392b; }
+
+    .group-section {
+      background: #fff;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .group-header {
+      background: linear-gradient(135deg, #6d0d10, #9f1319);
+      color: #fff;
+      padding: 0.5rem 1rem;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th {
+      background: #f8f7f3;
+      padding: 0.4rem 0.5rem;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      color: #999;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+    th:nth-child(1), th:nth-child(2) { text-align: left; }
+    td {
+      padding: 0.4rem 0.5rem;
+      border-bottom: 1px solid #f0efe8;
+      font-size: 0.85rem;
+    }
+    .team-cell { font-weight: 500; min-width: 100px; }
+    .vs-cell { text-align: center; color: #ccc; font-size: 0.75rem; }
+    .score-input {
+      width: 50px;
+      padding: 0.3rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: border-color 0.2s;
+    }
+    .score-input:focus {
+      outline: none;
+      border-color: #9f1319;
+      box-shadow: 0 0 0 2px rgba(159,19,25,0.15);
+    }
+    .score-input.filled { background: #f0fbe8; border-color: #24620e; }
+    .round-cell { color: #aaa; font-size: 0.75rem; }
+    .time-cell { color: #aaa; font-size: 0.75rem; }
+    tr:hover { background: #faf9f4; }
+
+    h2 { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; color: #9f1319; padding-left: 0.5rem; }
+
+    @media (max-width: 600px) {
+      body { padding: 0.5rem; }
+      .score-input { width: 40px; font-size: 0.8rem; }
+      .team-cell { font-size: 0.78rem; min-width: 70px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>🏆 Score Entry</h1>
+  <p class="subtitle">Enter scores below and click Save. Changes update the YAML file directly.</p>
+
+  <div class="save-bar">
+    <button class="save-btn" onclick="saveScores()">💾 Save All Scores</button>
+    <span class="status" id="save-status"></span>
+  </div>
+
+  <div id="groups-container"></div>
+
+  <h2>Knockout Stage</h2>
+  <div id="knockout-container"></div>
+
+<script>
+const YAML_PATH = '_data/padel_tournament.yml';
+const PROXY_URL = 'http://localhost:8081';
+let tournamentData = {{ site.data.padel_tournament | jsonify }};
+
+function init() {
+  renderAll();
+}
+
+function renderAll() {
+  renderGroups();
+  renderKnockout();
+}
+
+function renderGroups() {
+  const container = document.getElementById('groups-container');
+  let html = '';
+
+  Object.keys(tournamentData.groups).sort().forEach(gkey => {
+    const group = tournamentData.groups[gkey];
+    const pairNames = {};
+    group.pairs.forEach(p => { pairNames[p.seed] = p.name; });
+
+    html += `<div class="group-section">
+      <div class="group-header">Group ${gkey}</div>
+      <table>
+        <thead><tr>
+          <th>R</th><th>Team 1</th><th>Score</th><th></th><th>Score</th><th>Team 2</th><th>Time</th>
+        </tr></thead><tbody>`;
+
+    group.matches.forEach((m, idx) => {
+      const s1 = m.score1 || '';
+      const s2 = m.score2 || '';
+      html += `<tr>
+        <td class="round-cell">${m.round}</td>
+        <td class="team-cell">${pairNames[m.pair1] || m.pair1}</td>
+        <td><input class="score-input ${s1 ? 'filled' : ''}" type="number" min="0" max="99"
+            data-group="${gkey}" data-idx="${idx}" data-field="score1" value="${s1}"
+            oninput="markChanged(this)"></td>
+        <td class="vs-cell">vs</td>
+        <td><input class="score-input ${s2 ? 'filled' : ''}" type="number" min="0" max="99"
+            data-group="${gkey}" data-idx="${idx}" data-field="score2" value="${s2}"
+            oninput="markChanged(this)"></td>
+        <td class="team-cell">${pairNames[m.pair2] || m.pair2}</td>
+        <td class="time-cell">${m.time || ''}</td>
+      </tr>`;
+    });
+
+    html += '</tbody></table></div>';
+  });
+
+  container.innerHTML = html;
+}
+
+function renderKnockout() {
+  const container = document.getElementById('knockout-container');
+  if (!tournamentData.knockout) return;
+  let html = '';
+
+  const stages = [
+    ['r16', 'Round of 16'],
+    ['qf', 'Quarter-Finals'],
+    ['sf', 'Semi-Finals'],
+    ['final', 'Final']
+  ];
+
+  stages.forEach(([key, label]) => {
+    const matches = tournamentData.knockout[key];
+    if (!matches || !matches.length) return;
+
+    html += `<div class="group-section">
+      <div class="group-header">${label}</div>
+      <table>
+        <thead><tr>
+          <th>ID</th><th>Team 1</th><th colspan="3">Set 1</th><th></th><th colspan="3">Set 2</th><th>Team 2</th><th>Time</th>
+        </tr></thead><tbody>`;
+
+    matches.forEach((m, idx) => {
+      // Parse comma-separated set scores
+      const s1parts = (m.score1 || '').toString().split(',');
+      const s2parts = (m.score2 || '').toString().split(',');
+      const s1a = s1parts[0] || '', s1b = s1parts[1] || '';
+      const s2a = s2parts[0] || '', s2b = s2parts[1] || '';
+
+      html += `<tr>
+        <td class="round-cell">${m.id}</td>
+        <td class="team-cell">${m.pair1_from}</td>
+        <td>
+          <input class="score-input ${s1a ? 'filled' : ''}" type="number" min="0" max="9"
+              data-ko="${key}" data-idx="${idx}" data-set="1" data-player="1" value="${s1a}"
+              oninput="markChanged(this)" placeholder="S1">
+        </td>
+        <td class="vs-cell">-</td>
+        <td>
+          <input class="score-input ${s2a ? 'filled' : ''}" type="number" min="0" max="9"
+              data-ko="${key}" data-idx="${idx}" data-set="1" data-player="2" value="${s2a}"
+              oninput="markChanged(this)" placeholder="S1">
+        </td>
+        <td style="width:8px"></td>
+        <td>
+          <input class="score-input ${s1b ? 'filled' : ''}" type="number" min="0" max="9"
+              data-ko="${key}" data-idx="${idx}" data-set="2" data-player="1" value="${s1b}"
+              oninput="markChanged(this)" placeholder="S2" style="border-color:#caa64f">
+        </td>
+        <td class="vs-cell">-</td>
+        <td>
+          <input class="score-input ${s2b ? 'filled' : ''}" type="number" min="0" max="9"
+              data-ko="${key}" data-idx="${idx}" data-set="2" data-player="2" value="${s2b}"
+              oninput="markChanged(this)" placeholder="S2" style="border-color:#caa64f">
+        </td>
+        <td class="team-cell">${m.pair2_from}</td>
+        <td class="time-cell">${m.time || ''}</td>
+      </tr>`;
+    });
+
+    html += '</tbody></table></div>';
+  });
+
+  container.innerHTML = html;
+}
+
+function markChanged(input) {
+  input.classList.toggle('filled', input.value !== '');
+}
+
+function collectScores() {
+  // Update group scores (single set)
+  document.querySelectorAll('.score-input[data-group]').forEach(input => {
+    const g = input.dataset.group;
+    const idx = parseInt(input.dataset.idx);
+    const field = input.dataset.field;
+    tournamentData.groups[g].matches[idx][field] = input.value || '';
+  });
+
+  // Collect knockout scores (multi-set, combine into comma-separated)
+  const koSets = {};
+  document.querySelectorAll('.score-input[data-ko]').forEach(input => {
+    const stage = input.dataset.ko;
+    const idx = input.dataset.idx;
+    const set = input.dataset.set;
+    const player = input.dataset.player;
+    const k = `${stage}_${idx}`;
+    if (!koSets[k]) koSets[k] = { stage, idx: parseInt(idx), s1: ['',''], s2: ['',''] };
+    const setIdx = parseInt(set) - 1;
+    if (player === '1') koSets[k].s1[setIdx] = input.value || '';
+    else koSets[k].s2[setIdx] = input.value || '';
+  });
+
+  // Build comma-separated score strings
+  Object.values(koSets).forEach(ks => {
+    // Only include set 2 if it has values
+    let score1, score2;
+    if (ks.s1[1] || ks.s2[1]) {
+      score1 = ks.s1.join(',');
+      score2 = ks.s2.join(',');
+    } else {
+      score1 = ks.s1[0];
+      score2 = ks.s2[0];
+    }
+    tournamentData.knockout[ks.stage][ks.idx].score1 = score1;
+    tournamentData.knockout[ks.stage][ks.idx].score2 = score2;
+  });
+}
+
+async function saveScores() {
+  const btn = document.querySelector('.save-btn');
+  const status = document.getElementById('save-status');
+  btn.disabled = true;
+  status.textContent = 'Saving...';
+  status.className = 'status';
+
+  collectScores();
+
+  const yamlStr = jsyaml.dump(tournamentData, {
+    lineWidth: -1,
+    noRefs: true,
+    quotingType: '"',
+    forceQuotes: false
+  });
+
+  try {
+    const res = await fetch('http://localhost:3333/save', {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain' },
+      body: yamlStr
+    });
+
+    if (res.ok) {
+      status.textContent = '✅ Saved! Jekyll will auto-rebuild. Refresh tournament page.';
+      status.className = 'status success';
+    } else {
+      throw new Error('Server returned ' + res.status);
+    }
+  } catch(e) {
+    status.textContent = '❌ Make sure save-server is running: node save-server.js';
+    status.className = 'status error';
+    console.error(e);
+  }
+
+  btn.disabled = false;
+}
+
+// Load js-yaml library (needed for saving)
+const script = document.createElement('script');
+script.src = 'https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js';
+document.head.appendChild(script);
+
+// Render immediately since data is embedded
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>

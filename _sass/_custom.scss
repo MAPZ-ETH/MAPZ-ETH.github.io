@@ -286,6 +286,13 @@ table {
   margin: $space-2xl $space-xl;
 }
 
+// Padel tournament tables should fill their card container
+.pt-standings-table {
+  display: table !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
 // --- HTML Element Wrapping Styles ---
 div {
 
@@ -1566,4 +1573,26 @@ $color-platinum: #961C20; // Crimson
   padding: 0.3rem 2.5rem;
   transform: rotate(45deg);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+// ==========================================================================
+// PADEL TOURNAMENT — Full-bleed background
+// Override all theme containers so the sky-blue background spans edge-to-edge
+// ==========================================================================
+.initial-content:has(.pt-bg-wrapper),
+.initial-content:has(.pt-bg-wrapper) #main,
+.initial-content:has(.pt-bg-wrapper) .page,
+.initial-content:has(.pt-bg-wrapper) .page__inner-wrap,
+.initial-content:has(.pt-bg-wrapper) .page__content {
+  background: transparent !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: 0 !important;
+}
+
+// Hide the decorative star divider on the padel page
+.initial-content:has(.pt-bg-wrapper) .page__content::before {
+  display: none !important;
 }
