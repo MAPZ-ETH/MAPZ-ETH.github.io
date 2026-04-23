@@ -733,7 +733,8 @@ title: ""
 
 /* ─── Responsive ─── */
 @media (max-width: 768px) {
-  .pt-container { padding: 0 1rem; }
+  .pt-bg-wrapper { padding: 1.5rem 1rem 1.5rem; }
+  .pt-container { padding: 0 0.5rem; }
   .pt-hero-title { font-size: 1.5rem; }
   .pt-groups-grid { grid-template-columns: 1fr; }
   .pt-bracket { min-width: 700px; }
@@ -741,6 +742,8 @@ title: ""
 }
 
 @media (max-width: 480px) {
+  .pt-bg-wrapper { padding: 1rem 0.5rem 1rem; }
+  .pt-container { padding: 0 0.25rem; }
   .pt-tabs { max-width: 100%; }
   .pt-tab { font-size: 0.78rem; padding: 0.55rem 0.5rem; }
   .pt-hero-meta { flex-direction: column; gap: 0.3rem; }
