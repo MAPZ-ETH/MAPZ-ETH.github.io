@@ -11,6 +11,9 @@ title: ""
    PADEL TOURNAMENT — Premium Design
    ============================================================ */
 
+/* Hide the default theme's star divider on this page */
+.page__content::before { display: none !important; }
+
 /* ─── Decorative Background ─── */
 .pt-bg-wrapper {
   position: relative;
