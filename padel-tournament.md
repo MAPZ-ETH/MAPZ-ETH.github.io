@@ -769,7 +769,10 @@ document.addEventListener('DOMContentLoaded', function() {
   // ─── Live match indicator ───
   // Add blinking dot to matches happening right now
   const now = new Date();
-  const currentMinutes = now.getHours() * 60 + now.getMinutes();
+  
+  // Only show live dots on tournament day (Saturday, April 25, 2026)
+  if (now.getFullYear() === 2026 && now.getMonth() === 3 && now.getDate() === 25) {
+    const currentMinutes = now.getHours() * 60 + now.getMinutes();
 
   document.querySelectorAll('.pt-match-time').forEach(timeEl => {
     const timeText = timeEl.textContent.trim();
@@ -808,6 +811,7 @@ document.addEventListener('DOMContentLoaded', function() {
       timeEl.style.alignItems = 'center';
     }
   });
+  }
 
   // ─── Calculate group standings ───
   const groupData = {};
