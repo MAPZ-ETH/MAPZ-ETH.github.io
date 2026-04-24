@@ -2,11 +2,11 @@ groups:
   A:
     pairs:
       - seed: 1
-        name: Corredor
+        name: "Tomas.C / Player.2"
       - seed: 2
-        name: Lataoui
+        name: "Ismail.L / Mehdi.H"
       - seed: 3
-        name: Bilbao
+        name: "Jose.B / Jesús.E"
       - seed: 4
         name: "Adnane.E / Rayane.S"
     matches:
@@ -17,8 +17,8 @@ groups:
         score2: ""
         time: "15:00"
         court: 1
-        pair1_name: Corredor
-        pair2_name: Lataoui
+        pair1_name: "Tomas.C / Player.2"
+        pair2_name: "Ismail.L / Mehdi.H"
       - round: 1
         pair1: 3
         pair2: 4
@@ -26,7 +26,7 @@ groups:
         score2: ""
         time: "15:00"
         court: 2
-        pair1_name: Bilbao
+        pair1_name: "Jose.B / Jesús.E"
         pair2_name: "Adnane.E / Rayane.S"
       - round: 2
         pair1: 1
@@ -35,8 +35,8 @@ groups:
         score2: ""
         time: "16:20"
         court: 1
-        pair1_name: Corredor
-        pair2_name: Bilbao
+        pair1_name: "Tomas.C / Player.2"
+        pair2_name: "Jose.B / Jesús.E"
       - round: 2
         pair1: 2
         pair2: 4
@@ -44,7 +44,7 @@ groups:
         score2: ""
         time: "16:20"
         court: 2
-        pair1_name: Lataoui
+        pair1_name: "Ismail.L / Mehdi.H"
         pair2_name: "Adnane.E / Rayane.S"
       - round: 3
         pair1: 1
@@ -53,7 +53,7 @@ groups:
         score2: ""
         time: "17:40"
         court: 1
-        pair1_name: Corredor
+        pair1_name: "Tomas.C / Player.2"
         pair2_name: "Adnane.E / Rayane.S"
       - round: 3
         pair1: 2
@@ -62,8 +62,8 @@ groups:
         score2: ""
         time: "17:40"
         court: 2
-        pair1_name: Lataoui
-        pair2_name: Bilbao
+        pair1_name: "Ismail.L / Mehdi.H"
+        pair2_name: "Jose.B / Jesús.E"
   B:
     pairs:
       - seed: 1
@@ -134,7 +134,7 @@ groups:
       - seed: 1
         name: "Javier.S / Juan.P"
       - seed: 2
-        name: Alonso
+        name: "Mauro.A / German.F"
       - seed: 3
         name: "Matteo.C / Alessandro.D"
       - seed: 4
@@ -148,7 +148,7 @@ groups:
         time: "15:20"
         court: 1
         pair1_name: "Javier.S / Juan.P"
-        pair2_name: Alonso
+        pair2_name: "Mauro.A / German.F"
       - round: 1
         pair1: 3
         pair2: 4
@@ -174,7 +174,7 @@ groups:
         score2: ""
         time: "16:40"
         court: 2
-        pair1_name: Alonso
+        pair1_name: "Mauro.A / German.F"
         pair2_name: "Saad.M / Cornejo.A"
       - round: 3
         pair1: 1
@@ -192,18 +192,18 @@ groups:
         score2: ""
         time: "18:00"
         court: 2
-        pair1_name: Alonso
+        pair1_name: "Mauro.A / German.F"
         pair2_name: "Matteo.C / Alessandro.D"
   D:
     pairs:
       - seed: 1
-        name: Aissaoui
+        name: "Saad.A / Abdessalam.D"
       - seed: 2
         name: "Yshai.D / Ethan.B"
       - seed: 3
-        name: Navea
+        name: "Nicolas.B / Luca.R"
       - seed: 4
-        name: "Yassin.J / Yassin.J"
+        name: "Yassin.J / Idriss.B"
     matches:
       - round: 1
         pair1: 1
@@ -212,7 +212,7 @@ groups:
         score2: ""
         time: "15:20"
         court: 3
-        pair1_name: Aissaoui
+        pair1_name: "Saad.A / Abdessalam.D"
         pair2_name: "Yshai.D / Ethan.B"
       - round: 1
         pair1: 3
@@ -221,8 +221,8 @@ groups:
         score2: ""
         time: "15:20"
         court: 4
-        pair1_name: Navea
-        pair2_name: "Yassin.J / Yassin.J"
+        pair1_name: "Nicolas.B / Luca.R"
+        pair2_name: "Yassin.J / Idriss.B"
       - round: 2
         pair1: 1
         pair2: 3
@@ -230,8 +230,8 @@ groups:
         score2: ""
         time: "16:40"
         court: 3
-        pair1_name: Aissaoui
-        pair2_name: Navea
+        pair1_name: "Saad.A / Abdessalam.D"
+        pair2_name: "Nicolas.B / Luca.R"
       - round: 2
         pair1: 2
         pair2: 4
@@ -240,7 +240,7 @@ groups:
         time: "16:40"
         court: 4
         pair1_name: "Yshai.D / Ethan.B"
-        pair2_name: "Yassin.J / Yassin.J"
+        pair2_name: "Yassin.J / Idriss.B"
       - round: 3
         pair1: 1
         pair2: 4
@@ -248,8 +248,8 @@ groups:
         score2: ""
         time: "18:00"
         court: 3
-        pair1_name: Aissaoui
-        pair2_name: "Yassin.J / Yassin.J"
+        pair1_name: "Saad.A / Abdessalam.D"
+        pair2_name: "Yassin.J / Idriss.B"
       - round: 3
         pair1: 2
         pair2: 3
@@ -258,7 +258,7 @@ groups:
         time: "18:00"
         court: 4
         pair1_name: "Yshai.D / Ethan.B"
-        pair2_name: Navea
+        pair2_name: "Nicolas.B / Luca.R"
   E:
     pairs:
       - seed: 1
@@ -329,11 +329,11 @@ groups:
       - seed: 1
         name: "Ilias.D / Samy.B"
       - seed: 2
-        name: Janati Idrissi
+        name: "Abdellah.J / Youssef.C"
       - seed: 3
-        name: Meire
+        name: "Josep.A / Nicolas.M"
       - seed: 4
-        name: de Arespacochaga Lara
+        name: "Paula.A / Player.2"
     matches:
       - round: 1
         pair1: 1
@@ -343,7 +343,7 @@ groups:
         time: "15:40"
         court: 3
         pair1_name: "Ilias.D / Samy.B"
-        pair2_name: Janati Idrissi
+        pair2_name: "Abdellah.J / Youssef.C"
       - round: 1
         pair1: 3
         pair2: 4
@@ -351,8 +351,8 @@ groups:
         score2: ""
         time: "15:40"
         court: 4
-        pair1_name: Meire
-        pair2_name: de Arespacochaga Lara
+        pair1_name: "Josep.A / Nicolas.M"
+        pair2_name: "Paula.A / Player.2"
       - round: 2
         pair1: 1
         pair2: 3
@@ -361,7 +361,7 @@ groups:
         time: "17:00"
         court: 3
         pair1_name: "Ilias.D / Samy.B"
-        pair2_name: Meire
+        pair2_name: "Josep.A / Nicolas.M"
       - round: 2
         pair1: 2
         pair2: 4
@@ -369,8 +369,8 @@ groups:
         score2: ""
         time: "17:00"
         court: 4
-        pair1_name: Janati Idrissi
-        pair2_name: de Arespacochaga Lara
+        pair1_name: "Abdellah.J / Youssef.C"
+        pair2_name: "Paula.A / Player.2"
       - round: 3
         pair1: 1
         pair2: 4
@@ -379,7 +379,7 @@ groups:
         time: "18:20"
         court: 3
         pair1_name: "Ilias.D / Samy.B"
-        pair2_name: de Arespacochaga Lara
+        pair2_name: "Paula.A / Player.2"
       - round: 3
         pair1: 2
         pair2: 3
@@ -387,8 +387,8 @@ groups:
         score2: ""
         time: "18:20"
         court: 4
-        pair1_name: Janati Idrissi
-        pair2_name: Meire
+        pair1_name: "Abdellah.J / Youssef.C"
+        pair2_name: "Josep.A / Nicolas.M"
   G:
     pairs:
       - seed: 1
@@ -457,11 +457,11 @@ groups:
   H:
     pairs:
       - seed: 1
-        name: Weren
+        name: "Malik.W / Ahmad.F"
       - seed: 2
         name: "Thomas.B / Tassilo.W"
       - seed: 3
-        name: Nadal Lizaranzu
+        name: "Alberto.N / Maximiliano.H"
       - seed: 4
         name: "Lucas.P / Nathan.R"
     matches:
@@ -472,7 +472,7 @@ groups:
         score2: ""
         time: "16:00"
         court: 3
-        pair1_name: Weren
+        pair1_name: "Malik.W / Ahmad.F"
         pair2_name: "Thomas.B / Tassilo.W"
       - round: 1
         pair1: 3
@@ -481,7 +481,7 @@ groups:
         score2: ""
         time: "16:00"
         court: 4
-        pair1_name: Nadal Lizaranzu
+        pair1_name: "Alberto.N / Maximiliano.H"
         pair2_name: "Lucas.P / Nathan.R"
       - round: 2
         pair1: 1
@@ -490,8 +490,8 @@ groups:
         score2: ""
         time: "17:20"
         court: 3
-        pair1_name: Weren
-        pair2_name: Nadal Lizaranzu
+        pair1_name: "Malik.W / Ahmad.F"
+        pair2_name: "Alberto.N / Maximiliano.H"
       - round: 2
         pair1: 2
         pair2: 4
@@ -508,7 +508,7 @@ groups:
         score2: ""
         time: "18:40"
         court: 3
-        pair1_name: Weren
+        pair1_name: "Malik.W / Ahmad.F"
         pair2_name: "Lucas.P / Nathan.R"
       - round: 3
         pair1: 2
@@ -518,7 +518,7 @@ groups:
         time: "18:40"
         court: 4
         pair1_name: "Thomas.B / Tassilo.W"
-        pair2_name: Nadal Lizaranzu
+        pair2_name: "Alberto.N / Maximiliano.H"
 knockout:
   r16:
     - id: R16-1
