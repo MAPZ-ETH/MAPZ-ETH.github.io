@@ -468,8 +468,8 @@ groups:
       - round: 1
         pair1: 1
         pair2: 2
-        score1: ""
-        score2: ""
+        score1: "9"
+        score2: "35"
         time: "16:00"
         court: 3
         pair1_name: Malik.W / Ahmad.F
