@@ -131,6 +131,10 @@ permalink: /score-entry/
     <p class="subtitle">Enter scores below and click Save. Changes update the YAML file directly.</p>
 
   <div class="save-bar">
+    <div id="token-setup" style="display:none; align-items:center; gap:0.5rem;">
+      <input type="password" id="token-input" placeholder="GitHub token" style="padding:0.3rem 0.6rem;border:1px solid #ddd;border-radius:6px;font-size:0.85rem;width:220px;">
+      <button onclick="saveToken()" style="background:#9f1319;color:#fff;border:none;padding:0.3rem 0.8rem;border-radius:6px;cursor:pointer;font-size:0.85rem;">Save token</button>
+    </div>
     <button class="save-btn" onclick="saveScores()">💾 Save All Scores</button>
     <span class="status" id="save-status"></span>
   </div>
@@ -143,10 +147,17 @@ permalink: /score-entry/
 <script>
 const GITHUB_REPO = "MAPZ-ETH/MAPZ-ETH.github.io";
 const YAML_PATH = "_data/padel_tournament.yml";
-const GITHUB_TOKEN = "YOUR_GITHUB_TOKEN_HERE";
 let tournamentData = {{ site.data.padel_tournament | jsonify }};
 
+function getToken() { return localStorage.getItem('mapz_gh_token') || ''; }
+
+function saveToken() {
+  const t = document.getElementById('token-input').value.trim();
+  if (t) { localStorage.setItem('mapz_gh_token', t); document.getElementById('token-setup').style.display = 'none'; }
+}
+
 function init() {
+  if (!getToken()) document.getElementById('token-setup').style.display = 'flex';
   renderAll();
 }
 
@@ -324,7 +335,7 @@ async function saveScores() {
   try {
     const apiBase = `https://api.github.com/repos/${GITHUB_REPO}/contents/${YAML_PATH}`;
     const headers = {
-      'Authorization': `token ${GITHUB_TOKEN}`,
+      'Authorization': `token ${getToken()}`,
       'Accept': 'application/vnd.github+json',
       'Content-Type': 'application/json'
     };
