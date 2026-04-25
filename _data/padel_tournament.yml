@@ -13,8 +13,8 @@ groups:
       - round: 1
         pair1: 1
         pair2: 2
-        score1: "1"
-        score2: "0"
+        score1: "21"
+        score2: "19"
         time: "15:00"
         court: 1
         pair1_name: Tomas.C / Player.2
@@ -22,8 +22,8 @@ groups:
       - round: 1
         pair1: 3
         pair2: 4
-        score1: ""
-        score2: ""
+        score1: "32"
+        score2: "8"
         time: "15:00"
         court: 2
         pair1_name: Jose.B / Jesús.E
@@ -87,8 +87,8 @@ groups:
       - round: 1
         pair1: 3
         pair2: 4
-        score1: ""
-        score2: ""
+        score1: "10"
+        score2: "42"
         time: "15:00"
         court: 4
         pair1_name: Saad.L / Ramy.H
@@ -143,8 +143,8 @@ groups:
       - round: 1
         pair1: 1
         pair2: 2
-        score1: ""
-        score2: ""
+        score1: "25"
+        score2: "10"
         time: "15:20"
         court: 1
         pair1_name: Javier.S / Juan.P
@@ -152,8 +152,8 @@ groups:
       - round: 1
         pair1: 3
         pair2: 4
-        score1: ""
-        score2: ""
+        score1: "20"
+        score2: "0"
         time: "15:20"
         court: 2
         pair1_name: Matteo.C / Alessandro.D
@@ -208,8 +208,8 @@ groups:
       - round: 1
         pair1: 1
         pair2: 2
-        score1: ""
-        score2: ""
+        score1: "13"
+        score2: "34"
         time: "15:20"
         court: 3
         pair1_name: Saad.A / Abdessalam.D
@@ -217,8 +217,8 @@ groups:
       - round: 1
         pair1: 3
         pair2: 4
-        score1: ""
-        score2: ""
+        score1: "43"
+        score2: "9"
         time: "15:20"
         court: 4
         pair1_name: Nicolas.B / Luca.R
