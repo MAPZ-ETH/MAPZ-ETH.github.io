@@ -448,8 +448,8 @@ groups:
       - round: 3
         pair1: 2
         pair2: 3
-        score1: ""
-        score2: ""
+        score1: "20"
+        score2: "42"
         time: "18:40"
         court: 2
         pair1_name: Jeremias.F / Ruben.M
