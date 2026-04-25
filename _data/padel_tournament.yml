@@ -486,8 +486,8 @@ groups:
       - round: 2
         pair1: 1
         pair2: 3
-        score1: "2"
-        score2: ""
+        score1: "12"
+        score2: "37"
         time: "17:20"
         court: 3
         pair1_name: Malik.W / Ahmad.F
@@ -495,8 +495,8 @@ groups:
       - round: 2
         pair1: 2
         pair2: 4
-        score1: ""
-        score2: ""
+        score1: "28"
+        score2: "21"
         time: "17:20"
         court: 4
         pair1_name: Thomas.B / Tassilo.W
