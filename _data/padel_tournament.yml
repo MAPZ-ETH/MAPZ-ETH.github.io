@@ -552,8 +552,8 @@ knockout:
     - id: R16-5
       pair1_from: 1E
       pair2_from: 2D
-      score1: ""
-      score2: ""
+      score1: "6"
+      score2: "0"
       time: "19:30"
       court: 1
     - id: R16-6
