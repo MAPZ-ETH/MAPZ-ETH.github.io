@@ -273,8 +273,8 @@ groups:
       - round: 1
         pair1: 1
         pair2: 2
-        score1: ""
-        score2: ""
+        score1: "48"
+        score2: "10"
         time: "15:40"
         court: 1
         pair1_name: Maxime.C / Cesar.P
@@ -282,8 +282,8 @@ groups:
       - round: 1
         pair1: 3
         pair2: 4
-        score1: ""
-        score2: ""
+        score1: "32"
+        score2: "20"
         time: "15:40"
         court: 2
         pair1_name: Aleksei.D / Andrin.B
