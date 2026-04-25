@@ -439,8 +439,8 @@ groups:
       - round: 3
         pair1: 1
         pair2: 4
-        score1: ""
-        score2: ""
+        score1: "18"
+        score2: "26"
         time: "18:40"
         court: 1
         pair1_name: Inés.C / Blanca.V
@@ -504,8 +504,8 @@ groups:
       - round: 3
         pair1: 1
         pair2: 4
-        score1: ""
-        score2: ""
+        score1: "6"
+        score2: "38"
         time: "18:40"
         court: 3
         pair1_name: Malik.W / Ahmad.F
