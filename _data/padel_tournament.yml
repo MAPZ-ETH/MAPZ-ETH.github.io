@@ -291,8 +291,8 @@ groups:
       - round: 2
         pair1: 1
         pair2: 3
-        score1: ""
-        score2: ""
+        score1: "22"
+        score2: "30"
         time: "17:00"
         court: 1
         pair1_name: Maxime.C / Cesar.P
@@ -300,7 +300,7 @@ groups:
       - round: 2
         pair1: 2
         pair2: 4
-        score1: "10"
+        score1: "9"
         score2: "40"
         time: "17:00"
         court: 2
