@@ -188,8 +188,8 @@ groups:
       - round: 3
         pair1: 2
         pair2: 3
-        score1: ""
-        score2: ""
+        score1: "33"
+        score2: "19"
         time: "18:00"
         court: 2
         pair1_name: Mauro.A / German.F
