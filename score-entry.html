@@ -168,6 +168,7 @@ permalink: /score-entry/
       <h2 style="margin:0 0 0.5rem">Admin Access</h2>
       <p style="color:#666; font-size:0.9rem">Please enter the password to modify scores.</p>
       <input type="password" id="admin-pwd" class="pwd-input" placeholder="Password" onkeydown="if(event.key === 'Enter') checkPassword()">
+      <input type="password" id="admin-token" class="pwd-input" placeholder="GitHub Token" style="margin-top:0.5rem" onkeydown="if(event.key === 'Enter') checkPassword()">
       <button class="pwd-btn" onclick="checkPassword()">Unlock</button>
       <p id="pwd-error" class="pwd-error">Incorrect password</p>
     </div>
@@ -188,18 +189,22 @@ permalink: /score-entry/
   <div id="knockout-container"></div>
 
 <script>
-const ADMIN_PASSWORD = "mapzpadel"; // You can change this password here
-const YAML_PATH = '_data/padel_tournament.yml';
-const PROXY_URL = 'http://localhost:8081';
+const ADMIN_PASSWORD = "mapzpadel";
+const GITHUB_REPO = "MAPZ-ETH/MAPZ-ETH.github.io";
+const YAML_PATH = "_data/padel_tournament.yml";
+let githubToken = "";
 let tournamentData = {{ site.data.padel_tournament | jsonify }};
 
 function checkPassword() {
-  const input = document.getElementById('admin-pwd').value;
-  if (input === ADMIN_PASSWORD) {
+  const pwd = document.getElementById('admin-pwd').value;
+  const token = document.getElementById('admin-token').value.trim();
+  if (pwd === ADMIN_PASSWORD && token) {
+    githubToken = token;
     document.getElementById('password-overlay').style.display = 'none';
     document.getElementById('main-content').style.display = 'block';
   } else {
     document.getElementById('pwd-error').style.display = 'block';
+    document.getElementById('pwd-error').textContent = pwd !== ADMIN_PASSWORD ? 'Incorrect password' : 'GitHub token required';
   }
 }
 
@@ -379,20 +384,43 @@ async function saveScores() {
   });
 
   try {
-    const res = await fetch('http://localhost:3333/save', {
-      method: 'POST',
-      headers: { 'Content-Type': 'text/plain' },
-      body: yamlStr
+    const apiBase = `https://api.github.com/repos/${GITHUB_REPO}/contents/${YAML_PATH}`;
+    const headers = {
+      'Authorization': `token ${githubToken}`,
+      'Accept': 'application/vnd.github+json',
+      'Content-Type': 'application/json'
+    };
+
+    // Get current file SHA
+    const getRes = await fetch(apiBase, { headers });
+    if (!getRes.ok) throw new Error('Could not fetch file SHA: ' + getRes.status);
+    const fileInfo = await getRes.json();
+
+    // Base64-encode the YAML (handles unicode)
+    const bytes = new TextEncoder().encode(yamlStr);
+    const binary = Array.from(bytes).map(b => String.fromCharCode(b)).join('');
+    const encoded = btoa(binary);
+
+    // Commit updated file
+    const putRes = await fetch(apiBase, {
+      method: 'PUT',
+      headers,
+      body: JSON.stringify({
+        message: 'Update tournament scores',
+        content: encoded,
+        sha: fileInfo.sha
+      })
     });
 
-    if (res.ok) {
-      status.textContent = '✅ Saved! Jekyll will auto-rebuild. Refresh tournament page.';
+    if (putRes.ok) {
+      status.textContent = '✅ Saved! Page will update in ~30s after GitHub rebuilds.';
       status.className = 'status success';
     } else {
-      throw new Error('Server returned ' + res.status);
+      const err = await putRes.json();
+      throw new Error(err.message || putRes.status);
     }
   } catch(e) {
-    status.textContent = '❌ Make sure save-server is running: node save-server.js';
+    status.textContent = '❌ Error: ' + e.message;
     status.className = 'status error';
     console.error(e);
   }
