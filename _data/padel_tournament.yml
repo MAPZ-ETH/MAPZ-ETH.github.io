@@ -524,29 +524,29 @@ knockout:
     - id: R16-1
       pair1_from: 1A
       pair2_from: 2H
-      score1: 6,6
-      score2: 4,4
+      score1: "6"
+      score2: "4"
       time: "19:00"
       court: 1
     - id: R16-2
       pair1_from: 1B
       pair2_from: 2G
-      score1: 11,11
-      score2: 0,0
+      score1: "11"
+      score2: "0"
       time: "19:00"
       court: 2
     - id: R16-3
       pair1_from: 1C
       pair2_from: 2F
-      score1: 1,1
-      score2: 0,0
+      score1: "1"
+      score2: "0"
       time: "19:00"
       court: 3
     - id: R16-4
       pair1_from: 1D
       pair2_from: 2E
-      score1: 4,4
-      score2: 5,5
+      score1: "4"
+      score2: "5"
       time: "19:00"
       court: 4
     - id: R16-5
