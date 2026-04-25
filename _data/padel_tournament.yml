@@ -49,8 +49,8 @@ groups:
       - round: 3
         pair1: 1
         pair2: 4
-        score1: ""
-        score2: ""
+        score1: "22"
+        score2: "21"
         time: "17:40"
         court: 1
         pair1_name: Tomas.C / Player.2
