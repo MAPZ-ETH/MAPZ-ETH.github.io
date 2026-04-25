@@ -226,8 +226,8 @@ groups:
       - round: 2
         pair1: 1
         pair2: 3
-        score1: ""
-        score2: ""
+        score1: "15"
+        score2: "38"
         time: "16:40"
         court: 3
         pair1_name: Saad.A / Abdessalam.D
@@ -486,7 +486,7 @@ groups:
       - round: 2
         pair1: 1
         pair2: 3
-        score1: ""
+        score1: "2"
         score2: ""
         time: "17:20"
         court: 3
