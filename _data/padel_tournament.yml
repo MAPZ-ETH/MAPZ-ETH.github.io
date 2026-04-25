@@ -50,7 +50,7 @@ groups:
         pair1: 1
         pair2: 4
         score1: "22"
-        score2: "20"
+        score2: "21"
         time: "17:40"
         court: 1
         pair1_name: Tomas.C / Player.2
@@ -58,8 +58,8 @@ groups:
       - round: 3
         pair1: 2
         pair2: 3
-        score1: "10"
-        score2: "41"
+        score1: ""
+        score2: ""
         time: "17:40"
         court: 2
         pair1_name: Ismail.L / Mehdi.H
@@ -179,8 +179,8 @@ groups:
       - round: 3
         pair1: 1
         pair2: 4
-        score1: "20"
-        score2: "0"
+        score1: ""
+        score2: ""
         time: "18:00"
         court: 1
         pair1_name: Javier.S / Juan.P
@@ -188,8 +188,8 @@ groups:
       - round: 3
         pair1: 2
         pair2: 3
-        score1: "33"
-        score2: "19"
+        score1: ""
+        score2: ""
         time: "18:00"
         court: 2
         pair1_name: Mauro.A / German.F
@@ -244,8 +244,8 @@ groups:
       - round: 3
         pair1: 1
         pair2: 4
-        score1: "38"
-        score2: "17"
+        score1: ""
+        score2: ""
         time: "18:00"
         court: 3
         pair1_name: Saad.A / Abdessalam.D
@@ -253,8 +253,8 @@ groups:
       - round: 3
         pair1: 2
         pair2: 3
-        score1: "27"
-        score2: "36"
+        score1: ""
+        score2: ""
         time: "18:00"
         court: 4
         pair1_name: Yshai.D / Ethan.B
@@ -300,7 +300,7 @@ groups:
       - round: 2
         pair1: 2
         pair2: 4
-        score1: "10"
+        score1: "9"
         score2: "40"
         time: "17:00"
         court: 2
@@ -309,8 +309,8 @@ groups:
       - round: 3
         pair1: 1
         pair2: 4
-        score1: "26"
-        score2: "25"
+        score1: ""
+        score2: ""
         time: "18:20"
         court: 1
         pair1_name: Maxime.C / Cesar.P
@@ -318,8 +318,8 @@ groups:
       - round: 3
         pair1: 2
         pair2: 3
-        score1: "13"
-        score2: "20"
+        score1: ""
+        score2: ""
         time: "18:20"
         court: 2
         pair1_name: Aram.V / Nestor.K
@@ -374,8 +374,8 @@ groups:
       - round: 3
         pair1: 1
         pair2: 4
-        score1: "40"
-        score2: "12"
+        score1: ""
+        score2: ""
         time: "18:20"
         court: 3
         pair1_name: Ilias.D / Samy.B
@@ -383,8 +383,8 @@ groups:
       - round: 3
         pair1: 2
         pair2: 3
-        score1: "17"
-        score2: "35"
+        score1: ""
+        score2: ""
         time: "18:20"
         court: 4
         pair1_name: Abdellah.J / Youssef.C
@@ -439,8 +439,8 @@ groups:
       - round: 3
         pair1: 1
         pair2: 4
-        score1: "18"
-        score2: "26"
+        score1: ""
+        score2: ""
         time: "18:40"
         court: 1
         pair1_name: Inés.C / Blanca.V
@@ -448,8 +448,8 @@ groups:
       - round: 3
         pair1: 2
         pair2: 3
-        score1: "20"
-        score2: "42"
+        score1: ""
+        score2: ""
         time: "18:40"
         court: 2
         pair1_name: Jeremias.F / Ruben.M
@@ -496,7 +496,7 @@ groups:
         pair1: 2
         pair2: 4
         score1: "28"
-        score2: "21"
+        score2: "22"
         time: "17:20"
         court: 4
         pair1_name: Thomas.B / Tassilo.W
@@ -504,8 +504,8 @@ groups:
       - round: 3
         pair1: 1
         pair2: 4
-        score1: "6"
-        score2: "38"
+        score1: ""
+        score2: ""
         time: "18:40"
         court: 3
         pair1_name: Malik.W / Ahmad.F
@@ -513,8 +513,8 @@ groups:
       - round: 3
         pair1: 2
         pair2: 3
-        score1: "24"
-        score2: "21"
+        score1: ""
+        score2: ""
         time: "18:40"
         court: 4
         pair1_name: Thomas.B / Tassilo.W
@@ -524,29 +524,29 @@ knockout:
     - id: R16-1
       pair1_from: 1A
       pair2_from: 2H
-      score1: 6,6
-      score2: 4,4
+      score1: ""
+      score2: ""
       time: "19:00"
       court: 1
     - id: R16-2
       pair1_from: 1B
       pair2_from: 2G
-      score1: 11,11
-      score2: 0,0
+      score1: ""
+      score2: ""
       time: "19:00"
       court: 2
     - id: R16-3
       pair1_from: 1C
       pair2_from: 2F
-      score1: 1,1
-      score2: 0,0
+      score1: ""
+      score2: ""
       time: "19:00"
       court: 3
     - id: R16-4
       pair1_from: 1D
       pair2_from: 2E
-      score1: 4,4
-      score2: 5,5
+      score1: "5"
+      score2: "4"
       time: "19:00"
       court: 4
     - id: R16-5
