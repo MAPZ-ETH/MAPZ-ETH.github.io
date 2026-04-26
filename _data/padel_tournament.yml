@@ -617,8 +617,8 @@ knockout:
     - id: SF-2
       pair1_from: W-QF-3
       pair2_from: W-QF-4
-      score1: ""
-      score2: ""
+      score1: "6"
+      score2: "3"
       time: "20:30"
       court: 2
   final:
