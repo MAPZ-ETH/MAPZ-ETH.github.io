@@ -986,16 +986,11 @@ document.addEventListener('DOMContentLoaded', function() {
     return 0;
   }
 
-  // Format set scores for display: "6-1  6-3" or just "6-4"
-  function formatSetScores(sStr, oppStr) {
-    if (!sStr || !oppStr) return '';
-    const s = sStr.toString().split(',');
-    const o = oppStr.toString().split(',');
-    const parts = [];
-    for (let i = 0; i < Math.min(s.length, o.length); i++) {
-      parts.push(s[i] + '-' + o[i]);
-    }
-    return parts.join('  ');
+  // Format set scores for display: show only this team's scores per set
+  // e.g. score1="6,3" → "6  3", score2="4,6" → "4  6"
+  function formatSetScores(sStr) {
+    if (!sStr) return '';
+    return sStr.toString().split(',').join('  ');
   }
 
   // Process all bracket matches: set scores, determine winner, apply classes
@@ -1007,8 +1002,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (s1 && s2) {
       // Display formatted scores
-      pairs[0].querySelector('.pt-bm-score').textContent = formatSetScores(s1, s2);
-      pairs[1].querySelector('.pt-bm-score').textContent = formatSetScores(s2, s1);
+      pairs[0].querySelector('.pt-bm-score').textContent = formatSetScores(s1);
+      pairs[1].querySelector('.pt-bm-score').textContent = formatSetScores(s2);
 
       const winner = getKnockoutWinner(s1, s2);
       const isFinal = matchEl.classList.contains('pt-bracket-match-final');
