@@ -325,12 +325,15 @@ async function saveScores() {
 
   collectScores();
 
-  const yamlStr = jsyaml.dump(tournamentData, {
+  let yamlStr = jsyaml.dump(tournamentData, {
     lineWidth: -1,
     noRefs: true,
     quotingType: '"',
     forceQuotes: false
   });
+  // Ruby's YAML parser treats unquoted "6,6" as 66 (thousands separator bug)
+  // Force-quote any score field containing commas
+  yamlStr = yamlStr.replace(/^(\s+score\d:)\s+(\d[\d,]+\d)\s*$/mg, '$1 "$2"');
 
   try {
     const apiBase = `https://api.github.com/repos/${GITHUB_REPO}/contents/${YAML_PATH}`;
