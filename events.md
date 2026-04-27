@@ -8,33 +8,6 @@ header:
 excerpt: "Join us for networking, learning, and celebrating our community together!"
 ---
 
-<!-- ═══════════ FEATURED: LSVZ x MAPZ PADEL TOURNAMENT ═══════════ -->
-<div class="ev-featured-section" id="padel-register">
-  <div class="ev-featured-badge">Next Event — Register Now</div>
-  <h2 class="ev-featured-title">LSVZ × MAPZ Padel Tournament</h2>
-  <p class="ev-featured-subtitle">An afternoon of padel, competition, and great vibes — join us at Unipadel Zurich for a tournament designed to have fun, meet new people, and bring out your competitive side!</p>
-  <div class="ev-featured-meta">
-    <span>📅 Saturday, April 25 · 15:00–22:00</span>
-    <span>📍 Unipadel Zurich</span>
-  </div>
-  <div class="ev-featured-layout ev-padel-layout">
-    <div class="ev-padel-embed">
-      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DW1EL_JCEBr/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:1px;max-width:540px;min-width:326px;padding:0;width:calc(100% - 2px);"></blockquote>
-      <script async src="//www.instagram.com/embed.js"></script>
-    </div>
-    <div class="ev-padel-details">
-      <ul class="ev-padel-list">
-        <li>⏱ At least 1 hour guaranteed play per team</li>
-        <li>🏓 Matches played across 4 courts</li>
-        <li>👥 Capacity: 32 teams</li>
-        <li>💰 CHF 17.50 per player</li>
-      </ul>
-      <p class="ev-padel-warning">⚠️ Limited spots — secure your place now!</p>
-      <a href="https://eventfrog.ch/de/p/sport-fitness/sonstige-veranstaltungen/lsvz-x-mapz-padel-tournament-7447243789503041095.html?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener" class="ev-cta-btn ev-cta-btn--primary">Register on Eventfrog →</a>
-    </div>
-  </div>
-</div>
-
 ---
 
 ## Upcoming Events
