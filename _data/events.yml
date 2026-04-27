@@ -1,15 +1,11 @@
 upcoming:
-  - month: APR
-    time: 15:00 – 22:00
-    date: 2026-04-25
-    link_text: Register →
-    location: Unipadel Zurich
-    title: LSVZ × MAPZ Padel Tournament
-    link: "https://eventfrog.ch/de/p/sport-fitness/sonstige-veranstaltungen/lsvz-x-mapz-padel-tournament-7447243789503041095.html?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
-    day: "25"
-    description: Join us for an afternoon of padel, competition, and great vibes at Unipadel Zurich. 32 teams across 4 courts — at least 1 hour guaranteed play per team. CHF 17.50 per player.
-    year: "2026"
 past:
+  - title: LSVZ × MAPZ Padel Tournament
+    icon: fas fa-table-tennis
+    date_label: April 2026
+    year: 2026
+    location: Unipadel Zurich
+    description: "An afternoon of padel, competition, and great vibes at Unipadel Zurich. 32 teams competed across 4 courts for the ultimate prize!"
   - title: MAPZ Morning Run & Brunch
     icon: fas fa-running
     date_label: March 2026
