@@ -8,3 +8,6 @@ _site/
 Gemfile.lock
 .env
 
+
+# Padel score-entry passwords (tools/padel-admins.js) — never commit
+.padel-admins.secret.json

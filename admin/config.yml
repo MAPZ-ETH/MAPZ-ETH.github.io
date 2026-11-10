@@ -129,7 +129,7 @@ collections:
       - name: "padel_tournament"
         label: "Padel Tournament Scores"
         file: "_data/padel_tournament.yml"
-        description: "Update match scores for the LSVZ × MAPZ Padel Tournament"
+        description: "Backup only — during the tournament use mapz.ch/score-entry/ (it merges edits from several admins safely). Editing here at the same time can overwrite scores."
         fields:
           - name: groups
             label: "Groups"
@@ -339,8 +339,8 @@ collections:
                   - { name: id, label: "Match ID", widget: string }
                   - { name: pair1_from, label: "Team 1 (source)", widget: string, hint: "e.g. 1A = 1st of Group A" }
                   - { name: pair2_from, label: "Team 2 (source)", widget: string, hint: "e.g. 2H = 2nd of Group H" }
-                  - { name: score1, label: "Score Team 1", widget: string, required: false }
-                  - { name: score2, label: "Score Team 2", widget: string, required: false }
+                  - { name: score1, label: "Score Team 1", widget: string, required: false, hint: "Games per set separated by / (e.g. 6/4). Never use a comma here." }
+                  - { name: score2, label: "Score Team 2", widget: string, required: false, hint: "Games per set separated by / (e.g. 4/6)." }
                   - { name: time, label: "Time", widget: string }
                   - { name: court, label: "Court", widget: number, value_type: int }
               - name: qf
@@ -351,8 +351,8 @@ collections:
                   - { name: id, label: "Match ID", widget: string }
                   - { name: pair1_from, label: "Team 1 (source)", widget: string }
                   - { name: pair2_from, label: "Team 2 (source)", widget: string }
-                  - { name: score1, label: "Score Team 1", widget: string, required: false }
-                  - { name: score2, label: "Score Team 2", widget: string, required: false }
+                  - { name: score1, label: "Score Team 1", widget: string, required: false, hint: "Games per set separated by / (e.g. 6/4). Never use a comma here." }
+                  - { name: score2, label: "Score Team 2", widget: string, required: false, hint: "Games per set separated by / (e.g. 4/6)." }
                   - { name: time, label: "Time", widget: string }
                   - { name: court, label: "Court", widget: number, value_type: int }
               - name: sf
@@ -363,8 +363,8 @@ collections:
                   - { name: id, label: "Match ID", widget: string }
                   - { name: pair1_from, label: "Team 1 (source)", widget: string }
                   - { name: pair2_from, label: "Team 2 (source)", widget: string }
-                  - { name: score1, label: "Score Team 1", widget: string, required: false }
-                  - { name: score2, label: "Score Team 2", widget: string, required: false }
+                  - { name: score1, label: "Score Team 1", widget: string, required: false, hint: "Games per set separated by / (e.g. 6/4). Never use a comma here." }
+                  - { name: score2, label: "Score Team 2", widget: string, required: false, hint: "Games per set separated by / (e.g. 4/6)." }
                   - { name: time, label: "Time", widget: string }
                   - { name: court, label: "Court", widget: number, value_type: int }
               - name: final
@@ -375,8 +375,8 @@ collections:
                   - { name: id, label: "Match ID", widget: string }
                   - { name: pair1_from, label: "Team 1 (source)", widget: string }
                   - { name: pair2_from, label: "Team 2 (source)", widget: string }
-                  - { name: score1, label: "Score Team 1", widget: string, required: false }
-                  - { name: score2, label: "Score Team 2", widget: string, required: false }
+                  - { name: score1, label: "Score Team 1", widget: string, required: false, hint: "Games per set separated by / (e.g. 6/4). Never use a comma here." }
+                  - { name: score2, label: "Score Team 2", widget: string, required: false, hint: "Games per set separated by / (e.g. 4/6)." }
                   - { name: time, label: "Time", widget: string }
                   - { name: court, label: "Court", widget: number, value_type: int }
 

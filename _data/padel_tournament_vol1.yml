@@ -1,0 +1,631 @@
+groups:
+  A:
+    pairs:
+      - seed: 1
+        name: Tomas.C / Player.2
+      - seed: 2
+        name: Ismail.L / Mehdi.H
+      - seed: 3
+        name: Jose.B / Jesús.E
+      - seed: 4
+        name: Adnane.E / Rayane.S
+    matches:
+      - round: 1
+        pair1: 1
+        pair2: 2
+        score1: "21"
+        score2: "19"
+        time: "15:00"
+        court: 1
+        pair1_name: Tomas.C / Player.2
+        pair2_name: Ismail.L / Mehdi.H
+      - round: 1
+        pair1: 3
+        pair2: 4
+        score1: "32"
+        score2: "8"
+        time: "15:00"
+        court: 2
+        pair1_name: Jose.B / Jesús.E
+        pair2_name: Adnane.E / Rayane.S
+      - round: 2
+        pair1: 1
+        pair2: 3
+        score1: "11"
+        score2: "36"
+        time: "16:20"
+        court: 1
+        pair1_name: Tomas.C / Player.2
+        pair2_name: Jose.B / Jesús.E
+      - round: 2
+        pair1: 2
+        pair2: 4
+        score1: "19"
+        score2: "19"
+        time: "16:20"
+        court: 2
+        pair1_name: Ismail.L / Mehdi.H
+        pair2_name: Adnane.E / Rayane.S
+      - round: 3
+        pair1: 1
+        pair2: 4
+        score1: "22"
+        score2: "20"
+        time: "17:40"
+        court: 1
+        pair1_name: Tomas.C / Player.2
+        pair2_name: Adnane.E / Rayane.S
+      - round: 3
+        pair1: 2
+        pair2: 3
+        score1: "10"
+        score2: "41"
+        time: "17:40"
+        court: 2
+        pair1_name: Ismail.L / Mehdi.H
+        pair2_name: Jose.B / Jesús.E
+  B:
+    pairs:
+      - seed: 1
+        name: Fede.V / Javier.C
+      - seed: 2
+        name: El hassan.J / Gabriel.T
+      - seed: 3
+        name: Saad.L / Ramy.H
+      - seed: 4
+        name: Kevin.B / Mertol.K
+    matches:
+      - round: 1
+        pair1: 1
+        pair2: 2
+        score1: "32"
+        score2: "21"
+        time: "15:00"
+        court: 3
+        pair1_name: Fede.V / Javier.C
+        pair2_name: El hassan.J / Gabriel.T
+      - round: 1
+        pair1: 3
+        pair2: 4
+        score1: "10"
+        score2: "42"
+        time: "15:00"
+        court: 4
+        pair1_name: Saad.L / Ramy.H
+        pair2_name: Kevin.B / Mertol.K
+      - round: 2
+        pair1: 1
+        pair2: 3
+        score1: "29"
+        score2: "25"
+        time: "16:20"
+        court: 3
+        pair1_name: Fede.V / Javier.C
+        pair2_name: Saad.L / Ramy.H
+      - round: 2
+        pair1: 2
+        pair2: 4
+        score1: "10"
+        score2: "40"
+        time: "16:20"
+        court: 4
+        pair1_name: El hassan.J / Gabriel.T
+        pair2_name: Kevin.B / Mertol.K
+      - round: 3
+        pair1: 1
+        pair2: 4
+        score1: "21"
+        score2: "37"
+        time: "17:40"
+        court: 3
+        pair1_name: Fede.V / Javier.C
+        pair2_name: Kevin.B / Mertol.K
+      - round: 3
+        pair1: 2
+        pair2: 3
+        score1: "23"
+        score2: "27"
+        time: "17:40"
+        court: 4
+        pair1_name: El hassan.J / Gabriel.T
+        pair2_name: Saad.L / Ramy.H
+  C:
+    pairs:
+      - seed: 1
+        name: Javier.S / Juan.P
+      - seed: 2
+        name: Mauro.A / German.F
+      - seed: 3
+        name: Matteo.C / Alessandro.D
+      - seed: 4
+        name: Saad.M / Cornejo.A
+    matches:
+      - round: 1
+        pair1: 1
+        pair2: 2
+        score1: "25"
+        score2: "10"
+        time: "15:20"
+        court: 1
+        pair1_name: Javier.S / Juan.P
+        pair2_name: Mauro.A / German.F
+      - round: 1
+        pair1: 3
+        pair2: 4
+        score1: "20"
+        score2: "0"
+        time: "15:20"
+        court: 2
+        pair1_name: Matteo.C / Alessandro.D
+        pair2_name: Saad.M / Cornejo.A
+      - round: 2
+        pair1: 1
+        pair2: 3
+        score1: "25"
+        score2: "12"
+        time: "16:40"
+        court: 1
+        pair1_name: Javier.S / Juan.P
+        pair2_name: Matteo.C / Alessandro.D
+      - round: 2
+        pair1: 2
+        pair2: 4
+        score1: "20"
+        score2: "0"
+        time: "16:40"
+        court: 2
+        pair1_name: Mauro.A / German.F
+        pair2_name: Saad.M / Cornejo.A
+      - round: 3
+        pair1: 1
+        pair2: 4
+        score1: "20"
+        score2: "0"
+        time: "18:00"
+        court: 1
+        pair1_name: Javier.S / Juan.P
+        pair2_name: Saad.M / Cornejo.A
+      - round: 3
+        pair1: 2
+        pair2: 3
+        score1: "33"
+        score2: "19"
+        time: "18:00"
+        court: 2
+        pair1_name: Mauro.A / German.F
+        pair2_name: Matteo.C / Alessandro.D
+  D:
+    pairs:
+      - seed: 1
+        name: Saad.A / Abdessalam.D
+      - seed: 2
+        name: Yshai.D / Ethan.B
+      - seed: 3
+        name: Nicolas.B / Luca.R
+      - seed: 4
+        name: Yassin.J / Idriss.B
+    matches:
+      - round: 1
+        pair1: 1
+        pair2: 2
+        score1: "13"
+        score2: "34"
+        time: "15:20"
+        court: 3
+        pair1_name: Saad.A / Abdessalam.D
+        pair2_name: Yshai.D / Ethan.B
+      - round: 1
+        pair1: 3
+        pair2: 4
+        score1: "43"
+        score2: "9"
+        time: "15:20"
+        court: 4
+        pair1_name: Nicolas.B / Luca.R
+        pair2_name: Yassin.J / Idriss.B
+      - round: 2
+        pair1: 1
+        pair2: 3
+        score1: "17"
+        score2: "39"
+        time: "16:40"
+        court: 3
+        pair1_name: Saad.A / Abdessalam.D
+        pair2_name: Nicolas.B / Luca.R
+      - round: 2
+        pair1: 2
+        pair2: 4
+        score1: "40"
+        score2: "14"
+        time: "16:40"
+        court: 4
+        pair1_name: Yshai.D / Ethan.B
+        pair2_name: Yassin.J / Idriss.B
+      - round: 3
+        pair1: 1
+        pair2: 4
+        score1: "38"
+        score2: "17"
+        time: "18:00"
+        court: 3
+        pair1_name: Saad.A / Abdessalam.D
+        pair2_name: Yassin.J / Idriss.B
+      - round: 3
+        pair1: 2
+        pair2: 3
+        score1: "27"
+        score2: "36"
+        time: "18:00"
+        court: 4
+        pair1_name: Yshai.D / Ethan.B
+        pair2_name: Nicolas.B / Luca.R
+  E:
+    pairs:
+      - seed: 1
+        name: Maxime.C / Cesar.P
+      - seed: 2
+        name: Aram.V / Nestor.K
+      - seed: 3
+        name: Aleksei.D / Andrin.B
+      - seed: 4
+        name: Mamoun.R / Maxime.H
+    matches:
+      - round: 1
+        pair1: 1
+        pair2: 2
+        score1: "48"
+        score2: "10"
+        time: "15:40"
+        court: 1
+        pair1_name: Maxime.C / Cesar.P
+        pair2_name: Aram.V / Nestor.K
+      - round: 1
+        pair1: 3
+        pair2: 4
+        score1: "32"
+        score2: "20"
+        time: "15:40"
+        court: 2
+        pair1_name: Aleksei.D / Andrin.B
+        pair2_name: Mamoun.R / Maxime.H
+      - round: 2
+        pair1: 1
+        pair2: 3
+        score1: "22"
+        score2: "30"
+        time: "17:00"
+        court: 1
+        pair1_name: Maxime.C / Cesar.P
+        pair2_name: Aleksei.D / Andrin.B
+      - round: 2
+        pair1: 2
+        pair2: 4
+        score1: "10"
+        score2: "40"
+        time: "17:00"
+        court: 2
+        pair1_name: Aram.V / Nestor.K
+        pair2_name: Mamoun.R / Maxime.H
+      - round: 3
+        pair1: 1
+        pair2: 4
+        score1: "26"
+        score2: "25"
+        time: "18:20"
+        court: 1
+        pair1_name: Maxime.C / Cesar.P
+        pair2_name: Mamoun.R / Maxime.H
+      - round: 3
+        pair1: 2
+        pair2: 3
+        score1: "13"
+        score2: "20"
+        time: "18:20"
+        court: 2
+        pair1_name: Aram.V / Nestor.K
+        pair2_name: Aleksei.D / Andrin.B
+  F:
+    pairs:
+      - seed: 1
+        name: Ilias.D / Samy.B
+      - seed: 2
+        name: Abdellah.J / Youssef.C
+      - seed: 3
+        name: Josep.A / Nicolas.M
+      - seed: 4
+        name: Paula.A / Player.2
+    matches:
+      - round: 1
+        pair1: 1
+        pair2: 2
+        score1: "33"
+        score2: "16"
+        time: "15:40"
+        court: 3
+        pair1_name: Ilias.D / Samy.B
+        pair2_name: Abdellah.J / Youssef.C
+      - round: 1
+        pair1: 3
+        pair2: 4
+        score1: "26"
+        score2: "13"
+        time: "15:40"
+        court: 4
+        pair1_name: Josep.A / Nicolas.M
+        pair2_name: Paula.A / Player.2
+      - round: 2
+        pair1: 1
+        pair2: 3
+        score1: "23"
+        score2: "25"
+        time: "17:00"
+        court: 3
+        pair1_name: Ilias.D / Samy.B
+        pair2_name: Josep.A / Nicolas.M
+      - round: 2
+        pair1: 2
+        pair2: 4
+        score1: "21"
+        score2: "25"
+        time: "17:00"
+        court: 4
+        pair1_name: Abdellah.J / Youssef.C
+        pair2_name: Paula.A / Player.2
+      - round: 3
+        pair1: 1
+        pair2: 4
+        score1: "40"
+        score2: "12"
+        time: "18:20"
+        court: 3
+        pair1_name: Ilias.D / Samy.B
+        pair2_name: Paula.A / Player.2
+      - round: 3
+        pair1: 2
+        pair2: 3
+        score1: "17"
+        score2: "35"
+        time: "18:20"
+        court: 4
+        pair1_name: Abdellah.J / Youssef.C
+        pair2_name: Josep.A / Nicolas.M
+  G:
+    pairs:
+      - seed: 1
+        name: Inés.C / Blanca.V
+      - seed: 2
+        name: Jeremias.F / Ruben.M
+      - seed: 3
+        name: Franklin.T / Mael.L
+      - seed: 4
+        name: Amine.B / Ghali.B
+    matches:
+      - round: 1
+        pair1: 1
+        pair2: 2
+        score1: "22"
+        score2: "34"
+        time: "16:00"
+        court: 1
+        pair1_name: Inés.C / Blanca.V
+        pair2_name: Jeremias.F / Ruben.M
+      - round: 1
+        pair1: 3
+        pair2: 4
+        score1: "29"
+        score2: "12"
+        time: "16:00"
+        court: 2
+        pair1_name: Franklin.T / Mael.L
+        pair2_name: Amine.B / Ghali.B
+      - round: 2
+        pair1: 1
+        pair2: 3
+        score1: "8"
+        score2: "35"
+        time: "17:20"
+        court: 1
+        pair1_name: Inés.C / Blanca.V
+        pair2_name: Franklin.T / Mael.L
+      - round: 2
+        pair1: 2
+        pair2: 4
+        score1: "37"
+        score2: "28"
+        time: "17:20"
+        court: 2
+        pair1_name: Jeremias.F / Ruben.M
+        pair2_name: Amine.B / Ghali.B
+      - round: 3
+        pair1: 1
+        pair2: 4
+        score1: "18"
+        score2: "26"
+        time: "18:40"
+        court: 1
+        pair1_name: Inés.C / Blanca.V
+        pair2_name: Amine.B / Ghali.B
+      - round: 3
+        pair1: 2
+        pair2: 3
+        score1: "20"
+        score2: "42"
+        time: "18:40"
+        court: 2
+        pair1_name: Jeremias.F / Ruben.M
+        pair2_name: Franklin.T / Mael.L
+  H:
+    pairs:
+      - seed: 1
+        name: Malik.W / Ahmad.F
+      - seed: 2
+        name: Thomas.B / Tassilo.W
+      - seed: 3
+        name: Alberto.N / Maximiliano.H
+      - seed: 4
+        name: Lucas.P / Nathan.R
+    matches:
+      - round: 1
+        pair1: 1
+        pair2: 2
+        score1: "9"
+        score2: "35"
+        time: "16:00"
+        court: 3
+        pair1_name: Malik.W / Ahmad.F
+        pair2_name: Thomas.B / Tassilo.W
+      - round: 1
+        pair1: 3
+        pair2: 4
+        score1: "20"
+        score2: "20"
+        time: "16:00"
+        court: 4
+        pair1_name: Alberto.N / Maximiliano.H
+        pair2_name: Lucas.P / Nathan.R
+      - round: 2
+        pair1: 1
+        pair2: 3
+        score1: "12"
+        score2: "37"
+        time: "17:20"
+        court: 3
+        pair1_name: Malik.W / Ahmad.F
+        pair2_name: Alberto.N / Maximiliano.H
+      - round: 2
+        pair1: 2
+        pair2: 4
+        score1: "28"
+        score2: "21"
+        time: "17:20"
+        court: 4
+        pair1_name: Thomas.B / Tassilo.W
+        pair2_name: Lucas.P / Nathan.R
+      - round: 3
+        pair1: 1
+        pair2: 4
+        score1: "6"
+        score2: "38"
+        time: "18:40"
+        court: 3
+        pair1_name: Malik.W / Ahmad.F
+        pair2_name: Lucas.P / Nathan.R
+      - round: 3
+        pair1: 2
+        pair2: 3
+        score1: "24"
+        score2: "21"
+        time: "18:40"
+        court: 4
+        pair1_name: Thomas.B / Tassilo.W
+        pair2_name: Alberto.N / Maximiliano.H
+knockout:
+  r16:
+    - id: R16-1
+      pair1_from: 1A
+      pair2_from: 2H
+      score1: "6"
+      score2: "4"
+      time: "19:00"
+      court: 1
+    - id: R16-2
+      pair1_from: 1B
+      pair2_from: 2G
+      score1: "11"
+      score2: "0"
+      time: "19:00"
+      court: 2
+    - id: R16-3
+      pair1_from: 1C
+      pair2_from: 2F
+      score1: "1"
+      score2: "0"
+      time: "19:00"
+      court: 3
+    - id: R16-4
+      pair1_from: 1D
+      pair2_from: 2E
+      score1: "4"
+      score2: "5"
+      time: "19:00"
+      court: 4
+    - id: R16-5
+      pair1_from: 1E
+      pair2_from: 2D
+      score1: "6"
+      score2: "0"
+      time: "19:30"
+      court: 1
+    - id: R16-6
+      pair1_from: 1F
+      pair2_from: 2C
+      score1: "3"
+      score2: "9"
+      time: "19:30"
+      court: 2
+    - id: R16-7
+      pair1_from: 1G
+      pair2_from: 2B
+      score1: "6"
+      score2: "1"
+      time: "19:30"
+      court: 3
+    - id: R16-8
+      pair1_from: 1H
+      pair2_from: 2A
+      score1: "6"
+      score2: "0"
+      time: "19:30"
+      court: 4
+  qf:
+    - id: QF-1
+      pair1_from: W-R16-1
+      pair2_from: W-R16-2
+      score1: "3"
+      score2: "6"
+      time: "20:00"
+      court: 1
+    - id: QF-2
+      pair1_from: W-R16-3
+      pair2_from: W-R16-4
+      score1: "6"
+      score2: "0"
+      time: "20:00"
+      court: 2
+    - id: QF-3
+      pair1_from: W-R16-5
+      pair2_from: W-R16-6
+      score1: "9"
+      score2: "2"
+      time: "20:00"
+      court: 3
+    - id: QF-4
+      pair1_from: W-R16-7
+      pair2_from: W-R16-8
+      score1: "6"
+      score2: "3"
+      time: "20:00"
+      court: 4
+  sf:
+    - id: SF-1
+      pair1_from: W-QF-1
+      pair2_from: W-QF-2
+      score1: ""
+      score2: ""
+      time: "20:30"
+      court: 1
+    - id: SF-2
+      pair1_from: W-QF-3
+      pair2_from: W-QF-4
+      score1: "6"
+      score2: "3"
+      time: "20:30"
+      court: 2
+  final:
+    - id: Final
+      pair1_from: W-SF-1
+      pair2_from: W-SF-2
+      score1: "6,6"
+      score2: "1,1"
+      time: "21:00"
+      court: 1

@@ -1,276 +1,244 @@
-<!-- ═══════════ PADEL TOURNAMENT COMPONENT ═══════════ -->
-<div class="pt-bg-wrapper">
-  <!-- Decorative clouds -->
-  <img src="/assets/images/padel-cloud.webp" class="pt-deco pt-cloud pt-cloud-1" alt="" aria-hidden="true">
-  <img src="/assets/images/padel-cloud.webp" class="pt-deco pt-cloud pt-cloud-2" alt="" aria-hidden="true">
-  <img src="/assets/images/padel-cloud.webp" class="pt-deco pt-cloud pt-cloud-3" alt="" aria-hidden="true">
-  <img src="/assets/images/padel-cloud.webp" class="pt-deco pt-cloud pt-cloud-4" alt="" aria-hidden="true">
-  <img src="/assets/images/padel-cloud.webp" class="pt-deco pt-cloud pt-cloud-5" alt="" aria-hidden="true">
-  <!-- Decorative tennis balls -->
-  <img src="/assets/images/padel-ball.webp" class="pt-deco pt-ball pt-ball-1" alt="" aria-hidden="true">
-  <img src="/assets/images/padel-ball.webp" class="pt-deco pt-ball pt-ball-2" alt="" aria-hidden="true">
-  <img src="/assets/images/padel-ball.webp" class="pt-deco pt-ball pt-ball-3" alt="" aria-hidden="true">
-  <img src="/assets/images/padel-ball.webp" class="pt-deco pt-ball pt-ball-4" alt="" aria-hidden="true">
-  <img src="/assets/images/padel-ball.webp" class="pt-deco pt-ball pt-ball-5" alt="" aria-hidden="true">
+<!-- ═══════════ PADEL TOURNAMENT VOL.2 — mobile-first, poster style ═══════════ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&family=Inter:wght@400;500;600;700&family=Permanent+Marker&display=swap">
 
-<div class="pt-container" id="padel-tournament">
-  <!-- Hero -->
-  <div class="pt-hero">
-    <div class="pt-hero-badge">🏆 Live Tournament</div>
-    <h1 class="pt-hero-title">LSVZ × MAPZ Padel Tournament</h1>
-    <p class="pt-hero-subtitle">32 Pairs · 8 Groups · Knockout Bracket</p>
-    <div class="pt-hero-meta">
-      <span>📅 Saturday, April 25 · 15:00–22:00</span>
-      <span>📍 Unipadel Zurich</span>
-      <span>🎾 4 Courts</span>
-    </div>
-  </div>
+<style>
+/* Page-level: full-bleed app, room for the fixed tab bar */
+.page__content::before { display: none !important; }
+body { overflow-x: hidden; padding-bottom: 76px; }
 
-  <!-- Tab Navigation -->
-  <div class="pt-tabs">
-    <button class="pt-tab active" data-tab="groups" id="tab-groups">
-      <span class="pt-tab-icon">📊</span> Groups
-    </button>
-    <button class="pt-tab" data-tab="schedule" id="tab-schedule">
-      <span class="pt-tab-icon">📅</span> Schedule
-    </button>
-    <button class="pt-tab" data-tab="bracket" id="tab-bracket">
-      <span class="pt-tab-icon">🏆</span> Knockout
-    </button>
-  </div>
+.pd-app {
+  --lime: #e1fb2a; --navy: #0b2233; --card: #10324a; --card2: #0f2c41; --muted: #9fb5c4; --soft: #c9d8e2; --red: #ff3b3b;
+  width: 100vw; margin-left: calc(50% - 50vw); margin-top: -1em;
+  background: var(--navy); color: #fff; font-family: Inter, system-ui, -apple-system, sans-serif; font-size: 15px; line-height: 1.4;
+  -webkit-font-smoothing: antialiased; padding-bottom: 24px; min-height: calc(100vh - 60px);
+}
+.pd-app *, .pd-app *::before, .pd-app *::after { box-sizing: border-box; }
+.pd-app h1, .pd-app h2, .pd-app h3, .pd-app p { margin: 0; padding: 0; border: 0; color: inherit; background: none; text-shadow: none; }
+.pd-app h1::before, .pd-app h1::after, .pd-app h2::before, .pd-app h2::after { content: none !important; display: none !important; }
+.pd-app section { background: transparent; margin: 0; border: 0; box-shadow: none; }
+.pd-app a, .pd-app a:hover, .pd-app a:focus { text-decoration: none; color: inherit; }
+.pd-app button { font: inherit; margin: 0; cursor: pointer; }
+.pd-wrap { max-width: 1040px; margin: 0 auto; }
+.pd-num { font-variant-numeric: tabular-nums; }
+.pd-wide { font-family: Archivo, sans-serif; font-weight: 900; font-stretch: 112%; font-style: italic; letter-spacing: 0; }
 
-  <!-- ═══ GROUPS TAB ═══ -->
-  <div class="pt-panel active" id="panel-groups">
-    <div class="pt-groups-grid">
-      {% for group_entry in site.data.padel_tournament.groups %}
-      {% assign gkey = group_entry[0] %}
-      {% assign group = group_entry[1] %}
-      <div class="pt-group-card" id="group-{{ gkey }}">
-        <div class="pt-group-header">
-          <span class="pt-group-letter">{{ gkey }}</span>
-          <span class="pt-group-label">Group {{ gkey }}</span>
-        </div>
-        <table class="pt-standings-table">
-          <thead>
-            <tr>
-              <th class="pt-th-pos">#</th>
-              <th class="pt-th-team">Pair</th>
-              <th class="pt-th-stat">MP</th>
-              <th class="pt-th-stat">W</th>
-              <th class="pt-th-stat">L</th>
-              <th class="pt-th-stat">GD</th>
-              <th class="pt-th-stat">GW</th>
-            </tr>
-          </thead>
-          <tbody id="standings-{{ gkey }}">
-            {% for pair in group.pairs %}
-            <tr data-seed="{{ pair.seed }}">
-              <td class="pt-pos">{{ pair.seed }}</td>
-              <td class="pt-team-name">{{ pair.name }}</td>
-              <td class="pt-stat">0</td>
-              <td class="pt-stat">0</td>
-              <td class="pt-stat">0</td>
-              <td class="pt-stat">0</td>
-              <td class="pt-stat">0</td>
-            </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-        <!-- Group Matches -->
-        <div class="pt-group-matches">
-          <div class="pt-matches-label">Matches</div>
-          {% for match in group.matches %}
-          {% assign p1name = "" %}
-          {% assign p2name = "" %}
-          {% for pair in group.pairs %}
-            {% if pair.seed == match.pair1 %}{% assign p1name = pair.name %}{% endif %}
-            {% if pair.seed == match.pair2 %}{% assign p2name = pair.name %}{% endif %}
-          {% endfor %}
-          <div class="pt-match-row {% if match.score1 != '' %}pt-match-done{% endif %}" 
-               data-group="{{ gkey }}" data-p1="{{ match.pair1 }}" data-p2="{{ match.pair2 }}"
-               data-s1="{{ match.score1 }}" data-s2="{{ match.score2 }}">
-            <span class="pt-match-time">{{ match.time }}</span>
-            <span class="pt-match-team">{{ p1name }}</span>
-            <span class="pt-match-score">
-              {% if match.score1 != '' and match.score2 != '' %}
-                <strong>{{ match.score1 }}</strong> - <strong>{{ match.score2 }}</strong>
-              {% else %}
-                <em>vs</em>
-              {% endif %}
-            </span>
-            <span class="pt-match-team">{{ p2name }}</span>
-          </div>
-          {% endfor %}
-        </div>
+/* Hero (poster) */
+.pd-app .pd-hero { position: relative; overflow: hidden; background: linear-gradient(180deg, #02648b 0%, #0a86ad 55%, #2aa6cf 100%); }
+.pd-hero-in { position: relative; padding: 18px 20px 24px; display: flex; flex-direction: column; gap: 14px; max-width: 1040px; margin: 0 auto; }
+.pd-deco { position: absolute; pointer-events: none; user-select: none; }
+.pd-cloud { opacity: .5; }
+.pd-blur { filter: blur(2px); }
+.pd-toprow { display: flex; align-items: center; gap: 10px; }
+.pd-brand { font-family: Archivo, sans-serif; font-weight: 900; font-style: italic; font-stretch: 112%; font-size: 15px; }
+.pd-chip-status { margin-left: auto; display: inline-flex; align-items: center; gap: 6px; border-radius: 999px; padding: 5px 10px; font-weight: 700; font-size: 12px; letter-spacing: .08em; background: rgba(11,34,51,.55); }
+.pd-chip-status.is-live { background: var(--red); }
+.pd-chip-status .dot { width: 7px; height: 7px; border-radius: 50%; background: #fff; }
+.pd-title { display: flex; flex-direction: column; line-height: .92; }
+.pd-title .l1 { font-family: Archivo, sans-serif; font-weight: 900; font-stretch: 125%; font-size: clamp(54px, 15vw, 96px); color: var(--lime); letter-spacing: -.01em; }
+.pd-title .l2 { font-family: Archivo, sans-serif; font-weight: 900; font-style: italic; font-stretch: 112%; font-size: clamp(32px, 9vw, 58px); color: #fff; -webkit-text-stroke: 1.5px var(--navy); paint-order: stroke fill; }
+.pd-tabtitle { display: none; font-family: Archivo, sans-serif; font-weight: 900; font-stretch: 125%; font-size: 40px; line-height: 1; color: var(--lime); }
+.pd-brushes { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.pd-brush-lime { background: var(--lime); color: var(--navy); font-family: 'Permanent Marker', cursive; font-size: 30px; padding: 6px 22px 2px; transform: rotate(-4deg);
+  clip-path: polygon(3% 12%,22% 4%,48% 9%,74% 0%,97% 8%,100% 46%,96% 88%,70% 100%,41% 92%,15% 100%,0% 84%,2% 45%); }
+.pd-brush-navy { background: var(--navy); color: var(--lime); font-family: 'Permanent Marker', cursive; font-size: 21px; padding: 8px 18px 6px; transform: rotate(-3deg); display: inline-flex; align-items: center; gap: 8px;
+  clip-path: polygon(0% 18%,30% 6%,62% 12%,98% 0%,100% 52%,95% 94%,58% 86%,24% 100%,3% 90%,4% 50%); }
+.pd-glass { background: rgba(3,38,58,.42); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border: 1.5px solid var(--lime); border-radius: 18px; overflow: hidden; max-width: 520px; }
+.pd-glass-row { display: flex; align-items: stretch; }
+.pd-date { background: var(--lime); color: var(--navy); padding: 10px 14px; display: flex; align-items: center; font-family: Archivo, sans-serif; font-weight: 900; font-style: italic; font-stretch: 112%; font-size: 30px; }
+.pd-glass-line { display: flex; align-items: center; gap: 8px; padding: 10px 14px; border-top: 1px solid rgba(255,255,255,.15); font-weight: 700; color: var(--lime); }
+.pd-glass-stats { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); border-top: 1px solid rgba(255,255,255,.15); text-align: center; font-size: 13px; }
+.pd-glass-stats span { padding: 9px 4px; }
+.pd-glass-stats span + span { border-left: 1px solid rgba(255,255,255,.15); }
+.pd-app.is-compact .pd-title, .pd-app.is-compact .pd-brushes, .pd-app.is-compact .pd-glass { display: none; }
+.pd-app.is-compact .pd-tabtitle { display: block; }
+.pd-app.is-compact .pd-hero-in { padding-bottom: 18px; }
+
+/* Panels & cards */
+.pd-panel { padding: 0 16px; }
+.pd-panel[hidden] { display: none; }
+.pd-sec { padding: 20px 0 4px; display: flex; flex-direction: column; gap: 10px; }
+.pd-sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.pd-h2 { font-family: Archivo, sans-serif; font-weight: 900; font-style: italic; font-stretch: 112%; font-size: 22px; text-transform: uppercase; }
+.pd-app .pd-sub { font-size: 13px; color: var(--muted); line-height: 1.45; }
+.pd-app .pd-lime { color: var(--lime); }
+.pd-grid-courts { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
+.pd-court { background: var(--card); border: 1px solid rgba(255,255,255,.08); border-radius: 16px; padding: 12px; display: flex; flex-direction: column; gap: 7px; }
+.pd-court-top { display: flex; justify-content: space-between; align-items: center; gap: 6px; }
+.pd-court-name { font-family: Archivo, sans-serif; font-weight: 900; font-stretch: 112%; font-size: 16px; }
+.pd-tag { background: var(--lime); color: var(--navy); font-weight: 800; font-size: 11px; padding: 3px 7px; border-radius: 6px; white-space: nowrap; }
+.pd-vs { font-size: 11px; color: var(--muted); letter-spacing: .1em; }
+.pd-pname { font-weight: 600; font-size: 14px; line-height: 1.25; overflow-wrap: anywhere; }
+.pd-bar { height: 4px; background: rgba(255,255,255,.12); border-radius: 2px; overflow: hidden; }
+.pd-bar > span { display: block; height: 100%; background: var(--lime); }
+.pd-list { display: flex; flex-direction: column; border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,.1); }
+.pd-row { background: var(--card2); padding: 11px 12px; border-bottom: 1px solid rgba(255,255,255,.06); }
+.pd-row:last-child { border-bottom: 0; }
+.pd-row-next { display: grid; grid-template-columns: 34px minmax(0,1fr) auto; gap: 10px; align-items: center; }
+.pd-row-res { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 3px 10px; }
+.pd-meta { grid-column: 1 / -1; font-size: 11px; color: var(--muted); }
+.pd-win { color: var(--lime); font-weight: 700; }
+.pd-lose { color: var(--soft); }
+.pd-note { background: var(--card2); border-radius: 14px; padding: 14px; color: var(--soft); font-size: 14px; }
+.pd-progress { display: flex; flex-direction: column; gap: 6px; padding: 12px; border-radius: 14px; background: var(--card2); }
+.pd-progress .pd-bar { height: 6px; }
+.pd-champ { border: 2px solid var(--lime); border-radius: 20px; background: var(--card); padding: 16px; display: flex; align-items: center; gap: 14px; }
+.pd-champ-name { font-family: Archivo, sans-serif; font-weight: 900; font-stretch: 112%; font-size: 22px; color: var(--lime); }
+
+/* Groups */
+.pd-chips { display: flex; gap: 8px; overflow-x: auto; padding: 14px 0 4px; scrollbar-width: none; }
+.pd-chip { min-width: 46px; height: 46px; border-radius: 12px; border: 1.5px solid rgba(255,255,255,.25); background: transparent; color: #fff; font-family: Archivo, sans-serif; font-weight: 900; font-size: 18px; flex: 0 0 auto; }
+.pd-chip[aria-pressed="true"] { background: var(--lime); color: var(--navy); border-color: var(--lime); }
+.pd-gcard { background: var(--card); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,.08); }
+.pd-ghead { display: flex; align-items: center; gap: 12px; padding: 14px 16px; }
+.pd-gletter { width: 44px; height: 44px; border-radius: 12px; background: var(--lime); color: var(--navy); display: flex; align-items: center; justify-content: center; font-family: Archivo, sans-serif; font-weight: 900; font-size: 24px; }
+.pd-trow { display: grid; grid-template-columns: 24px minmax(0,1fr) 26px 26px 26px 40px; gap: 6px; align-items: center; padding: 11px 16px; border-top: 1px solid rgba(255,255,255,.06); }
+.pd-trow.is-head { font-size: 11px; color: var(--muted); letter-spacing: .08em; background: #0e2c42; padding: 8px 16px; border-top: 0; }
+.pd-trow.is-q { background: rgba(225,251,42,.08); }
+.pd-trow.is-q .pos { color: var(--lime); }
+.pd-trow .pos { font-weight: 900; color: #6f8798; }
+.pd-trow .c { text-align: center; }
+.pd-trow .r { text-align: right; }
+.pd-mrow { display: grid; grid-template-columns: 50px minmax(0,1fr) auto; gap: 8px; align-items: center; padding: 10px 16px; border-top: 1px solid rgba(255,255,255,.05); }
+.pd-mtime { display: flex; flex-direction: column; font-size: 12px; color: var(--muted); }
+.pd-mtime b { color: #fff; font-size: 14px; }
+.pd-badge { font-weight: 800; font-size: 13px; border-radius: 8px; padding: 6px 9px; text-align: center; min-width: 52px; white-space: nowrap; }
+.pd-badge.done { background: rgba(255,255,255,.1); }
+.pd-badge.live { background: var(--red); }
+.pd-badge.late { background: rgba(225,251,42,.15); color: var(--lime); font-size: 11px; }
+.pd-badge.next { color: #6f8798; }
+.pd-badge.won { background: var(--lime); color: var(--navy); }
+.pd-minis { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.pd-mini { text-align: left; border-radius: 14px; padding: 10px 12px; display: flex; flex-direction: column; gap: 3px; color: #fff; background: var(--card); border: 1.5px solid transparent; min-height: 44px; }
+.pd-mini[aria-pressed="true"] { border-color: var(--lime); background: #143d59; }
+.pd-mini .k { font-family: Archivo, sans-serif; font-weight: 900; font-size: 15px; color: var(--lime); }
+.pd-mini .n { font-size: 13px; font-weight: 600; overflow-wrap: anywhere; }
+
+/* My matches */
+.pd-search { position: relative; margin-top: 16px; }
+.pd-search svg { position: absolute; left: 14px; top: 15px; }
+.pd-input { width: 100%; font: inherit; font-size: 17px; border-radius: 14px; border: 2px solid var(--lime); background: #fff; color: var(--navy); padding: 13px 14px 13px 44px; min-height: 52px; margin: 0; box-shadow: none; -webkit-appearance: none; appearance: none; }
+.pd-input:focus { outline: none; box-shadow: 0 0 0 4px rgba(225,251,42,.35); }
+.pd-label { display: block; font-size: 13px; font-weight: 600; color: var(--soft); margin-top: 16px; }
+.pd-sugs { display: flex; flex-wrap: wrap; gap: 8px; }
+.pd-sug { font-size: 13px; font-weight: 600; color: #fff; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.25); border-radius: 999px; padding: 8px 12px; min-height: 38px; }
+.pd-nextcard { border-radius: 22px; overflow: hidden; border: 2px solid var(--lime); background: var(--card); }
+.pd-nextcard-top { background: var(--lime); color: var(--navy); padding: 8px 14px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.pd-nextcard-body { padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+.pd-bigtime { font-family: Archivo, sans-serif; font-weight: 900; font-stretch: 112%; font-size: 56px; line-height: .9; }
+.pd-me { display: flex; align-items: center; gap: 14px; background: var(--card); border-radius: 18px; padding: 14px 16px; }
+.pd-me-pos { width: 52px; height: 52px; flex: 0 0 52px; border-radius: 14px; background: rgba(225,251,42,.12); border: 1.5px solid var(--lime); color: var(--lime); display: flex; align-items: center; justify-content: center; font-family: Archivo, sans-serif; font-weight: 900; font-size: 20px; }
+.pd-mymatch { display: grid; grid-template-columns: 56px minmax(0,1fr) auto; gap: 10px; align-items: center; background: var(--card); border-radius: 14px; padding: 12px 14px; border: 1px solid transparent; }
+.pd-mymatch.is-next { border-color: rgba(225,251,42,.4); }
+
+/* Bracket */
+.pd-rounds { display: flex; gap: 8px; overflow-x: auto; padding: 14px 0 4px; }
+.pd-roundlink { color: #fff; font-weight: 700; font-size: 13px; border: 1.5px solid rgba(255,255,255,.3); border-radius: 999px; padding: 10px 14px; min-height: 44px; display: inline-flex; align-items: center; flex: 0 0 auto; background: transparent; }
+.pd-kocard { display: grid; grid-template-columns: 60px minmax(0,1fr); background: var(--card); border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,.06); }
+.pd-kotime { background: #0e2c42; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 8px 4px; font-size: 11px; color: var(--muted); }
+.pd-kotime b { color: #fff; font-size: 14px; }
+.pd-koside { display: flex; justify-content: space-between; gap: 10px; padding: 10px 12px; font-size: 14px; font-weight: 600; }
+.pd-koside + .pd-koside { border-top: 1px solid rgba(255,255,255,.06); }
+.pd-koside.is-win { color: var(--lime); }
+.pd-koside.is-tbd { color: var(--muted); font-weight: 500; }
+.pd-final { position: relative; border-radius: 24px; overflow: hidden; border: 2px solid var(--lime); background: var(--card); padding: 18px; display: flex; flex-direction: column; gap: 14px; }
+.pd-final .pd-kocard { background: var(--navy); }
+.pd-cols { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+
+/* Partners + tab bar */
+.pd-partners { display: flex; justify-content: center; align-items: center; gap: 18px; padding: 28px 0 8px; }
+.pd-lsvz { font-family: Archivo, sans-serif; font-weight: 900; font-stretch: 125%; font-size: 26px; letter-spacing: -.02em; }
+.pd-logo { width: 48px; height: 48px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; }
+.pd-logo img { width: 44px; height: 44px; object-fit: contain; }
+.pd-tabbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; background: rgba(8,26,40,.97); border-top: 1px solid rgba(255,255,255,.1); padding-bottom: env(safe-area-inset-bottom); }
+.pd-tabbar-in { max-width: 560px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); padding: 4px 6px 8px; }
+.pd-app .pd-tab { color: var(--muted); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-size: 11px; font-weight: 600; padding: 8px 0; min-height: 52px; font-family: Inter, system-ui, sans-serif; }
+.pd-app .pd-tab[aria-current="page"] { color: var(--lime); }
+.pd-app .pd-tab, .pd-app .pd-tab:hover, .pd-app .pd-tab:focus, .pd-app .pd-tab[aria-current] { text-decoration: none !important; border: 0; }
+.pd-noscript { padding: 20px 16px; color: var(--soft); }
+
+@media (min-width: 760px) {
+  .pd-panel { padding: 0 24px; }
+  .pd-hero-in { padding: 28px 24px 32px; }
+}
+</style>
+
+<div class="pd-app" id="padel-app">
+  <section class="pd-hero" aria-label="LSVZ × MAPZ Padel Tournament Vol. 2">
+    <img class="pd-deco pd-cloud" src="/assets/images/padel-cloud.webp" alt="" aria-hidden="true" style="top:40px;left:-70px;width:240px">
+    <img class="pd-deco pd-cloud" src="/assets/images/padel-cloud.webp" alt="" aria-hidden="true" style="top:230px;right:-90px;width:260px;opacity:.4">
+    <img class="pd-deco" src="/assets/images/padel-ball-sm.webp" alt="" aria-hidden="true" style="top:-26px;right:-26px;width:104px">
+    <img class="pd-deco pd-blur" src="/assets/images/padel-ball-sm.webp" alt="" aria-hidden="true" style="top:300px;left:-34px;width:78px">
+    <div class="pd-hero-in">
+      <div class="pd-toprow">
+        <span class="pd-brand">LSVZ × MAPZ</span>
+        <span class="pd-chip-status" id="pd-status"><span class="dot"></span><span id="pd-status-text">SAT 14.11</span></span>
       </div>
-      {% endfor %}
-    </div>
-  </div>
-
-  <!-- ═══ SCHEDULE TAB ═══ -->
-  <div class="pt-panel" id="panel-schedule">
-    <h2 class="pt-section-title">Group Stage <span class="pt-time-badge">15:00 – 19:00</span></h2>
-    <div class="pt-schedule-grid">
-      {% assign timeslots = "15:00,15:20,15:40,16:00,16:20,16:40,17:00,17:20,17:40,18:00,18:20,18:40" | split: "," %}
-      {% for ts in timeslots %}
-      <div class="pt-timeslot">
-        <div class="pt-timeslot-header">
-          <span class="pt-timeslot-time">{{ ts }}</span>
-        </div>
-        <div class="pt-courts-row">
-          {% for group_entry in site.data.padel_tournament.groups %}
-          {% assign gkey = group_entry[0] %}
-          {% assign group = group_entry[1] %}
-          {% for match in group.matches %}
-            {% if match.time == ts %}
-              {% assign p1name = "" %}
-              {% assign p2name = "" %}
-              {% for pair in group.pairs %}
-                {% if pair.seed == match.pair1 %}{% assign p1name = pair.name %}{% endif %}
-                {% if pair.seed == match.pair2 %}{% assign p2name = pair.name %}{% endif %}
-              {% endfor %}
-              <div class="pt-court-card {% if match.score1 != '' %}pt-court-done{% endif %}">
-                <div class="pt-court-badge">Court {{ match.court }}</div>
-                <div class="pt-court-group">Group {{ gkey }}</div>
-                <div class="pt-court-matchup">
-                  <span>{{ p1name }}</span>
-                  <span class="pt-court-score">
-                    {% if match.score1 != '' and match.score2 != '' %}
-                      {{ match.score1 }} - {{ match.score2 }}
-                    {% else %}
-                      vs
-                    {% endif %}
-                  </span>
-                  <span>{{ p2name }}</span>
-                </div>
-              </div>
-            {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </div>
+      <span class="pd-tabtitle" id="pd-tabtitle">GROUPS</span>
+      <h1 class="pd-title"><span class="l1">PADEL</span><span class="l2">TOURNAMENT</span></h1>
+      <div class="pd-brushes">
+        <span class="pd-brush-lime">VOL 2</span>
+        <span class="pd-brush-navy">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3z"/><path d="M3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg>DJ LIVE
+        </span>
       </div>
-      {% endfor %}
-    </div>
-
-    <h2 class="pt-section-title" style="margin-top:2.5rem;">Knockout Stage <span class="pt-time-badge">19:00 – 22:00</span></h2>
-    <div class="pt-schedule-grid">
-      {% assign ko_timeslots = "19:00,19:30,20:00,20:30,21:00" | split: "," %}
-      {% for ts in ko_timeslots %}
-      <div class="pt-timeslot">
-        <div class="pt-timeslot-header">
-          <span class="pt-timeslot-time">{{ ts }}</span>
-          <span class="pt-timeslot-round">
-            {% if ts == "19:00" %}Round of 16{% elsif ts == "19:30" %}Round of 16{% elsif ts == "20:00" %}Quarter-Finals{% elsif ts == "20:30" %}Semi-Finals{% elsif ts == "21:00" %}Final{% endif %}
-          </span>
-        </div>
-        <div class="pt-courts-row">
-          {% assign all_ko = "" | split: "" %}
-          {% for stage_entry in site.data.padel_tournament.knockout %}
-          {% assign matches = stage_entry[1] %}
-          {% for match in matches %}
-            {% if match.time == ts %}
-            <div class="pt-court-card pt-court-ko {% if match.score1 != '' %}pt-court-done{% endif %}">
-              <div class="pt-court-badge">Court {{ match.court }}</div>
-              <div class="pt-court-group">{{ match.id }}</div>
-              <div class="pt-court-matchup">
-                <span class="ko-pair" data-from="{{ match.pair1_from }}">{{ match.pair1_from }}</span>
-                <span class="pt-court-score">
-                  {% if match.score1 != '' and match.score2 != '' %}
-                    {{ match.score1 }} - {{ match.score2 }}
-                  {% else %}
-                    vs
-                  {% endif %}
-                </span>
-                <span class="ko-pair" data-from="{{ match.pair2_from }}">{{ match.pair2_from }}</span>
-              </div>
-            </div>
-            {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-
-  <!-- ═══ BRACKET TAB ═══ -->
-  <div class="pt-panel" id="panel-bracket">
-    <div class="pt-bracket-scroll">
-      <div class="pt-bracket">
-        <!-- Round of 16 -->
-        <div class="pt-bracket-round">
-          <div class="pt-round-title">Round of 16</div>
-          <div class="pt-bracket-matches">
-            {% for match in site.data.padel_tournament.knockout.r16 %}
-            <div class="pt-bracket-match" data-match-id="{{ match.id }}" data-s1="{{ match.score1 }}" data-s2="{{ match.score2 }}">
-              <div class="pt-bm-pair" data-from="{{ match.pair1_from }}">
-                <span class="pt-bm-name">{{ match.pair1_from }}</span>
-                <span class="pt-bm-score"></span>
-              </div>
-              <div class="pt-bm-pair" data-from="{{ match.pair2_from }}">
-                <span class="pt-bm-name">{{ match.pair2_from }}</span>
-                <span class="pt-bm-score"></span>
-              </div>
-            </div>
-            {% endfor %}
+      <div class="pd-glass">
+        <div class="pd-glass-row">
+          <div class="pd-date">14.11</div>
+          <div style="padding:10px 14px;display:flex;flex-direction:column;justify-content:center;gap:2px">
+            <span class="pd-num" style="font-weight:700;font-size:17px">15:00 – 22:00</span>
+            <span style="font-size:13px;color:#d6e8f2">1 hour guaranteed play</span>
           </div>
         </div>
-        <!-- Quarter-Finals -->
-        <div class="pt-bracket-round">
-          <div class="pt-round-title">Quarter-Finals</div>
-          <div class="pt-bracket-matches">
-            {% for match in site.data.padel_tournament.knockout.qf %}
-            <div class="pt-bracket-match" data-match-id="{{ match.id }}" data-s1="{{ match.score1 }}" data-s2="{{ match.score2 }}">
-              <div class="pt-bm-pair" data-from="{{ match.pair1_from }}">
-                <span class="pt-bm-name">{{ match.pair1_from }}</span>
-                <span class="pt-bm-score"></span>
-              </div>
-              <div class="pt-bm-pair" data-from="{{ match.pair2_from }}">
-                <span class="pt-bm-name">{{ match.pair2_from }}</span>
-                <span class="pt-bm-score"></span>
-              </div>
-            </div>
-            {% endfor %}
-          </div>
+        <div class="pd-glass-line">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Unipadel Zurich
         </div>
-        <!-- Semi-Finals -->
-        <div class="pt-bracket-round">
-          <div class="pt-round-title">Semi-Finals</div>
-          <div class="pt-bracket-matches">
-            {% for match in site.data.padel_tournament.knockout.sf %}
-            <div class="pt-bracket-match" data-match-id="{{ match.id }}" data-s1="{{ match.score1 }}" data-s2="{{ match.score2 }}">
-              <div class="pt-bm-pair" data-from="{{ match.pair1_from }}">
-                <span class="pt-bm-name">{{ match.pair1_from }}</span>
-                <span class="pt-bm-score"></span>
-              </div>
-              <div class="pt-bm-pair" data-from="{{ match.pair2_from }}">
-                <span class="pt-bm-name">{{ match.pair2_from }}</span>
-                <span class="pt-bm-score"></span>
-              </div>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-        <!-- Final -->
-        <div class="pt-bracket-round pt-bracket-final">
-          <div class="pt-round-title">🏆 Final</div>
-          <div class="pt-bracket-matches">
-            {% for match in site.data.padel_tournament.knockout.final %}
-            <div class="pt-bracket-match pt-bracket-match-final" data-match-id="{{ match.id }}" data-s1="{{ match.score1 }}" data-s2="{{ match.score2 }}">
-              <div class="pt-bm-pair" data-from="{{ match.pair1_from }}">
-                <span class="pt-bm-name">{{ match.pair1_from }}</span>
-                <span class="pt-bm-score"></span>
-              </div>
-              <div class="pt-bm-pair" data-from="{{ match.pair2_from }}">
-                <span class="pt-bm-name">{{ match.pair2_from }}</span>
-                <span class="pt-bm-score"></span>
-              </div>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
+        <div class="pd-glass-stats"><span>4 courts</span><span>32 teams</span><span>CHF 20 / player</span></div>
       </div>
     </div>
+  </section>
+
+  <div class="pd-wrap">
+    <section class="pd-panel" id="pd-panel-live" aria-label="Live"></section>
+    <section class="pd-panel" id="pd-panel-groups" aria-label="Groups" hidden></section>
+    <section class="pd-panel" id="pd-panel-mine" aria-label="My matches" hidden>
+      <label class="pd-label" for="pd-q">Find your pair — type your name or your partner’s</label>
+      <div class="pd-search" style="margin-top:8px">
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0b2233" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input class="pd-input" id="pd-q" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="e.g. Lataoui">
+      </div>
+      <div id="pd-mine-out"></div>
+    </section>
+    <section class="pd-panel" id="pd-panel-bracket" aria-label="Bracket" hidden></section>
+
+    <div class="pd-partners">
+      <span class="pd-lsvz">LSVZ</span>
+      <span style="width:1px;height:36px;background:rgba(255,255,255,.35)"></span>
+      <span class="pd-logo"><img src="/assets/images/TATTOO.png" alt="MAPZ"></span>
+    </div>
+    <noscript><p class="pd-noscript">Turn on JavaScript to see live scores and standings.</p></noscript>
   </div>
+
+  <nav class="pd-tabbar" aria-label="Tournament sections">
+    <div class="pd-tabbar-in">
+      <a class="pd-tab" href="#live" data-tab="live" aria-current="page">
+        <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.2 7.8a6 6 0 0 1 0 8.4"/><path d="M7.8 16.2a6 6 0 0 1 0-8.4"/><path d="M19.1 4.9a10 10 0 0 1 0 14.2"/><path d="M4.9 19.1a10 10 0 0 1 0-14.2"/></svg>Live
+      </a>
+      <a class="pd-tab" href="#groups" data-tab="groups">
+        <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Groups
+      </a>
+      <a class="pd-tab" href="#mine" data-tab="mine">
+        <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>My matches
+      </a>
+      <a class="pd-tab" href="#bracket" data-tab="bracket">
+        <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3"/><path d="M7 5H4v2a3 3 0 0 0 3 3"/></svg>Bracket
+      </a>
+    </div>
+  </nav>
 </div>
-</div>
+
+<script id="pt-data" type="application/json">{{ site.data.padel_tournament | jsonify }}</script>
+<script src="{{ '/assets/js/padel-core.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+<script src="{{ '/assets/js/padel-page.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
