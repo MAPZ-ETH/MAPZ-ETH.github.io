@@ -293,8 +293,8 @@ groups:
       - round: 2
         pair1: 1
         pair2: 3
-        score1: ""
-        score2: ""
+        score1: "27"
+        score2: "18"
         time: "17:00"
         court: 1
         pair1_name: "Paula.dA / Pau.A"
@@ -302,8 +302,8 @@ groups:
       - round: 2
         pair1: 2
         pair2: 4
-        score1: ""
-        score2: ""
+        score1: "35"
+        score2: "25"
         time: "17:00"
         court: 2
         pair1_name: "Mostafa.Z / Ali.B"
@@ -358,8 +358,8 @@ groups:
       - round: 2
         pair1: 1
         pair2: 3
-        score1: ""
-        score2: ""
+        score1: "38"
+        score2: "13"
         time: "17:00"
         court: 3
         pair1_name: "Thorveig.F"
