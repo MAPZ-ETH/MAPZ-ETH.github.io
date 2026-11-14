@@ -181,8 +181,8 @@ groups:
       - round: 3
         pair1: 1
         pair2: 4
-        score1: ""
-        score2: ""
+        score1: "40"
+        score2: "10"
         time: "18:00"
         court: 1
         pair1_name: "Milan.J / Mamoun.T"
@@ -246,8 +246,8 @@ groups:
       - round: 3
         pair1: 1
         pair2: 4
-        score1: ""
-        score2: ""
+        score1: "21"
+        score2: "36"
         time: "18:00"
         court: 3
         pair1_name: "André.S / Karim.Z"
