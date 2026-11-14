@@ -125,8 +125,8 @@ groups:
       - round: 3
         pair1: 2
         pair2: 3
-        score1: ""
-        score2: ""
+        score1: "23"
+        score2: "25"
         time: "17:40"
         court: 4
         pair1_name: "Ghali.B / Amine.B"
