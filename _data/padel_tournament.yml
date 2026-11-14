@@ -423,8 +423,8 @@ groups:
       - round: 2
         pair1: 1
         pair2: 3
-        score1: "34"
-        score2: "29"
+        score1: "31"
+        score2: "15"
         time: "17:20"
         court: 1
         pair1_name: "Álvaro.B / Javi.C"
@@ -497,8 +497,8 @@ groups:
       - round: 2
         pair1: 2
         pair2: 4
-        score1: ""
-        score2: ""
+        score1: "34"
+        score2: "29"
         time: "17:20"
         court: 4
         pair1_name: "Marco.K"
