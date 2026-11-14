@@ -33,8 +33,8 @@ groups:
       - round: 2
         pair1: 1
         pair2: 3
-        score1: ""
-        score2: ""
+        score1: "15"
+        score2: "31"
         time: "16:20"
         court: 1
         pair1_name: "Abdellah.J / Adnane.E"
@@ -42,8 +42,8 @@ groups:
       - round: 2
         pair1: 2
         pair2: 4
-        score1: ""
-        score2: ""
+        score1: "35"
+        score2: "18"
         time: "16:20"
         court: 2
         pair1_name: "Giulio.L"
@@ -98,8 +98,8 @@ groups:
       - round: 2
         pair1: 1
         pair2: 3
-        score1: ""
-        score2: ""
+        score1: "26"
+        score2: "16"
         time: "16:20"
         court: 3
         pair1_name: "Bernat.R / Aleu.R"
@@ -107,8 +107,8 @@ groups:
       - round: 2
         pair1: 2
         pair2: 4
-        score1: ""
-        score2: ""
+        score1: "21"
+        score2: "23"
         time: "16:20"
         court: 4
         pair1_name: "Ghali.B / Amine.B"
