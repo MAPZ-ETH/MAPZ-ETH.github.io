@@ -441,8 +441,8 @@ groups:
       - round: 3
         pair1: 1
         pair2: 4
-        score1: ""
-        score2: ""
+        score1: "21"
+        score2: "23"
         time: "18:40"
         court: 1
         pair1_name: "Álvaro.B / Javi.C"
