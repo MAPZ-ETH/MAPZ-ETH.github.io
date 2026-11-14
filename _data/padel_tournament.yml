@@ -15,8 +15,8 @@ groups:
       - round: 1
         pair1: 1
         pair2: 2
-        score1: ""
-        score2: ""
+        score1: "50"
+        score2: "0"
         time: "15:00"
         court: 1
         pair1_name: "Abdellah.J / Adnane.E"
@@ -523,110 +523,110 @@ groups:
         pair2_name: "Kenzy.H / Mohamed.A"
 knockout:
   r16:
-    - id: R16-1
-      pair1_from: 1A
-      pair2_from: 2H
+    - id: "R16-1"
+      pair1_from: "1A"
+      pair2_from: "2H"
       score1: ""
       score2: ""
       time: "19:00"
       court: 1
-    - id: R16-2
-      pair1_from: 1B
-      pair2_from: 2G
+    - id: "R16-2"
+      pair1_from: "1B"
+      pair2_from: "2G"
       score1: ""
       score2: ""
       time: "19:00"
       court: 2
-    - id: R16-3
-      pair1_from: 1C
-      pair2_from: 2F
+    - id: "R16-3"
+      pair1_from: "1C"
+      pair2_from: "2F"
       score1: ""
       score2: ""
       time: "19:00"
       court: 3
-    - id: R16-4
-      pair1_from: 1D
-      pair2_from: 2E
+    - id: "R16-4"
+      pair1_from: "1D"
+      pair2_from: "2E"
       score1: ""
       score2: ""
       time: "19:00"
       court: 4
-    - id: R16-5
-      pair1_from: 1E
-      pair2_from: 2D
+    - id: "R16-5"
+      pair1_from: "1E"
+      pair2_from: "2D"
       score1: ""
       score2: ""
       time: "19:30"
       court: 1
-    - id: R16-6
-      pair1_from: 1F
-      pair2_from: 2C
+    - id: "R16-6"
+      pair1_from: "1F"
+      pair2_from: "2C"
       score1: ""
       score2: ""
       time: "19:30"
       court: 2
-    - id: R16-7
-      pair1_from: 1G
-      pair2_from: 2B
+    - id: "R16-7"
+      pair1_from: "1G"
+      pair2_from: "2B"
       score1: ""
       score2: ""
       time: "19:30"
       court: 3
-    - id: R16-8
-      pair1_from: 1H
-      pair2_from: 2A
+    - id: "R16-8"
+      pair1_from: "1H"
+      pair2_from: "2A"
       score1: ""
       score2: ""
       time: "19:30"
       court: 4
   qf:
-    - id: QF-1
-      pair1_from: W-R16-1
-      pair2_from: W-R16-2
+    - id: "QF-1"
+      pair1_from: "W-R16-1"
+      pair2_from: "W-R16-2"
       score1: ""
       score2: ""
       time: "20:00"
       court: 1
-    - id: QF-2
-      pair1_from: W-R16-3
-      pair2_from: W-R16-4
+    - id: "QF-2"
+      pair1_from: "W-R16-3"
+      pair2_from: "W-R16-4"
       score1: ""
       score2: ""
       time: "20:00"
       court: 2
-    - id: QF-3
-      pair1_from: W-R16-5
-      pair2_from: W-R16-6
+    - id: "QF-3"
+      pair1_from: "W-R16-5"
+      pair2_from: "W-R16-6"
       score1: ""
       score2: ""
       time: "20:00"
       court: 3
-    - id: QF-4
-      pair1_from: W-R16-7
-      pair2_from: W-R16-8
+    - id: "QF-4"
+      pair1_from: "W-R16-7"
+      pair2_from: "W-R16-8"
       score1: ""
       score2: ""
       time: "20:00"
       court: 4
   sf:
-    - id: SF-1
-      pair1_from: W-QF-1
-      pair2_from: W-QF-2
+    - id: "SF-1"
+      pair1_from: "W-QF-1"
+      pair2_from: "W-QF-2"
       score1: ""
       score2: ""
       time: "20:30"
       court: 1
-    - id: SF-2
-      pair1_from: W-QF-3
-      pair2_from: W-QF-4
+    - id: "SF-2"
+      pair1_from: "W-QF-3"
+      pair2_from: "W-QF-4"
       score1: ""
       score2: ""
       time: "20:30"
       court: 2
   final:
-    - id: Final
-      pair1_from: W-SF-1
-      pair2_from: W-SF-2
+    - id: "Final"
+      pair1_from: "W-SF-1"
+      pair2_from: "W-SF-2"
       score1: ""
       score2: ""
       time: "21:00"
