@@ -547,8 +547,8 @@ knockout:
     - id: "R16-4"
       pair1_from: "1D"
       pair2_from: "2E"
-      score1: ""
-      score2: ""
+      score1: "6"
+      score2: "2"
       time: "19:00"
       court: 4
     - id: "R16-5"
