@@ -250,7 +250,11 @@
   function findPairs(q) {
     var f = fold(q);
     if (!f) return [];
-    return PAIRS.filter(function (p) { return fold(p.name).indexOf(f) !== -1; });
+    // Prefer names that start with what was typed ("ali" → Ali.B, not Malik.T); else any substring
+    var starts = PAIRS.filter(function (p) {
+      return fold(p.name).split(/[^a-z0-9]+/).some(function (t) { return t && t.indexOf(f) === 0; });
+    });
+    return starts.length ? starts : PAIRS.filter(function (p) { return fold(p.name).indexOf(f) !== -1; });
   }
   var chosenPair = null;
   function renderMine() {
@@ -258,13 +262,13 @@
     var out = $('pd-mine-out');
     if (!fold(q)) {
       var sugs = [PAIRS[2], PAIRS[13], PAIRS[24]].filter(Boolean);
-      out.innerHTML = '<div class="pd-sec"><p class="pd-sub">Pairs are listed by the surname of the person who bought the ticket.</p><div class="pd-sugs">' +
+      out.innerHTML = '<div class="pd-sec"><p class="pd-sub">Type your first name or your partner’s, e.g. Ismail.</p><div class="pd-sugs">' +
         sugs.map(function (p) { return '<button type="button" class="pd-sug" data-q="' + esc(p.name) + '">' + esc(p.name) + '</button>'; }).join('') + '</div></div>';
       return;
     }
     var hits = findPairs(q);
     if (!hits.length) {
-      out.innerHTML = '<div class="pd-sec"><div class="pd-note"><b style="color:#fff">No pair found.</b><br>Pairs are listed by the surname of the person who bought the ticket — try your partner’s name.</div></div>';
+      out.innerHTML = '<div class="pd-sec"><div class="pd-note"><b style="color:#fff">No pair found.</b><br>Check the spelling, or try your partner’s first name.</div></div>';
       return;
     }
     if (hits.length > 1 && !(chosenPair && hits.some(function (p) { return p.name === chosenPair; }))) {
